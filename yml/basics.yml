@@ -1,6 +1,7 @@
+{% set name = 'basics' %}
 ---
 -
-    name: basics
+    name: {{ name }}
     children:
         -
             name: var

@@ -1,25 +1,29 @@
 #!/usr/bin/env python3
 
+# Convert a YAML file to XML and write it to stdout.
+#
+
 import sys, string, re, types
 import yaml
 
 from xml.dom import minidom
 from xml.dom import Node
 
+from jinja2 import FileSystemLoader, Environment, select_autoescape
+env = Environment(loader=FileSystemLoader('yml'), autoescape=select_autoescape(['html', 'xml']))
 
-#
-# Convert a YAML file to XML and write it to stdout.
-#
-def convertYaml2Xml(inFileName):
-    inobj = None
-    with open(inFileName, 'r') as f:
-        inobj = yaml.load(f)
-    if inobj is None:
+
+def convertYaml2Xml(inFileName): 
+    rendered = env.get_template(inFileName)
+    rendered = rendered.render().encode('utf-8')
+    yamled = yaml.load(rendered)
+    if yamled is None:
         sys.stdout.write('No such file!\n')
         sys.exit(-1)
+    
     out = []
     level = 0
-    convertYaml2XmlAux(inobj, level, out)
+    convertYaml2XmlAux(yamled, level, out)
     outStr = "".join(out)
     sys.stdout.write(outStr)
 
