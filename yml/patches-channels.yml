@@ -1,0 +1,84 @@
+---
+-
+    name: patchlist
+    children:
+        -
+            name: patch
+            attributes:
+                channel: 0
+                name: OUTPUT TO MIDI CHANNEL 1
+        -
+            name: patch
+            attributes:
+                channel: 1
+                name: OUTPUT TO MIDI CHANNEL 2
+        -
+            name: patch
+            attributes:
+                channel: 2
+                name: OUTPUT TO MIDI CHANNEL 3
+        -
+            name: patch
+            attributes:
+                channel: 3
+                name: OUTPUT TO MIDI CHANNEL 4
+        -
+            name: patch
+            attributes:
+                channel: 4
+                name: OUTPUT TO MIDI CHANNEL 5
+        -
+            name: patch
+            attributes:
+                channel: 5
+                name: OUTPUT TO MIDI CHANNEL 6
+        -
+            name: patch
+            attributes:
+                channel: 6
+                name: OUTPUT TO MIDI CHANNEL 7
+        -
+            name: patch
+            attributes:
+                channel: 7
+                name: OUTPUT TO MIDI CHANNEL 8
+        -
+            name: patch
+            attributes:
+                channel: 8
+                name: OUTPUT TO MIDI CHANNEL 9
+        -
+            name: patch
+            attributes:
+                channel: 9
+                name: OUTPUT TO MIDI CHANNEL 10
+        -
+            name: patch
+            attributes:
+                channel: 10
+                name: OUTPUT TO MIDI CHANNEL 11
+        -
+            name: patch
+            attributes:
+                channel: 11
+                name: OUTPUT TO MIDI CHANNEL 12
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: OUTPUT TO MIDI CHANNEL 13
+        -
+            name: patch
+            attributes:
+                channel: 13
+                name: OUTPUT TO MIDI CHANNEL 14
+        -
+            name: patch
+            attributes:
+                channel: 14
+                name: OUTPUT TO MIDI CHANNEL 15
+        -
+            name: patch
+            attributes:
+                channel: 15
+                name: OUTPUT TO MIDI CHANNEL 16

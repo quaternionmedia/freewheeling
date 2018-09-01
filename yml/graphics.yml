@@ -1,0 +1,36 @@
+---
+-
+    name: graphics
+    children:
+        -
+            name: var
+            attributes:
+                resolution: 640,480
+        -
+            name: var
+            attributes:
+                videodelay: 40
+        -
+            name: font
+            attributes:
+                size: 20
+                file: verabd.ttf
+                name: main
+        -
+            name: font
+            attributes:
+                size: 14
+                file: verabd.ttf
+                name: small
+        -
+            name: font
+            attributes:
+                size: 10
+                file: vera.ttf
+                name: tiny
+        -
+            name: font
+            attributes:
+                size: 16
+                file: vera.ttf
+                name: help

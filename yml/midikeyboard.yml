@@ -1,0 +1,438 @@
+---
+-
+    name: interface
+    children:
+        -
+            name: bindings
+            children:
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_cur_program
+                        type: int
+                        init: 0
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_loopid_pianostart
+                        type: int
+                        init: 350
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_piano_looppage
+                        type: int
+                        init: 0
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_pianocapture
+                        type: int
+                        init: 0
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_pianocapture_set
+                        type: char
+                        init: 0
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_noterange
+                        type: range
+                        init: 36>47
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_notechan
+                        type: int
+                        init: 0
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_selectoctave
+                        type: int
+                        init: 12
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_noterangechange
+                        type: int
+                        init: 12
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_midikeyboard_interfaceid
+                        type: int
+                        init: 0
+                -
+                    name: binding
+                    attributes:
+                        input: start-interface
+                        parameters1: layoutid=0 and                   loopid=VAR_noterange+VAR_loopid_pianostart
+                        parameters2: var=VAR_midikeyboard_interfaceid and value=interfaceid
+                        output2: set-variable
+                        output1: video-show-loop
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        parameters1: var=VAR_pianocapture and value=notenum
+                        conditions: VAR_pianocapture_set=1 and keydown=1
+                        output2: set-variable
+                        parameters2: var=VAR_pianocapture_set and value=0
+                        output1: set-variable
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        conditions: VAR_keyheld_up=1 and midichannel=VAR_notechan and                   notenum=VAR_noterange
+                        parameters: loopid=notenum+VAR_loopid_pianostart and                   slide=keydown*VAR_slide_speed/2
+                        output: slide-loop-amplifier
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        conditions: VAR_keyheld_down=1 and midichannel=VAR_notechan and                   notenum=VAR_noterange
+                        parameters: loopid=notenum+VAR_loopid_pianostart and                   slide=-keydown*VAR_slide_speed/2
+                        output: slide-loop-amplifier
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        conditions: VAR_cutmode=1 and midichannel=VAR_notechan and                   notenum=VAR_noterange and keydown=1
+                        parameters: loopid=notenum+VAR_loopid_pianostart and vol=velocity/127
+                        output: set-trigger-volume
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        conditions: VAR_cutmode=1 and midichannel=VAR_notechan and                   notenum=VAR_noterange and keydown=0
+                        parameters: loopid=notenum+VAR_loopid_pianostart and vol=0
+                        output: set-trigger-volume
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        parameters1: loopid=VAR_loopid_footswitch
+                        conditions: VAR_keyheld_space=1 and notenum=VAR_pianocapture and keydown=1
+                        output2: set-variable
+                        parameters2: var=VAR_xferloop and value=0
+                        output1: erase-loop
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        conditions: VAR_keyheld_space=1 and midichannel=VAR_notechan and                   notenum=VAR_noterange and keydown=1
+                        parameters: loopid=notenum+VAR_loopid_pianostart
+                        output: erase-loop
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        parameters1: oldloopid=VAR_xferidx and                    newloopid=notenum+VAR_loopid_pianostart
+                        conditions: VAR_xferloop=1 and midichannel=VAR_notechan and                  notenum=VAR_noterange and keydown=1
+                        output2: set-variable
+                        parameters2: var=VAR_xferloop and value=0
+                        output1: move-loop
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        parameters1: overdub=1 and overdubfeedback=VAR_overdubfeedback and                   loopid=VAR_loopid_footswitch and vol=velocity/127
+                        output3: set-variable
+                        conditions: VAR_overdubmode=1 and notenum=VAR_pianocapture and keydown=1
+                        output2: set-variable
+                        parameters3: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
+                        parameters2: var=VAR_xferloop and value=1
+                        output1: trigger-loop
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        conditions: VAR_overdubmode=1 and midichannel=VAR_notechan and                   notenum=VAR_noterange and keydown=1
+                        parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=notenum+VAR_loopid_pianostart and vol=velocity/127
+                        output: trigger-loop
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        parameters1: loopid=VAR_loopid_footswitch and vol=velocity/127
+                        output3: set-variable
+                        conditions: notenum=VAR_pianocapture and keydown=1
+                        output2: set-variable
+                        parameters3: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
+                        parameters2: var=VAR_xferloop and value=1
+                        output1: trigger-loop
+                -
+                    name: binding
+                    attributes:
+                        input: midikey
+                        conditions: midichannel=VAR_notechan and notenum=VAR_noterange and                   keydown=1
+                        parameters: loopid=notenum+VAR_loopid_pianostart and vol=velocity/127
+                        output: trigger-loop
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        parameters1: var=VAR_loopid_pianostart and                                           value=VAR_loopid_pianostart+                                                VAR_noterangechange
+                        output3: video-show-loop
+                        conditions: SYSTEM_cur_switchable_interface=VAR_midikeyboard_interfaceid and key=x and keydown=1
+                        output2: set-variable
+                        parameters3: layoutid=0 and loopid=VAR_noterange+VAR_loopid_pianostart
+                        parameters2: var=VAR_piano_looppage and                                          value=VAR_piano_looppage+1
+                        output1: set-variable
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        parameters1: var=VAR_loopid_pianostart and                    value=VAR_loopid_pianostart-VAR_noterangechange
+                        output3: video-show-loop
+                        conditions: SYSTEM_cur_switchable_interface=VAR_midikeyboard_interfaceid and key=z and keydown=1
+                        output2: set-variable
+                        parameters3: layoutid=0 and loopid=VAR_noterange+VAR_loopid_pianostart
+                        parameters2: var=VAR_piano_looppage and                                          value=VAR_piano_looppage-1
+                        output1: set-variable
+        -
+            name: graphics
+            children:
+                -
+                    name: layout
+                    attributes:
+                        label: 0
+                        show: 1
+                        name: Piano Keyboard
+                        scale: 0.35,0.55
+                        id: 0
+                        pos: 0.00,0.00
+                        elabel: 0
+                        namepos: 0.02,0.02
+                    children:
+                        -
+                            name: element
+                            attributes:
+                                base: 0.0,0.0
+                                looppos: 0.20,0.85
+                                name: C
+                                id: 0
+                                loopsize: 0.5
+                                namepos: 0.15,1.10
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.00,0.60, 0.40,1.20
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: T LR
+                                        pos: 0.00,0.00, 0.15,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 0.0,0.0
+                                looppos: 0.35,0.25
+                                name: C#
+                                id: 1
+                                loopsize: 0.5
+                                namepos: 0.25,0.50
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.15,0.00, 0.55,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 0.4,0.0
+                                looppos: 0.20,0.85
+                                name: D
+                                id: 2
+                                loopsize: 0.5
+                                namepos: 0.15,1.10
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.00,0.60, 0.40,1.20
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: T LR
+                                        pos: 0.15,0.00, 0.25,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 0.4,0.0
+                                looppos: 0.45,0.25
+                                name: D#
+                                id: 3
+                                loopsize: 0.5
+                                namepos: 0.35,0.50
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.25,0.00, 0.65,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 0.8,0.0
+                                looppos: 0.20,0.85
+                                name: E
+                                id: 4
+                                loopsize: 0.5
+                                namepos: 0.15,1.10
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.00,0.60, 0.40,1.20
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: T LR
+                                        pos: 0.25,0.00, 0.40,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 1.2,0.0
+                                looppos: 0.20,0.85
+                                name: F
+                                id: 5
+                                loopsize: 0.5
+                                namepos: 0.15,1.10
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.00,0.60, 0.40,1.20
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: T LR
+                                        pos: 0.00,0.00, 0.15,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 1.2,0.0
+                                looppos: 0.35,0.25
+                                name: F#
+                                id: 6
+                                loopsize: 0.5
+                                namepos: 0.25,0.50
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.15,0.00, 0.55,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 1.6,0.0
+                                looppos: 0.20,0.85
+                                name: G
+                                id: 7
+                                loopsize: 0.5
+                                namepos: 0.15,1.10
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.00,0.60, 0.40,1.20
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: T LR
+                                        pos: 0.15,0.00, 0.20,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 1.6,0.0
+                                looppos: 0.40,0.25
+                                name: G#
+                                id: 8
+                                loopsize: 0.5
+                                namepos: 0.30,0.50
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.20,0.00, 0.60,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 2.0,0.0
+                                looppos: 0.20,0.85
+                                name: A
+                                id: 9
+                                loopsize: 0.5
+                                namepos: 0.15,1.10
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.00,0.60, 0.40,1.20
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: T LR
+                                        pos: 0.20,0.00, 0.25,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 2.0,0.0
+                                looppos: 0.45,0.25
+                                name: A#
+                                id: 10
+                                loopsize: 0.5
+                                namepos: 0.35,0.50
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.25,0.00, 0.65,0.60
+                        -
+                            name: element
+                            attributes:
+                                base: 2.4,0.0
+                                looppos: 0.20,0.85
+                                name: B
+                                id: 11
+                                loopsize: 0.5
+                                namepos: 0.15,1.10
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: TBLR
+                                        pos: 0.00,0.60, 0.40,1.20
+                                -
+                                    name: box
+                                    attributes:
+                                        outline: T LR
+                                        pos: 0.25,0.00, 0.40,0.60
+                -
+                    name: display
+                    attributes:
+                        var: VAR_piano_looppage
+                        type: squares
+                        lastsquareval: 2
+                        orientation: horizontal
+                        squareinterval: 1.0
+                        squaresize: 0.05,0.05
+                        pos: 0.9,0.9
+                        font: small
+                        firstsquareval: -2
+                        title: Page

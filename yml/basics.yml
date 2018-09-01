@@ -1,0 +1,106 @@
+---
+-
+    name: basics
+    children:
+        -
+            name: var
+            attributes:
+                numloopids: 1024
+        -
+            name: var
+            attributes:
+                maxsnapshots: 100
+        -
+            name: var
+            attributes:
+                librarypath: fw-lib/
+        -
+            name: var
+            attributes:
+                midiouts: 4
+        -
+            name: var
+            attributes:
+                midisyncouts: 1
+        -
+            name: var
+            attributes:
+                externalaudioinputs: MMSS
+        -
+            name: var
+            attributes:
+                audioinputmonitoring: NNNN
+        -
+            name: var
+            attributes:
+                streaminputs: NYYN
+        -
+            name: var
+            attributes:
+                streamfinalmix: N
+        -
+            name: var
+            attributes:
+                streamloopmix: Y
+        -
+            name: var
+            attributes:
+                maxplayvol: 0.0
+        -
+            name: var
+            attributes:
+                maxlimitergain: 1.0
+        -
+            name: var
+            attributes:
+                limiterthreshhold: 0.75
+        -
+            name: var
+            attributes:
+                limiterreleaserate: 0.000020
+        -
+            name: var
+            attributes:
+                fadermaxdb: 6
+        -
+            name: var
+            attributes:
+                loopoutformat: OGG
+        -
+            name: var
+            attributes:
+                streamoutformat: OGG
+        -
+            name: var
+            attributes:
+                oggquality: 0.5
+        -
+            name: fluidsynth
+            attributes:
+                stereo: 1
+        -
+            name: fluidsynth
+            attributes:
+                param: synth.polyphony
+                setint: 64
+        -
+            name: fluidsynth
+            attributes:
+                param: synth.parallel-render
+                setint: 0
+        -
+            name: fluidsynth
+            attributes:
+                interpolation: 1
+        -
+            name: fluidsynth
+            attributes:
+                channel: 0
+        -
+            name: fluidsynth
+            attributes:
+                tuning: -31.76
+        -
+            name: fluidsynth
+            attributes:
+                soundfont: basic.sf2

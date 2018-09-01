@@ -1,0 +1,2727 @@
+---
+-
+    name: patchlist
+    children:
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 0
+                name: String Thingy
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 1
+                name: Simulated Wood Grain Flat
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 2
+                name: Hydrogenous
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 3
+                name: Ice Chorus
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 4
+                name: Bristol Mini 99
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 5
+                name: amSynth Sweet Bass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 6
+                name: DragonPurr
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 7
+                name: Lush Bells
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 8
+                name: Soft Synth Strings
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 9
+                name: Simulated Wood Grain
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 10
+                name: Mighty Synchronoton
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 11
+                name: FM E.Piano 3
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 12
+                name: FM E.Piano 1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 13
+                name: FM E.Piano 2
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 14
+                name: Early Semisolid Bass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 15
+                name: SpaceBass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 16
+                name: Glass Organ
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 17
+                name: Bernoulli Choir
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 18
+                name: Waveshaper Bass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 19
+                name: Waveshaper Clav
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 20
+                name: PADsynth Strings
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 21
+                name: PADsynth Choir A
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 22
+                name: PADsynth Choir B
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 23
+                name: Simulated Wood Grain Bass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 24
+                name: Malarky
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 25
+                name: Wide Load
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 26
+                name: Double Lush Bells
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 27
+                name: Helianthus
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 28
+                name: Moose Invasion
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 29
+                name: pseudo steel drums
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 30
+                name: more pseudo steel drums
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 31
+                name: Spooky Bell
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 32
+                name: Sync Leslie
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 33
+                name: Mighty Synchronoton Delayed
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 34
+                name: amSynth Derren 1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 35
+                name: amSynth Sexy Boy
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 36
+                name: amSynth Flangey Bass 1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 37
+                name: amSynth Lazy Moon Lead
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 38
+                name: amSynth Encounter
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 39
+                name: amSynth Artic
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 40
+                name: Bristol Mini 0
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 41
+                name: Bristol Explorer 0
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 42
+                name: Circuit
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 43
+                name: Headache
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 44
+                name: LFO Madness
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 45
+                name: Swarmed!
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 46
+                name: PADsynth Choir JP3
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 47
+                name: PADsynth Choir JP
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 48
+                name: PADsynth Choir JP
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 49
+                name: X: strings
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 50
+                name: X2: strings
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 51
+                name: X: Quick Strings
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 52
+                name: X2: Quick Strings
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 53
+                name: X: A-ha
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 54
+                name: X: A-ha VS
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 55
+                name: X: Brass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 56
+                name: X2: Brass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 57
+                name: X: Xylophone
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 58
+                name: X: Shimmer Pad
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 59
+                name: X2: Shimmer Pad
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 60
+                name: X: Sun Dog
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 61
+                name: X2: Sun Dog
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 62
+                name: X: Organ 2
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 63
+                name: X2: Organ 2
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 64
+                name: X: French Horn
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 65
+                name: X: plucked
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 66
+                name: X: bell
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 67
+                name: X: bell VS
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 68
+                name: X: sync_bass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 69
+                name: X: sync_sweep
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 70
+                name: X2: sync_sweep
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 71
+                name: X: Gramma's Organ
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 72
+                name: X: Long Portamento
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 73
+                name: X: Owww!
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 74
+                name: X: Tube Growl
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 75
+                name: X2: Tube Growl
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 76
+                name: X: squelchy_bass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 77
+                name: X: reso_sweep
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 78
+                name: X2: reso_sweep
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 79
+                name: X: theremin
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 80
+                name: X: Twub
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 81
+                name: X: Wavey
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 82
+                name: X2: Wavey
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 83
+                name: X: heart_beat
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 84
+                name: X: voice
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 85
+                name: X: VS Bass 1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 86
+                name: X: VS Bass 2
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 87
+                name: X: Klaxon
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 88
+                name: X2: Klaxon
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 89
+                name: X: Hammond pedals
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 90
+                name: X: space race
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 91
+                name: X: Night Sweats 2
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 92
+                name: X: Tweetie
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 93
+                name: X: Vitreous Humor
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 94
+                name: X: Vibrothingie
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 95
+                name: X: Vibrato Hammond
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 96
+                name: X2: Music Box
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 97
+                name: X: Ploink Box
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 98
+                name: X2: Polkenstein
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 99
+                name: ====== Rudimentary conversions
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 100
+                name: ====== from Kawai K4 patches:
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 101
+                name: K4oid: Lue
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 102
+                name: K4oid: Monocultur
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 103
+                name: K4oid: BreezeGame
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 104
+                name: K4oid: E.Piano S1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 105
+                name: K4oid: FletchLead
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 106
+                name: K4oid: jaBBazyntx
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 107
+                name: K4oid: MICROwave
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 108
+                name: K4oid: OBIErezPAD
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 109
+                name: K4oid: van halen
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 110
+                name: K4oid: Glaschords
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 111
+                name: K4oid: Harmonics
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 112
+                name: K4oid: Polysynth
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 113
+                name: K4oid: Pyeipzz
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 114
+                name: K4oid: Reedy Synt
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 115
+                name: K4oid: Return
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 116
+                name: K4oid: TechnoTube
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 117
+                name: K4oid: Thin Keys
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 118
+                name: K4oid: Vectory !
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 119
+                name: K4oid: Warm Synpi
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 120
+                name: K4oid: Woodpecker
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 121
+                name: K4oid: Zippoline
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 122
+                name: K4oid: Double Wha
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 123
+                name: K4oid: Lurkerer
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 124
+                name: K4oid: Remember?
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 125
+                name: K4oid: Talkochord
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 126
+                name: K4oid: Cla Bell
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 127
+                name: K4oid: Euro*Dig
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 0
+                name: K4oid: FINE FINE
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 1
+                name: K4oid: Spring Sky
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 2
+                name: K4oid: AmbientHrp
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 3
+                name: K4oid: BitterStrg
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 4
+                name: K4oid: LylesStrng
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 5
+                name: K4oid: OB Strings
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 6
+                name: K4oid: EnglishHrn
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 7
+                name: K4oid: emphasizer
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 8
+                name: K4oid: UnderAtack
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 9
+                name: K4oid: Soundtrack
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 10
+                name: K4oid: Sync Wail
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 11
+                name: K4oid: VeryHiVocs
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 12
+                name: K4oid: CleanOrgn1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 13
+                name: K4oid: IndoProOne
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 14
+                name: K4oid: Moog+ChDly
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 15
+                name: K4oid: PPG/VelRes
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 16
+                name: K4oid: RememberMe
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 17
+                name: K4oid: RichRhodes
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 18
+                name: K4oid: CleanOrgn3
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 19
+                name: K4oid: Bob'sBass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 20
+                name: K4oid: digitaSYNT
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 21
+                name: K4oid: elektrik 1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 22
+                name: K4oid: PropaQ PaD
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 23
+                name: K4oid: Vibraphon
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 24
+                name: K4oid: Sierra
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 25
+                name: K4oid: Spinn Solo
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 26
+                name: K4oid: Seventy
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 27
+                name: K4oid: OhhBe Ex-A
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 28
+                name: K4oid: OldSutCase
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 29
+                name: K4oid: Lead Me
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 30
+                name: K4oid: Memory
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 31
+                name: K4oid: Glass EP
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 32
+                name: K4oid: Super KX
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 33
+                name: K4oid: SquareLead
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 34
+                name: K4oid: Rock Organ
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 35
+                name: K4oid: Warmth
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 36
+                name: K4oid: Miniapolis
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 37
+                name: K4oid: Reso Syn
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 38
+                name: K4oid: Oboe
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 39
+                name: K4oid: Mini Bass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 40
+                name: K4oid: Melo Vox 1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 41
+                name: K4oid: Melo Waves
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 42
+                name: K4oid: MelSqrSwep
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 43
+                name: K4oid: Sqr Sweep1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 44
+                name: K4oid: SqrMel Ld1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 45
+                name: K4oid: SqrMel Ld2
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 46
+                name: K4oid: Slow Swell
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 47
+                name: K4oid: Eeeevil 1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 48
+                name: K4oid: Matheim
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 49
+                name: K4oid: Celest
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 50
+                name: K4oid: Xylophone
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 51
+                name: K4oid: WaterBells
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 52
+                name: K4oid: Oh Bo! Mel
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 53
+                name: K4oid: Sunday 1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 54
+                name: K4oid: Sunday  2
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 55
+                name: K4oid: Sunday  3
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 56
+                name: K4oid: Rezysyn
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 57
+                name: K4oid: Reso.Syn 0
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 58
+                name: K4oid: 4osc. Juno
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 59
+                name: K4oid: MooG InvsN
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 60
+                name: K4oid: ToyPiano16
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 61
+                name: K4oid: 7ender EP
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 62
+                name: K4oid: Apham EP
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 63
+                name: K4oid: Traum
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 64
+                name: K4oid: EP
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 65
+                name: K4oid: Blue*G*Org
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 66
+                name: K4oid: Mild
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 67
+                name: K4oid: Peak-A-Bos
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 68
+                name: K4oid: Harpsich60
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 69
+                name: K4oid: Troubles
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 70
+                name: K4oid: Contempo
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 71
+                name: K4oid: GurglGhost
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 72
+                name: K4oid: ClavRhods
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 73
+                name: K4oid: DX-7 Piano
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 74
+                name: K4oid: Every
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 75
+                name: K4oid: Iron E.P
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 76
+                name: K4oid: SemiRoads
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 77
+                name: K4oid: Glocklock+
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 78
+                name: K4oid: Wastmnstr+
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 79
+                name: K4oid: HouseBass+
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 80
+                name: K4oid: Taurs4Pol+
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 81
+                name: K4oid: Frogbell
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 82
+                name: K4oid: Raspel
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 83
+                name: K4oid: Clarinet
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 84
+                name: K4oid: Glass Harp
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 85
+                name: K4oid: GlockGlock
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 86
+                name: K4oid: Islandbell
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 87
+                name: K4oid: Drops
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 88
+                name: K4oid: scritti
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 89
+                name: K4oid: UnAnalogic
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 90
+                name: K4oid: dead PIANO
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 91
+                name: K4oid: digistical
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 92
+                name: K4oid: modular 1
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 93
+                name: K4oid: obPAD+dxEP
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 94
+                name: K4oid: Candlemass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 95
+                name: K4oid: Eno's Mini
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 96
+                name: K4oid: SyntexBass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 97
+                name: K4oid: OBX Brass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 98
+                name: K4oid: OceanBrass
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 99
+                name: K4oid: Alassen
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 100
+                name: K4oid: AnalgClavi
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 101
+                name: K4oid: Kaliohpann
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 102
+                name: K4oid: Pepe,Geh !
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 103
+                name: K4oid: K4-Init
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 104
+                name: ================ Test patches:
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 105
+                name: sweep alias test (key=100)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 106
+                name: sweep alias test 2 (key=108)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 107
+                name: sync alias test (key=108)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 108
+                name: mod discontinuity test
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 109
+                name: subsample alias test (key=94)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 110
+                name: subsample alias 2 (key=60)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 111
+                name: subsample alias 3 (key=96)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 112
+                name: startup thump test (key=108)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 113
+                name: tri sync thump test (key=77)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 114
+                name: pulse click! (key=106)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 115
+                name: pulse click! (key=103)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 116
+                name: osc amp mod test
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 117
+                name: amp mod test 2
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 118
+                name: new filter test
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 119
+                name: eg amp mod test
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 120
+                name: wave comparer (LFO)
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 121
+                name: ========= Development patches:
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 122
+                name: -Xsynth-DSSI single init voice
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 123
+                name: -Xsynth-DSSI dual init voice-
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 124
+                name: - K4oid single init voice -
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 125
+                name: - K4oid dual init voice -
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 126
+                name: - K4oid twin init voice -
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 1
+                program: 127
+                name: - K4oid double init voice -
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 2
+                program: 0
+                name: GSynth
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 2
+                program: 1
+                name:   dual agran base 
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 2
+                program: 2
+                name:    PADsynth stereo base 
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 2
+                program: 3
+                name:   init voice 
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 2
+                program: 4
+                name: Simulated Wood Grain Flat
+                channel: 0
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 0
+                name: Elec Piano
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 1
+                name: FB:PfVibe 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 2
+                name: FatThinE.P
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 3
+                name: E.PIANO 1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 4
+                name: E.PIANO 3 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 5
+                name: E.GRAND 1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 6
+                name: PIANO   1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 7
+                name: A.Piano1.5
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 8
+                name: HARPSICH. 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 9
+                name: VIBES    A
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 10
+                name: A.MALLET A
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 11
+                name: CARIBIC 2 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 12
+                name: MARIMBA   
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 13
+                name: XYLOPHONE 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 14
+                name: CLAV.    B
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 15
+                name: GUITAR  1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 16
+                name: GUITAR  3 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 17
+                name: SPANISHGTR
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 18
+                name: LUTE      
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 19
+                name: HARP    1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 20
+                name: FB:PluckGt
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 21
+                name: LOTUS     
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 22
+                name: E.ORGAN 1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 23
+                name: HAMM ORG7 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 24
+                name: CLIC.ORGDW
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 25
+                name: JOrg Combo
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 26
+                name: PIPES    A
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 27
+                name: PIPES   3 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 28
+                name: E.BASS Fix
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 29
+                name: BASS    1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 30
+                name: BASS    2 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 31
+                name: FUNK BASS 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 32
+                name: FUNK-BASS1
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 33
+                name: a-ha TOM  
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 34
+                name: SKI       
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 35
+                name: JUMP      
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 36
+                name: FILTER EG 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 37
+                name: --ANALOG--
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 38
+                name: ORCHESTRAL
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 39
+                name: SYN-LEAD 2
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 40
+                name: SYN-LEAD 4
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 41
+                name: Crazy4U  1
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 42
+                name: BOMBAST 1D
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 43
+                name: DOUBLE  2 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 44
+                name: DOUBLEHARP
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 45
+                name: CELESTA   
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 46
+                name: DOUBLE  3 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 47
+                name: KARIMBA!!!
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 48
+                name: Growler   
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 49
+                name: CHIMES    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 50
+                name: Sortofvoce
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 51
+                name: FEM. CHOIR
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 52
+                name: STRINGS 2 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 53
+                name: VIOLINS  A
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 54
+                name: CELLOS   B
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 55
+                name: Clarinet  
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 56
+                name: FLUTE   1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 57
+                name: PofL Brass
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 58
+                name: BRASS   1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 59
+                name: BRASS   3 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 60
+                name: HORN SEC.A
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 61
+                name: TIMPANI   
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 62
+                name: LOG DRUM  
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 63
+                name: GONG    1 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 64
+                name: TUBERISE A
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 65
+                name: DIGI DRUM1
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 66
+                name: BeatMeHrdr
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 67
+                name: EVOLUTION 
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 68
+                name: Nasty KCP2
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 69
+                name: GRAND PRIX
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 70
+                name: TIMEWARP  
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 71
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 72
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 73
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 74
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 75
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 76
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 77
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 78
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 79
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 80
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 81
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 82
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 83
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 84
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 85
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 86
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 87
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 88
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 89
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 90
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 91
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 92
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 93
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 94
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 95
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 96
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 97
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 98
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 99
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 100
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 101
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 102
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 103
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 104
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 105
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 106
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 107
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 108
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 109
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 110
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 111
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 112
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 113
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 114
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 115
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 116
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 117
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 118
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 119
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 120
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 121
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 122
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 123
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 124
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 125
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 126
+                name:     --    
+                channel: 1
+        -
+            name: patch
+            attributes:
+                bank: 0
+                program: 127
+                name:     --    
+                channel: 1

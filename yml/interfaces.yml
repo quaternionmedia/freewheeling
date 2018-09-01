@@ -1,0 +1,51 @@
+---
+-
+    name: interfaces
+    children:
+        -
+            name: interface
+            attributes:
+                switchable: 0
+                setup: coreinterface.xml
+        -
+            name: interface
+            attributes:
+                switchable: 0
+                setup: mercury.xml
+        -
+            name: interface
+            attributes:
+                switchable: 0
+                setup: synthedit.xml
+        -
+            name: interface
+            attributes:
+                switchable: 0
+                setup: bcf2000-synthedit.xml
+        -
+            name: interface
+            attributes:
+                switchable: 0
+                setup: rme-hdsp.xml
+        -
+            name: interface
+            attributes:
+                switchable: 0
+                setup: browsers.xml
+        -
+            name: interface
+            attributes:
+                switchable: 0
+                setup: midifootswitch.xml
+        -
+            name: interface
+            attributes:
+                setup: bcf2000.xml
+        -
+            name: interface
+            attributes:
+                setup: midikeyboard.xml
+        -
+            name: interface
+            attributes:
+                setup: dancemat.xml

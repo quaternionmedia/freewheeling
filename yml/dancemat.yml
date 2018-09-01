@@ -1,0 +1,263 @@
+---
+-
+    name: interface
+    children:
+        -
+            name: bindings
+            children:
+                -
+                    name: declare
+                    attributes:
+                        type: int
+                        var: VAR_loopid_dancemat
+                        init: 500
+                -
+                    name: declare
+                    attributes:
+                        type: range
+                        var: VAR_dancematrange
+                        init: 0>15
+                -
+                    name: declare
+                    attributes:
+                        type: int
+                        var: VAR_dancemat_joystick
+                        init: 0
+                -
+                    name: binding
+                    attributes:
+                        output1: video-show-loop
+                        parameters1: layoutid=0 and                   loopid=VAR_dancematrange+VAR_loopid_dancemat
+                        input: start-interface
+                -
+                    name: binding
+                    attributes:
+                        parameters: loopid=VAR_loopid_dancemat+button                                                and slide=VAR_slide_speed/2
+                        output: slide-loop-amplifier
+                        conditions: VAR_keyheld_up=1 and joystick=VAR_dancemat_joystick and                  button=VAR_dancematrange and down=1
+                        input: joybutton
+                -
+                    name: binding
+                    attributes:
+                        parameters: loopid=VAR_loopid_dancemat+button                                                and slide=-VAR_slide_speed/2
+                        output: slide-loop-amplifier
+                        conditions: VAR_keyheld_down=1 and joystick=VAR_dancemat_joystick and                  button=VAR_dancematrange and down=1
+                        input: joybutton
+                -
+                    name: binding
+                    attributes:
+                        parameters: loopid=VAR_loopid_dancemat+button and vol=1.0*down
+                        output: set-trigger-volume
+                        conditions: VAR_cutmode=1 and joystick=VAR_dancemat_joystick and                  button=VAR_dancematrange
+                        input: joybutton
+                -
+                    name: binding
+                    attributes:
+                        parameters: pulse=0
+                        output: select-pulse
+                        conditions: joystick=VAR_dancemat_joystick and                                            button=9 and down=1
+                        input: joybutton
+                -
+                    name: binding
+                    attributes:
+                        output1: erase-loop
+                        parameters1: loopid=SYSTEM_loopid_lastrecord_0
+                        input: joybutton
+                        parameters2: var=VAR_xferloop and value=0
+                        output2: set-variable
+                        conditions: SYSTEM_loopid_lastrecord_0=VAR_loopid_footswitch and                   joystick=VAR_dancemat_joystick and button=8 and down=1
+                -
+                    name: binding
+                    attributes:
+                        parameters: loopid=SYSTEM_loopid_lastrecord_0
+                        output: erase-loop
+                        conditions: joystick=VAR_dancemat_joystick and                                            button=8 and down=1
+                        input: joybutton
+                -
+                    name: binding
+                    attributes:
+                        parameters: var=VAR_overdubmode and maxvalue=1
+                        output: toggle-variable
+                        conditions: joystick=VAR_dancemat_joystick and                                            button=4 and down=1
+                        input: joybutton
+                -
+                    name: binding
+                    attributes:
+                        parameters: var=VAR_shotmode and maxvalue=1
+                        output: toggle-variable
+                        conditions: joystick=VAR_dancemat_joystick and                                            button=7 and down=1
+                        input: joybutton
+                -
+                    name: binding
+                    attributes:
+                        output1: erase-loop
+                        parameters1: loopid=VAR_loopid_dancemat+button
+                        input: joybutton
+                        parameters2: var=VAR_xferloop and value=0
+                        output2: set-variable
+                        conditions: VAR_keyheld_space=1 and joystick=VAR_dancemat_joystick and                  button=VAR_dancematrange and down=1
+                -
+                    name: binding
+                    attributes:
+                        output1: move-loop
+                        parameters1: oldloopid=VAR_xferidx and                  newloopid=VAR_loopid_dancemat+button
+                        input: joybutton
+                        parameters2: var=VAR_xferloop and value=0
+                        output2: set-variable
+                        conditions: VAR_xferloop=1 and joystick=VAR_dancemat_joystick and                  button=VAR_dancematrange and down=1
+                -
+                    name: binding
+                    attributes:
+                        parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=VAR_loopid_dancemat+button and vol=1.0*down
+                        output: trigger-loop
+                        conditions: VAR_overdubmode=1 and joystick=VAR_dancemat_joystick and                  button=VAR_dancematrange and down=1
+                        input: joybutton
+                -
+                    name: binding
+                    attributes:
+                        parameters: loopid=VAR_loopid_dancemat+button and vol=1.0*down and                  engage=down and shot=1
+                        output: trigger-loop
+                        conditions: VAR_shotmode=1 and joystick=VAR_dancemat_joystick and                  button=VAR_dancematrange
+                        input: joybutton
+                -
+                    name: binding
+                    attributes:
+                        parameters: loopid=VAR_loopid_dancemat+button and vol=1.0*down
+                        output: trigger-loop
+                        conditions: joystick=VAR_dancemat_joystick and button=VAR_dancematrange                  and down=1
+                        input: joybutton
+        -
+            name: graphics
+            children:
+                -
+                    name: layout
+                    attributes:
+                        label: 1
+                        pos: 0.02,0.02
+                        scale: 2.0,2.0
+                        show: 0
+                        id: 0
+                        name: DANCEMAT
+                        elabel: 1
+                        namepos: 0.2,0.275
+                    children:
+                        -
+                            name: element
+                            attributes:
+                                base: 0.0,0.0
+                                looppos: 0.05,0.05
+                                loopsize: 0.1
+                                id: 2
+                                name: TL
+                                namepos: 0.01,0.00
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
+                        -
+                            name: element
+                            attributes:
+                                base: 0.1,0.0
+                                looppos: 0.05,0.05
+                                loopsize: 0.1
+                                id: 12
+                                name: T
+                                namepos: 0.01,0.00
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
+                        -
+                            name: element
+                            attributes:
+                                base: 0.2,0.0
+                                looppos: 0.05,0.05
+                                loopsize: 0.1
+                                id: 1
+                                name: TR
+                                namepos: 0.01,0.00
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
+                        -
+                            name: element
+                            attributes:
+                                base: 0.0,0.1
+                                looppos: 0.05,0.05
+                                loopsize: 0.1
+                                id: 15
+                                name: L
+                                namepos: 0.01,0.00
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
+                        -
+                            name: element
+                            attributes:
+                                base: 0.2,0.1
+                                looppos: 0.05,0.05
+                                loopsize: 0.1
+                                id: 13
+                                name: R
+                                namepos: 0.01,0.00
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
+                        -
+                            name: element
+                            attributes:
+                                base: 0.0,0.2
+                                looppos: 0.05,0.05
+                                loopsize: 0.1
+                                id: 0
+                                name: BL
+                                namepos: 0.01,0.00
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
+                        -
+                            name: element
+                            attributes:
+                                base: 0.1,0.2
+                                looppos: 0.05,0.05
+                                loopsize: 0.1
+                                id: 14
+                                name: B
+                                namepos: 0.01,0.00
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
+                        -
+                            name: element
+                            attributes:
+                                base: 0.2,0.2
+                                looppos: 0.05,0.05
+                                loopsize: 0.1
+                                id: 3
+                                name: BR
+                                namepos: 0.01,0.00
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
