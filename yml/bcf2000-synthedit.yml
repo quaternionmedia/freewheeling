@@ -8,215 +8,215 @@
                 -
                     name: declare
                     attributes:
-                        type: float
-                        init: 0.
                         var: VAR_bcf2000_se_value
+                        init: 0.
+                        type: float
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 0
                         var: VAR_bcf2000_se_idx
+                        init: 0
+                        type: int
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 0
                         var: VAR_bcf2000_se_idx_msb
-                -
-                    name: declare
-                    attributes:
-                        type: int
                         init: 0
+                        type: int
+                -
+                    name: declare
+                    attributes:
                         var: VAR_bcf2000_se_idx_lsb
+                        init: 0
+                        type: int
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 14
                         var: VAR_bcf2000_synthedit_channel
+                        init: 14
+                        type: int
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 118
                         var: VAR_bcf2000_se_prevbank_midicontrol
+                        init: 118
+                        type: int
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 119
                         var: VAR_bcf2000_se_nextbank_midicontrol
+                        init: 119
+                        type: int
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 120
                         var: VAR_bcf2000_se_prevparampage_midicontrol
+                        init: 120
+                        type: int
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 121
                         var: VAR_bcf2000_se_nextparampage_midicontrol
+                        init: 121
+                        type: int
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 110
                         var: VAR_bcf2000_se_toggle_midicontrol
+                        init: 110
+                        type: int
                 -
                     name: binding
                     attributes:
-                        output9: paramset-get-param
-                        parameters6: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+2 and controlval=VAR_bcf2000_se_value
-                        parameters1: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=0
-                        parameters5: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=2
-                        output12: midicontroller
-                        output3: paramset-get-param
-                        output13: paramset-get-param
-                        output11: paramset-get-param
-                        output14: midicontroller
-                        output4: midicontroller
-                        output6: midicontroller
-                        output5: paramset-get-param
-                        parameters11: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=5
-                        parameters3: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=1
-                        parameters14: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+6 and controlval=VAR_bcf2000_se_value
-                        output16: midicontroller
-                        parameters2: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+0 and controlval=VAR_bcf2000_se_value
-                        parameters7: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=3
-                        input: go-sub
-                        parameters12: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+5 and controlval=VAR_bcf2000_se_value
-                        output7: paramset-get-param
-                        parameters15: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=7
-                        output8: midicontroller
-                        parameters10: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+4 and controlval=VAR_bcf2000_se_value
-                        parameters16: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+7 and controlval=VAR_bcf2000_se_value
-                        conditions: sub=1010
-                        output15: paramset-get-param
-                        parameters4: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+1 and controlval=VAR_bcf2000_se_value
-                        output2: midicontroller
-                        parameters9: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=4
-                        parameters8: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+3 and controlval=VAR_bcf2000_se_value
-                        output10: midicontroller
                         output1: paramset-get-param
-                        parameters13: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=6
-                -
-                    name: binding
-                    attributes:
-                        parameters6: midichannel=VAR_synthedit_midichannel and controlnum=6 and controlval=param2
-                        parameters1: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and value=param2 and paramidx=param1
-                        parameters5: midichannel=VAR_synthedit_midichannel and controlnum=98 and controlval=VAR_bcf2000_se_idx_lsb
-                        parameters4: midichannel=VAR_synthedit_midichannel and controlnum=99 and controlval=VAR_bcf2000_se_idx_msb
-                        output3: split-variable-msb-lsb
-                        output5: midicontroller
+                        output8: midicontroller
+                        output5: paramset-get-param
+                        output9: paramset-get-param
+                        parameters11: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=5
+                        output11: paramset-get-param
+                        output10: midicontroller
+                        output2: midicontroller
+                        parameters3: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=1
+                        parameters5: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=2
+                        parameters8: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+3 and controlval=VAR_bcf2000_se_value
+                        parameters1: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=0
+                        output15: paramset-get-param
+                        parameters14: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+6 and controlval=VAR_bcf2000_se_value
                         output4: midicontroller
-                        output6: midicontroller
-                        conditions: sub=1011
-                        parameters3: var=VAR_bcf2000_se_idx and msb=VAR_bcf2000_se_idx_msb and lsb=VAR_bcf2000_se_idx_lsb
-                        output2: paramset-get-absolute-param-index
-                        parameters2: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and absidx=VAR_bcf2000_se_idx and paramidx=param1
-                        output1: paramset-set-param
+                        parameters10: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+4 and controlval=VAR_bcf2000_se_value
+                        output16: midicontroller
+                        parameters12: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+5 and controlval=VAR_bcf2000_se_value
+                        conditions: sub=1010
+                        output13: paramset-get-param
                         input: go-sub
+                        parameters15: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=7
+                        output6: midicontroller
+                        output12: midicontroller
+                        output14: midicontroller
+                        output3: paramset-get-param
+                        parameters2: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+0 and controlval=VAR_bcf2000_se_value
+                        parameters13: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=6
+                        parameters9: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=4
+                        parameters16: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+7 and controlval=VAR_bcf2000_se_value
+                        parameters6: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+2 and controlval=VAR_bcf2000_se_value
+                        output7: paramset-get-param
+                        parameters4: outport=VAR_bcf2000_outport and midichannel=VAR_bcf2000_synthedit_channel and controlnum=VAR_bcf2000fadercc+1 and controlval=VAR_bcf2000_se_value
+                        parameters7: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and var=VAR_bcf2000_se_value and paramidx=3
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_prevbank_midicontrol and                   controlval=VAR_switch_on
+                        output1: paramset-set-param
+                        output5: midicontroller
+                        conditions: sub=1011
+                        output6: midicontroller
+                        input: go-sub
+                        output2: paramset-get-absolute-param-index
+                        parameters3: var=VAR_bcf2000_se_idx and msb=VAR_bcf2000_se_idx_msb and lsb=VAR_bcf2000_se_idx_lsb
+                        parameters5: midichannel=VAR_synthedit_midichannel and controlnum=98 and controlval=VAR_bcf2000_se_idx_lsb
+                        output3: split-variable-msb-lsb
+                        parameters2: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and absidx=VAR_bcf2000_se_idx and paramidx=param1
+                        parameters1: interfaceid=VAR_synthedit_interfaceid and displayid=DISPLAY_synthedit and value=param2 and paramidx=param1
+                        output4: midicontroller
+                        parameters6: midichannel=VAR_synthedit_midichannel and controlnum=6 and controlval=param2
+                        parameters4: midichannel=VAR_synthedit_midichannel and controlnum=99 and controlval=VAR_bcf2000_se_idx_msb
+                -
+                    name: binding
+                    attributes:
+                        output1: video-show-paramset-bank
+                        parameters2: sub=1010
                         parameters1: interfaceid=VAR_synthedit_interfaceid and                                                      displayid=DISPLAY_synthedit and                                                      bank=-1
-                        output2: go-sub
-                        parameters2: sub=1010
-                        output1: video-show-paramset-bank
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_prevbank_midicontrol and                   controlval=VAR_switch_on
                         input: midicontroller
+                        output2: go-sub
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_nextbank_midicontrol and                   controlval=VAR_switch_on
+                        output1: video-show-paramset-bank
+                        parameters2: sub=1010
                         parameters1: interfaceid=VAR_synthedit_interfaceid and                                                      displayid=DISPLAY_synthedit and                                                      bank=1
-                        output2: go-sub
-                        parameters2: sub=1010
-                        output1: video-show-paramset-bank
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_nextbank_midicontrol and                   controlval=VAR_switch_on
                         input: midicontroller
+                        output2: go-sub
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_prevparampage_midicontrol and                   controlval=VAR_switch_on
+                        output1: video-show-paramset-page
+                        parameters2: sub=1010
                         parameters1: interfaceid=VAR_synthedit_interfaceid and                                                      displayid=DISPLAY_synthedit and                                                      page=-1
-                        output2: go-sub
-                        parameters2: sub=1010
-                        output1: video-show-paramset-page
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_prevparampage_midicontrol and                   controlval=VAR_switch_on
                         input: midicontroller
+                        output2: go-sub
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_nextparampage_midicontrol and                   controlval=VAR_switch_on
+                        output1: video-show-paramset-page
+                        parameters2: sub=1010
                         parameters1: interfaceid=VAR_synthedit_interfaceid and                                                      displayid=DISPLAY_synthedit and                                                      page=1
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_nextparampage_midicontrol and                   controlval=VAR_switch_on
+                        input: midicontroller
                         output2: go-sub
-                        parameters2: sub=1010
-                        output1: video-show-paramset-page
-                        input: midicontroller
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+0
+                        output1: go-sub
                         parameters1: sub=1011 and param1=0 and param2=controlval
-                        output1: go-sub
                         input: midicontroller
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+0
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+1
+                        output1: go-sub
                         parameters1: sub=1011 and param1=1 and param2=controlval
-                        output1: go-sub
                         input: midicontroller
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+1
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+2
+                        output1: go-sub
                         parameters1: sub=1011 and param1=2 and param2=controlval
-                        output1: go-sub
                         input: midicontroller
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+2
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+3
+                        output1: go-sub
                         parameters1: sub=1011 and param1=3 and param2=controlval
-                        output1: go-sub
                         input: midicontroller
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+3
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+4
+                        output1: go-sub
                         parameters1: sub=1011 and param1=4 and param2=controlval
-                        output1: go-sub
                         input: midicontroller
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+4
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+5
+                        output1: go-sub
                         parameters1: sub=1011 and param1=5 and param2=controlval
-                        output1: go-sub
                         input: midicontroller
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+5
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+6
+                        output1: go-sub
                         parameters1: sub=1011 and param1=6 and param2=controlval
-                        output1: go-sub
                         input: midicontroller
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+6
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+7
+                        output1: go-sub
                         parameters1: sub=1011 and param1=7 and param2=controlval
-                        output1: go-sub
                         input: midicontroller
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000fadercc+7
                 -
                     name: binding
                     attributes:
-                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_toggle_midicontrol
-                        parameters1: interfaceid=VAR_synthedit_interfaceid and                                                 displayid=DISPLAY_synthedit and                                                show=controlval
-                        output2: video-show-display
-                        parameters2: interfaceid=VAR_synthedit_interfaceid and                                                 displayid=DISPLAY_synthedit_chanselect and show=controlval
                         output1: video-show-display
+                        parameters2: interfaceid=VAR_synthedit_interfaceid and                                                 displayid=DISPLAY_synthedit_chanselect and show=controlval
+                        parameters1: interfaceid=VAR_synthedit_interfaceid and                                                 displayid=DISPLAY_synthedit and                                                show=controlval
+                        conditions: midichannel=VAR_bcf2000_synthedit_channel and                   controlnum=VAR_bcf2000_se_toggle_midicontrol
                         input: midicontroller
+                        output2: video-show-display

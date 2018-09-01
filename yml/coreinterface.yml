@@ -8,1425 +8,1425 @@
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: int
+                        init: 0
                         var: DISPLAY_browser_patch
                 -
                     name: declare
                     attributes:
-                        init: 1
                         type: int
+                        init: 1
                         var: DISPLAY_browser_loop
                 -
                     name: declare
                     attributes:
-                        init: 2
                         type: int
+                        init: 2
                         var: DISPLAY_browser_scene
                 -
                     name: declare
                     attributes:
-                        init: 3
                         type: int
+                        init: 3
                         var: DISPLAY_syncpanel
                 -
                     name: declare
                     attributes:
-                        init: 2
                         type: int
+                        init: 2
                         var: VAR_max_browser
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: int
+                        init: 0
                         var: VAR_cur_browser
                 -
                     name: declare
                     attributes:
-                        init: 10
                         type: int
+                        init: 10
                         var: DISPLAY_loop_tray
                 -
                     name: declare
                     attributes:
-                        init: 2000
                         type: int
+                        init: 2000
                         var: DISPLAY_scenes
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: int
+                        init: 0
                         var: VAR_syncpanel_show
                 -
                     name: declare
                     attributes:
-                        init: 1
                         type: int
+                        init: 1
                         var: VAR_numsync_per_pulse
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: int
+                        init: 0
                         var: VAR_synctype
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: int
+                        init: 0
                         var: VAR_midisync
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_keyheld_up
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_keyheld_down
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_keyheld_shift
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_keyheld_ctrl
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_keyheld_alt
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_keyheld_space
                 -
                     name: declare
                     attributes:
-                        init: 64>127
                         type: range
+                        init: 64>127
                         var: VAR_switch_on
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: int
+                        init: 0
                         var: VAR_switch_off
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_overdubmode
                 -
                     name: declare
                     attributes:
-                        init: 0.8
                         type: float
+                        init: 0.8
                         var: VAR_overdubfeedback
                 -
                     name: declare
                     attributes:
-                        init: 1>4
                         type: range
+                        init: 1>4
                         var: VAR_inputs
                 -
                     name: declare
                     attributes:
-                        init: 48
                         type: int
+                        init: 48
                         var: VAR_zero_keysym
                 -
                     name: declare
                     attributes:
-                        init: 1>9
                         type: range
+                        init: 1>9
                         var: VAR_snaps
                 -
                     name: declare
                     attributes:
-                        init: -1
                         type: int
+                        init: -1
                         var: VAR_snapid_last1
                 -
                     name: declare
                     attributes:
-                        init: -1
                         type: int
+                        init: -1
                         var: VAR_snapid_last2
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_switch_metronome
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_cutmode
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_shotmode
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_xferloop
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: int
+                        init: 0
                         var: VAR_xferidx
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_develmode
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_auto_loop_save
                 -
                     name: declare
                     attributes:
-                        init: 1
                         type: char
+                        init: 1
                         var: VAR_laptopkeymode
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_videofullscreen
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_showdebuginfo
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: char
+                        init: 0
                         var: VAR_helppage
                 -
                     name: declare
                     attributes:
-                        init: 1
                         type: int
+                        init: 1
                         var: VAR_showinterface
                 -
                     name: declare
                     attributes:
-                        init: 600>1000
                         type: range
+                        init: 600>1000
                         var: VAR_loopid_default_range
                 -
                     name: declare
                     attributes:
-                        init: 0.3
                         type: float
+                        init: 0.3
                         var: VAR_slide_speed
                 -
                     name: declare
                     attributes:
-                        init: 0.9
                         type: float
+                        init: 0.9
                         var: VAR_loopamp_adj
                 -
                     name: declare
                     attributes:
-                        init: 0>15
                         type: range
+                        init: 0>15
                         var: VAR_channelrange
                 -
                     name: binding
                     attributes:
-                        output1: set-auto-loop-saving
-                        parameters1: save=VAR_auto_loop_save
                         parameters3: interfaceid=VAR_showinterface
-                        output3: video-switch-interface
                         input: start-freewheeling
+                        output1: set-auto-loop-saving
                         parameters2: looprange=VAR_loopid_default_range
                         output2: set-default-loop-placement
+                        parameters1: save=VAR_auto_loop_save
+                        output3: video-switch-interface
                 -
                     name: binding
                     attributes:
-                        output1: video-show-display
-                        parameters1: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=0
                         parameters3: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=1
-                        output3: video-show-display
                         input: go-sub
-                        parameters2: var=VAR_cur_browser and                                           value=param1
                         conditions: sub=100
+                        output1: video-show-display
+                        parameters2: var=VAR_cur_browser and                                           value=param1
                         output2: set-variable
+                        parameters1: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=0
+                        output3: video-show-display
                 -
                     name: binding
                     attributes:
-                        output1: trigger-snapshot
-                        parameters1: snapid=param1
                         parameters3: var=VAR_snapid_last1 and value=param1
-                        output3: set-variable
                         input: go-sub
-                        parameters2: var=VAR_snapid_last2 and value=VAR_snapid_last1
                         conditions: sub=101
+                        output1: trigger-snapshot
+                        parameters2: var=VAR_snapid_last2 and value=VAR_snapid_last1
                         output2: set-variable
+                        parameters1: snapid=param1
+                        output3: set-variable
                 -
                     name: binding
                     attributes:
-                        output: exit-freewheeling
                         input: key
                         conditions: key=escape and keydown=1
+                        output: exit-freewheeling
                 -
                     name: binding
                     attributes:
-                        output1: toggle-variable
-                        parameters1: var=VAR_helppage and                                             maxvalue=SYSTEM_num_help_pages
                         input: key
-                        parameters2: page=VAR_helppage
                         conditions: key=slash and keydown=1
+                        output1: toggle-variable
+                        parameters2: page=VAR_helppage
                         output2: video-show-help
+                        parameters1: var=VAR_helppage and                                             maxvalue=SYSTEM_num_help_pages
                 -
                     name: binding
                     attributes:
-                        output1: toggle-variable
-                        parameters1: var=VAR_showdebuginfo and                                              maxvalue=1
                         input: key
-                        parameters2: show=VAR_showdebuginfo
                         conditions: VAR_laptopkeymode=1 and                                      VAR_keyheld_shift=1 and key=return and                                      keydown=1
-                        output2: show-debug-info
-                -
-                    name: binding
-                    attributes:
                         output1: toggle-variable
-                        parameters1: var=VAR_showdebuginfo and                                              maxvalue=1
-                        input: key
                         parameters2: show=VAR_showdebuginfo
-                        conditions: key=enter and keydown=1
                         output2: show-debug-info
+                        parameters1: var=VAR_showdebuginfo and                                              maxvalue=1
                 -
                     name: binding
                     attributes:
-                        output1: toggle-variable
-                        parameters1: var=VAR_videofullscreen and                                             maxvalue=1
                         input: key
-                        parameters2: fullscreen=VAR_videofullscreen
+                        conditions: key=enter and keydown=1
+                        output1: toggle-variable
+                        parameters2: show=VAR_showdebuginfo
+                        output2: show-debug-info
+                        parameters1: var=VAR_showdebuginfo and                                              maxvalue=1
+                -
+                    name: binding
+                    attributes:
+                        input: key
                         conditions: VAR_laptopkeymode=1 and                                       key=f3 and keydown=1
-                        output2: video-full-screen
-                -
-                    name: binding
-                    attributes:
                         output1: toggle-variable
-                        parameters1: var=VAR_videofullscreen and                                             maxvalue=1
-                        input: key
                         parameters2: fullscreen=VAR_videofullscreen
-                        conditions: key=pause and keydown=1
                         output2: video-full-screen
+                        parameters1: var=VAR_videofullscreen and                                             maxvalue=1
                 -
                     name: binding
                     attributes:
-                        output: toggle-disk-output
+                        input: key
+                        conditions: key=pause and keydown=1
+                        output1: toggle-variable
+                        parameters2: fullscreen=VAR_videofullscreen
+                        output2: video-full-screen
+                        parameters1: var=VAR_videofullscreen and                                             maxvalue=1
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: VAR_laptopkeymode=1 and                                       key=f4 and keydown=1
+                        output: toggle-disk-output
                 -
                     name: binding
                     attributes:
-                        output: toggle-disk-output
                         input: key
                         conditions: key=printscreen and keydown=1
+                        output: toggle-disk-output
                 -
                     name: binding
                     attributes:
-                        parameters: var=VAR_develmode and maxvalue=1
-                        output: toggle-variable
                         input: key
                         conditions: VAR_keyheld_ctrl=1 and key=d and keydown=1
+                        parameters: var=VAR_develmode and maxvalue=1
+                        output: toggle-variable
                 -
                     name: binding
                     attributes:
-                        output: toggle-disk-output
                         input: midikey
                         conditions: notenum=47 and VAR_develmode=1 and keydown=1
+                        output: toggle-disk-output
                 -
                     name: binding
                     attributes:
-                        parameters: keydown=keydown and outport=1 and                                    midichannel=0 and                                    notenum=37 and velocity=127
-                        output: midikey
                         input: key
                         conditions: key=d and VAR_develmode=1
+                        parameters: keydown=keydown and outport=1 and                                    midichannel=0 and                                    notenum=37 and velocity=127
+                        output: midikey
                 -
                     name: binding
                     attributes:
-                        parameters: snapid=key-VAR_zero_keysym-1+SYSTEM_snapshot_page_firstidx
-                        output: create-snapshot
                         input: key
                         conditions: VAR_keyheld_shift=1 and                                      key=VAR_snaps+VAR_zero_keysym and                                      keydown=1
+                        parameters: snapid=key-VAR_zero_keysym-1+SYSTEM_snapshot_page_firstidx
+                        output: create-snapshot
                 -
                     name: binding
                     attributes:
-                        parameters: sub=101 and param1=key-VAR_zero_keysym-1+SYSTEM_snapshot_page_firstidx
-                        output: go-sub
                         input: key
                         conditions: VAR_keyheld_ctrl=1 and                                      key=VAR_snaps+VAR_zero_keysym and                                      keydown=1
+                        parameters: sub=101 and param1=key-VAR_zero_keysym-1+SYSTEM_snapshot_page_firstidx
+                        output: go-sub
                 -
                     name: binding
                     attributes:
-                        parameters: snapid=key-VAR_zero_keysym-1+SYSTEM_snapshot_page_firstidx
-                        output: rename-snapshot
                         input: key
                         conditions: VAR_keyheld_alt=1 and                                      key=VAR_snaps+VAR_zero_keysym and                                      keydown=1
+                        parameters: snapid=key-VAR_zero_keysym-1+SYSTEM_snapshot_page_firstidx
+                        output: rename-snapshot
                 -
                     name: binding
                     attributes:
-                        parameters: snapid=9+SYSTEM_snapshot_page_firstidx
-                        output: create-snapshot
                         input: key
                         conditions: VAR_keyheld_shift=1 and                                      key=zero and                                      keydown=1
+                        parameters: snapid=9+SYSTEM_snapshot_page_firstidx
+                        output: create-snapshot
                 -
                     name: binding
                     attributes:
-                        parameters: sub=101 and param1=9+SYSTEM_snapshot_page_firstidx
-                        output: go-sub
                         input: key
                         conditions: VAR_keyheld_ctrl=1 and                                      key=zero and                                      keydown=1
+                        parameters: sub=101 and param1=9+SYSTEM_snapshot_page_firstidx
+                        output: go-sub
                 -
                     name: binding
                     attributes:
-                        parameters: snapid=9+SYSTEM_snapshot_page_firstidx
-                        output: rename-snapshot
                         input: key
                         conditions: VAR_keyheld_alt=1 and                                      key=zero and                                      keydown=1
+                        parameters: snapid=9+SYSTEM_snapshot_page_firstidx
+                        output: rename-snapshot
                 -
                     name: binding
                     attributes:
-                        parameters: interfaceid=0 and                                                    displayid=DISPLAY_scenes and                                                    page=-1
-                        output: video-show-snapshot-page
                         input: key
                         conditions: VAR_keyheld_ctrl=1 and key=comma and                                       keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: interfaceid=0 and                                                    displayid=DISPLAY_scenes and                                                    page=1
-                        output: video-show-snapshot-page
-                        input: key
-                        conditions: VAR_keyheld_ctrl=1 and key=period and                                       keydown=1
-                -
-                    name: binding
-                    attributes:
                         parameters: interfaceid=0 and                                                    displayid=DISPLAY_scenes and                                                    page=-1
                         output: video-show-snapshot-page
-                        input: key
-                        conditions: VAR_keyheld_shift=1 and key=comma and                                       keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_keyheld_ctrl=1 and key=period and                                       keydown=1
                         parameters: interfaceid=0 and                                                    displayid=DISPLAY_scenes and                                                    page=1
                         output: video-show-snapshot-page
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: VAR_keyheld_shift=1 and key=comma and                                       keydown=1
+                        parameters: interfaceid=0 and                                                    displayid=DISPLAY_scenes and                                                    page=-1
+                        output: video-show-snapshot-page
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: VAR_keyheld_shift=1 and key=period and                                       keydown=1
+                        parameters: interfaceid=0 and                                                    displayid=DISPLAY_scenes and                                                    page=1
+                        output: video-show-snapshot-page
                 -
                     name: binding
                     attributes:
-                        parameters: input=key-VAR_zero_keysym and                                           slide=VAR_slide_speed
-                        output: slide-in-volume
                         input: key
                         conditions: VAR_keyheld_up=1 and                                      key=VAR_inputs+VAR_zero_keysym and                                      keydown=1
+                        parameters: input=key-VAR_zero_keysym and                                           slide=VAR_slide_speed
+                        output: slide-in-volume
                 -
                     name: binding
                     attributes:
-                        parameters: input=key-VAR_zero_keysym and                                           slide=-VAR_slide_speed
-                        output: slide-in-volume
                         input: key
                         conditions: VAR_keyheld_down=1 and                                      key=VAR_inputs+VAR_zero_keysym and                                       keydown=1
+                        parameters: input=key-VAR_zero_keysym and                                           slide=-VAR_slide_speed
+                        output: slide-in-volume
                 -
                     name: binding
                     attributes:
-                        parameters: input=key-VAR_zero_keysym
-                        output: toggle-input-record
                         input: key
                         conditions: key=VAR_inputs+VAR_zero_keysym and                                      keydown=1
+                        parameters: input=key-VAR_zero_keysym
+                        output: toggle-input-record
                 -
                     name: binding
                     attributes:
-                        output: slide-loop-amplifier-stop-all
                         input: key
                         conditions: VAR_keyheld_alt=1 and key=backslash and keydown=1
+                        output: slide-loop-amplifier-stop-all
                 -
                     name: binding
                     attributes:
-                        parameters: slide=VAR_slide_speed
-                        output: slide-master-in-volume
                         input: key
                         conditions: VAR_laptopkeymode=1 and                                       key=semicolon and keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: slide=-VAR_slide_speed
-                        output: slide-master-in-volume
-                        input: key
-                        conditions: VAR_laptopkeymode=1 and                                      key=backquote and keydown=1
-                -
-                    name: binding
-                    attributes:
                         parameters: slide=VAR_slide_speed
                         output: slide-master-in-volume
-                        input: key
-                        conditions: key=insert and keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_laptopkeymode=1 and                                      key=backquote and keydown=1
                         parameters: slide=-VAR_slide_speed
                         output: slide-master-in-volume
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=insert and keydown=1
+                        parameters: slide=VAR_slide_speed
+                        output: slide-master-in-volume
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=delete and keydown=1
+                        parameters: slide=-VAR_slide_speed
+                        output: slide-master-in-volume
                 -
                     name: binding
                     attributes:
-                        parameters: vol=1.0
-                        output: set-master-in-volume
                         input: key
                         conditions: key=backspace and keydown=1
+                        parameters: vol=1.0
+                        output: set-master-in-volume
                 -
                     name: binding
                     attributes:
-                        parameters: slide=VAR_slide_speed/2
-                        output: slide-master-out-volume
                         input: key
                         conditions: VAR_laptopkeymode=1 and                                       key=squarebracketopen and keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: slide=-VAR_slide_speed/2
-                        output: slide-master-out-volume
-                        input: key
-                        conditions: VAR_laptopkeymode=1 and                                       key=squarebracketclose and keydown=1
-                -
-                    name: binding
-                    attributes:
                         parameters: slide=VAR_slide_speed/2
                         output: slide-master-out-volume
-                        input: key
-                        conditions: key=home and keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_laptopkeymode=1 and                                       key=squarebracketclose and keydown=1
                         parameters: slide=-VAR_slide_speed/2
                         output: slide-master-out-volume
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=home and keydown=1
+                        parameters: slide=VAR_slide_speed/2
+                        output: slide-master-out-volume
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=end and keydown=1
+                        parameters: slide=-VAR_slide_speed/2
+                        output: slide-master-out-volume
                 -
                     name: binding
                     attributes:
-                        parameters: vol=1.0
-                        output: set-master-out-volume
                         input: key
                         conditions: key=backslash and keydown=1
+                        parameters: vol=1.0
+                        output: set-master-out-volume
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=loopid and                  slide=VAR_slide_speed/2
-                        output: slide-loop-amplifier
                         input: loop-clicked
                         conditions: VAR_keyheld_up=1 and button=1 and down=1
+                        parameters: loopid=loopid and                  slide=VAR_slide_speed/2
+                        output: slide-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=loopid and                  slide=-VAR_slide_speed/2
-                        output: slide-loop-amplifier
                         input: loop-clicked
                         conditions: VAR_keyheld_down=1 and button=1 and down=1
+                        parameters: loopid=loopid and                  slide=-VAR_slide_speed/2
+                        output: slide-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        parameters: setid=0 and ampfactor=1.0/VAR_loopamp_adj
-                        output: adjust-selected-loops-amp
                         input: loop-clicked
                         conditions: button=4 and VAR_keyheld_ctrl=1
+                        parameters: setid=0 and ampfactor=1.0/VAR_loopamp_adj
+                        output: adjust-selected-loops-amp
                 -
                     name: binding
                     attributes:
-                        parameters: setid=0 and ampfactor=VAR_loopamp_adj
-                        output: adjust-selected-loops-amp
                         input: loop-clicked
                         conditions: button=5 and VAR_keyheld_ctrl=1
+                        parameters: setid=0 and ampfactor=VAR_loopamp_adj
+                        output: adjust-selected-loops-amp
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=loopid and ampfactor=1.0/VAR_loopamp_adj
-                        output: adjust-loop-amplifier
                         input: loop-clicked
                         conditions: button=4
+                        parameters: loopid=loopid and ampfactor=1.0/VAR_loopamp_adj
+                        output: adjust-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=loopid and ampfactor=VAR_loopamp_adj
-                        output: adjust-loop-amplifier
                         input: loop-clicked
                         conditions: button=5
+                        parameters: loopid=loopid and ampfactor=VAR_loopamp_adj
+                        output: adjust-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=loopid and in=in
-                        output: rename-loop
                         input: loop-clicked
                         conditions: VAR_keyheld_ctrl=1 and button=1 and down=1
+                        parameters: loopid=loopid and in=in
+                        output: rename-loop
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=loopid and vol=1.0*down
-                        output: set-trigger-volume
                         input: loop-clicked
                         conditions: VAR_cutmode=1 and button=1
+                        parameters: loopid=loopid and vol=1.0*down
+                        output: set-trigger-volume
                 -
                     name: binding
                     attributes:
-                        parameters: adjust=-12
-                        output: adjust-midi-transpose
                         input: key
                         conditions: VAR_laptopkeymode=1 and key=comma and                                       keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: adjust=12
-                        output: adjust-midi-transpose
-                        input: key
-                        conditions: VAR_laptopkeymode=1 and key=period and                                      keydown=1
-                -
-                    name: binding
-                    attributes:
                         parameters: adjust=-12
                         output: adjust-midi-transpose
-                        input: key
-                        conditions: key=KP0 and keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_laptopkeymode=1 and key=period and                                      keydown=1
                         parameters: adjust=12
                         output: adjust-midi-transpose
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=KP0 and keydown=1
+                        parameters: adjust=-12
+                        output: adjust-midi-transpose
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=KPperiod and keydown=1
+                        parameters: adjust=12
+                        output: adjust-midi-transpose
                 -
                     name: binding
                     attributes:
-                        parameters: tuning=0
-                        output: set-midi-tuning
                         input: key
                         conditions: key=openparen and keydown=1
+                        parameters: tuning=0
+                        output: set-midi-tuning
                 -
                     name: binding
                     attributes:
-                        parameters: tuning=SYSTEM_cur_pitchbend
-                        output: set-midi-tuning
                         input: key
                         conditions: key=zero and keydown=1
+                        parameters: tuning=SYSTEM_cur_pitchbend
+                        output: set-midi-tuning
                 -
                     name: binding
                     attributes:
-                        parameters: snapid1=VAR_snapid_last1 and snapid2=VAR_snapid_last2
-                        output: swap-snapshots
                         input: key
                         conditions: VAR_keyheld_alt=1 and key=p and keydown=1
+                        parameters: snapid1=VAR_snapid_last1 and snapid2=VAR_snapid_last2
+                        output: swap-snapshots
                 -
                     name: binding
                     attributes:
-                        parameters: setid=0 and loopid=loopid
-                        output: toggle-select-loop
                         input: loop-clicked
                         conditions: VAR_keyheld_shift=1 and button=1 and down=1
-                -
-                    name: binding
-                    attributes:
                         parameters: setid=0 and loopid=loopid
                         output: toggle-select-loop
+                -
+                    name: binding
+                    attributes:
                         input: loop-clicked
                         conditions: button=3 and down=1
+                        parameters: setid=0 and loopid=loopid
+                        output: toggle-select-loop
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=loopid
-                        output: erase-loop
                         input: loop-clicked
                         conditions: VAR_keyheld_space=1 and button=1 and down=1
+                        parameters: loopid=loopid
+                        output: erase-loop
                 -
                     name: binding
                     attributes:
-                        output1: move-loop
-                        parameters1: oldloopid=VAR_xferidx and                    newloopid=loopid
                         input: loop-clicked
-                        parameters2: var=VAR_xferloop and value=0
                         conditions: VAR_xferloop=1 and button=1 and down=1
+                        output1: move-loop
+                        parameters2: var=VAR_xferloop and value=0
                         output2: set-variable
+                        parameters1: oldloopid=VAR_xferidx and                    newloopid=loopid
                 -
                     name: binding
                     attributes:
-                        parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=loopid and vol=1.0
-                        output: trigger-loop
                         input: loop-clicked
                         conditions: VAR_overdubmode=1 and button=1 and down=1
+                        parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=loopid and vol=1.0
+                        output: trigger-loop
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=loopid and vol=1.0
-                        output: trigger-loop
                         input: loop-clicked
                         conditions: button=1 and down=1
+                        parameters: loopid=loopid and vol=1.0
+                        output: trigger-loop
                 -
                     name: binding
                     attributes:
-                        parameters: setid=0 and playing=0
-                        output: select-only-playing-loops
                         input: key
                         conditions: VAR_laptopkeymode=1 and VAR_keyheld_shift=1 and                   key=lessthan and keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: setid=0 and select=0
-                        output: select-all-loops
-                        input: key
-                        conditions: VAR_laptopkeymode=1 and VAR_keyheld_alt=1 and                   key=lessthan and keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: setid=0
-                        output: invert-selection
-                        input: key
-                        conditions: VAR_laptopkeymode=1 and VAR_keyheld_ctrl=1 and                   key=lessthan and keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: setid=0 and playing=1
-                        output: select-only-playing-loops
-                        input: key
-                        conditions: VAR_laptopkeymode=1 and key=lessthan and keydown=1
-                -
-                    name: binding
-                    attributes:
                         parameters: setid=0 and playing=0
                         output: select-only-playing-loops
-                        input: key
-                        conditions: VAR_keyheld_shift=1 and key=KPasterisk and keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_laptopkeymode=1 and VAR_keyheld_alt=1 and                   key=lessthan and keydown=1
                         parameters: setid=0 and select=0
                         output: select-all-loops
-                        input: key
-                        conditions: VAR_keyheld_alt=1 and key=KPasterisk and keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_laptopkeymode=1 and VAR_keyheld_ctrl=1 and                   key=lessthan and keydown=1
                         parameters: setid=0
                         output: invert-selection
-                        input: key
-                        conditions: VAR_keyheld_ctrl=1 and key=KPasterisk and keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_laptopkeymode=1 and key=lessthan and keydown=1
                         parameters: setid=0 and playing=1
                         output: select-only-playing-loops
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: VAR_keyheld_shift=1 and key=KPasterisk and keydown=1
+                        parameters: setid=0 and playing=0
+                        output: select-only-playing-loops
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: VAR_keyheld_alt=1 and key=KPasterisk and keydown=1
+                        parameters: setid=0 and select=0
+                        output: select-all-loops
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: VAR_keyheld_ctrl=1 and key=KPasterisk and keydown=1
+                        parameters: setid=0
+                        output: invert-selection
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=KPasterisk and keydown=1
+                        parameters: setid=0 and playing=1
+                        output: select-only-playing-loops
                 -
                     name: binding
                     attributes:
-                        parameters: setid=0 and vol=1.0 and                                                  toggleloops=1
-                        output: trigger-selected-loops
                         input: key
                         conditions: key=t and keydown=1
+                        parameters: setid=0 and vol=1.0 and                                                  toggleloops=1
+                        output: trigger-selected-loops
                 -
                     name: binding
                     attributes:
-                        output1: toggle-variable
-                        parameters1: var=VAR_showinterface and maxvalue=SYSTEM_num_switchable_interfaces and minvalue=1
                         input: key
-                        parameters2: interfaceid=VAR_showinterface
                         conditions: key=tab and keydown=1
+                        output1: toggle-variable
+                        parameters2: interfaceid=VAR_showinterface
                         output2: video-switch-interface
+                        parameters1: var=VAR_showinterface and maxvalue=SYSTEM_num_switchable_interfaces and minvalue=1
                 -
                     name: binding
                     attributes:
-                        output1: erase-loop
-                        parameters1: loopid=SYSTEM_loopid_lastrecord_0
                         input: key
-                        parameters2: var=VAR_xferloop and value=0
                         conditions: SYSTEM_loopid_lastrecord_0=VAR_loopid_footswitch and                   key=u and keydown=1
+                        output1: erase-loop
+                        parameters2: var=VAR_xferloop and value=0
                         output2: set-variable
+                        parameters1: loopid=SYSTEM_loopid_lastrecord_0
                 -
                     name: binding
                     attributes:
-                        parameters: setid=0
-                        output: erase-selected-loops
                         input: key
                         conditions: VAR_keyheld_shift=1 and key=space and keydown=1
+                        parameters: setid=0
+                        output: erase-selected-loops
                 -
                     name: binding
                     attributes:
-                        output: erase-all-loops
                         input: key
                         conditions: VAR_keyheld_alt=1 and key=space and keydown=1
+                        output: erase-all-loops
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=SYSTEM_loopid_lastrecord_0
-                        output: erase-loop
                         input: key
                         conditions: key=u and keydown=1
+                        parameters: loopid=SYSTEM_loopid_lastrecord_0
+                        output: erase-loop
                 -
                     name: binding
                     attributes:
-                        parameters: var=VAR_overdubmode and maxvalue=1
-                        output: toggle-variable
                         input: key
                         conditions: VAR_keyheld_shift=1 and key=tilde and keydown=1
+                        parameters: var=VAR_overdubmode and maxvalue=1
+                        output: toggle-variable
                 -
                     name: binding
                     attributes:
-                        parameters: var=VAR_cutmode and maxvalue=1
-                        output: toggle-variable
                         input: key
                         conditions: key=tilde and keydown=1
+                        parameters: var=VAR_cutmode and maxvalue=1
+                        output: toggle-variable
                 -
                     name: binding
                     attributes:
-                        output1: toggle-variable
-                        parameters1: var=VAR_auto_loop_save and                                             maxvalue=1
                         input: key
-                        parameters2: save=VAR_auto_loop_save
                         conditions: key=f9 and keydown=1
+                        output1: toggle-variable
+                        parameters2: save=VAR_auto_loop_save
                         output2: set-auto-loop-saving
+                        parameters1: var=VAR_auto_loop_save and                                             maxvalue=1
                 -
                     name: binding
                     attributes:
-                        parameters: loopid=SYSTEM_loopid_lastrecord_0
-                        output: save-loop
                         input: key
                         conditions: key=f8 and keydown=1
+                        parameters: loopid=SYSTEM_loopid_lastrecord_0
+                        output: save-loop
                 -
                     name: binding
                     attributes:
-                        output: save-new-scene
                         input: key
                         conditions: VAR_keyheld_shift=1 and key=f7 and                                      keydown=1
+                        output: save-new-scene
                 -
                     name: binding
                     attributes:
-                        output: save-current-scene
                         input: key
                         conditions: key=f7 and keydown=1
+                        output: save-current-scene
                 -
                     name: binding
                     attributes:
-                        output: transmit-playing-loops-to-daw
                         input: key
                         conditions: key=f10 and                                       keydown=1
+                        output: transmit-playing-loops-to-daw
                 -
                     name: binding
                     attributes:
-                        parameters: direction=-1
-                        output: patchbrowser-move-to-bank
                         input: key
                         conditions: key=left and keydown=1
+                        parameters: direction=-1
+                        output: patchbrowser-move-to-bank
                 -
                     name: binding
                     attributes:
-                        parameters: direction=1
-                        output: patchbrowser-move-to-bank
                         input: key
                         conditions: key=right and keydown=1
+                        parameters: direction=1
+                        output: patchbrowser-move-to-bank
                 -
                     name: binding
                     attributes:
-                        output1: video-show-display
-                        parameters1: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=0
                         parameters3: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=1
-                        output3: video-show-display
                         input: key
-                        parameters2: var=VAR_cur_browser and                                              maxvalue=VAR_max_browser
                         conditions: key=b and keydown=1
+                        output1: video-show-display
+                        parameters2: var=VAR_cur_browser and                                              maxvalue=VAR_max_browser
                         output2: toggle-variable
+                        parameters1: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=0
+                        output3: video-show-display
                 -
                     name: binding
                     attributes:
-                        parameters: browserid=VAR_cur_browser
-                        output: browser-rename-item
                         input: key
                         conditions: VAR_keyheld_ctrl=1 and key=return and keydown=1
-                -
-                    name: binding
-                    attributes:
-                        output1: set-variable
-                        parameters1: var=VAR_xferloop and value=1
-                        parameters3: browserid=VAR_cur_browser
-                        output3: browser-select-item
-                        input: key
-                        parameters2: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
-                        conditions: VAR_cur_browser=DISPLAY_browser_loop and key=return and                   keydown=1
-                        output2: set-variable
-                -
-                    name: binding
-                    attributes:
                         parameters: browserid=VAR_cur_browser
-                        output: browser-select-item
+                        output: browser-rename-item
+                -
+                    name: binding
+                    attributes:
+                        parameters3: browserid=VAR_cur_browser
+                        input: key
+                        conditions: VAR_cur_browser=DISPLAY_browser_loop and key=return and                   keydown=1
+                        output1: set-variable
+                        parameters2: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
+                        output2: set-variable
+                        parameters1: var=VAR_xferloop and value=1
+                        output3: browser-select-item
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=return and keydown=1
+                        parameters: browserid=VAR_cur_browser
+                        output: browser-select-item
                 -
                     name: binding
                     attributes:
-                        parameters: browserid=VAR_cur_browser and                                                adjust=0 and jumpadjust=-1
-                        output: browser-move-to-item
                         input: key
                         conditions: VAR_keyheld_shift=1 and VAR_laptopkeymode=1 and key=minus                  and keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: browserid=VAR_cur_browser and                                                adjust=0 and jumpadjust=1
-                        output: browser-move-to-item
-                        input: key
-                        conditions: VAR_keyheld_shift=1 and VAR_laptopkeymode=1 and key=equal                   and keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: browserid=VAR_cur_browser and                                                adjust=-1 and jumpadjust=0
-                        output: browser-move-to-item
-                        input: key
-                        conditions: VAR_laptopkeymode=1 and key=minus and keydown=1
-                -
-                    name: binding
-                    attributes:
-                        parameters: browserid=VAR_cur_browser and                                                adjust=1 and jumpadjust=0
-                        output: browser-move-to-item
-                        input: key
-                        conditions: VAR_laptopkeymode=1 and key=equal and keydown=1
-                -
-                    name: binding
-                    attributes:
                         parameters: browserid=VAR_cur_browser and                                                adjust=0 and jumpadjust=-1
                         output: browser-move-to-item
-                        input: key
-                        conditions: VAR_keyheld_shift=1 and key=KPminus and keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_keyheld_shift=1 and VAR_laptopkeymode=1 and key=equal                   and keydown=1
                         parameters: browserid=VAR_cur_browser and                                                adjust=0 and jumpadjust=1
                         output: browser-move-to-item
-                        input: key
-                        conditions: VAR_keyheld_shift=1 and key=KPplus and keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_laptopkeymode=1 and key=minus and keydown=1
                         parameters: browserid=VAR_cur_browser and                                                adjust=-1 and jumpadjust=0
                         output: browser-move-to-item
-                        input: key
-                        conditions: key=KPminus and keydown=1
                 -
                     name: binding
                     attributes:
+                        input: key
+                        conditions: VAR_laptopkeymode=1 and key=equal and keydown=1
                         parameters: browserid=VAR_cur_browser and                                                adjust=1 and jumpadjust=0
                         output: browser-move-to-item
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: VAR_keyheld_shift=1 and key=KPminus and keydown=1
+                        parameters: browserid=VAR_cur_browser and                                                adjust=0 and jumpadjust=-1
+                        output: browser-move-to-item
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: VAR_keyheld_shift=1 and key=KPplus and keydown=1
+                        parameters: browserid=VAR_cur_browser and                                                adjust=0 and jumpadjust=1
+                        output: browser-move-to-item
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=KPminus and keydown=1
+                        parameters: browserid=VAR_cur_browser and                                                adjust=-1 and jumpadjust=0
+                        output: browser-move-to-item
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=KPplus and keydown=1
+                        parameters: browserid=VAR_cur_browser and                                                adjust=1 and jumpadjust=0
+                        output: browser-move-to-item
                 -
                     name: binding
                     attributes:
-                        output1: toggle-variable
-                        parameters1: var=VAR_syncpanel_show and                                              maxvalue=1
                         input: key
-                        parameters2: displayid=DISPLAY_syncpanel and                                                show=VAR_syncpanel_show
                         conditions: VAR_keyheld_shift=1 and key=f1 and                                       keydown=1
+                        output1: toggle-variable
+                        parameters2: displayid=DISPLAY_syncpanel and                                                show=VAR_syncpanel_show
                         output2: video-show-display
+                        parameters1: var=VAR_syncpanel_show and                                              maxvalue=1
                 -
                     name: binding
                     attributes:
-                        parameters: pulse=0
-                        output: delete-pulse
                         input: key
                         conditions: VAR_keyheld_space=1 and key=f1 and keydown=1
+                        parameters: pulse=0
+                        output: delete-pulse
                 -
                     name: binding
                     attributes:
-                        parameters: pulse=0
-                        output: select-pulse
                         input: key
                         conditions: key=f1 and keydown=1
+                        parameters: pulse=0
+                        output: select-pulse
                 -
                     name: binding
                     attributes:
-                        output1: set-variable
-                        parameters1: var=VAR_numsync_per_pulse and value=VAR_numsync_per_pulse+1
                         input: key
-                        parameters2: speed=VAR_numsync_per_pulse
                         conditions: VAR_keyheld_shift=1 and key=s and keydown=1
-                        output2: set-sync-speed
-                -
-                    name: binding
-                    attributes:
                         output1: set-variable
-                        parameters1: var=VAR_numsync_per_pulse and value=VAR_numsync_per_pulse-1
-                        input: key
                         parameters2: speed=VAR_numsync_per_pulse
-                        conditions: VAR_keyheld_ctrl=1 and key=s and keydown=1
                         output2: set-sync-speed
+                        parameters1: var=VAR_numsync_per_pulse and value=VAR_numsync_per_pulse+1
                 -
                     name: binding
                     attributes:
-                        output1: toggle-variable
-                        parameters1: var=VAR_synctype and maxvalue=1
                         input: key
-                        parameters2: type=VAR_synctype
+                        conditions: VAR_keyheld_ctrl=1 and key=s and keydown=1
+                        output1: set-variable
+                        parameters2: speed=VAR_numsync_per_pulse
+                        output2: set-sync-speed
+                        parameters1: var=VAR_numsync_per_pulse and value=VAR_numsync_per_pulse-1
+                -
+                    name: binding
+                    attributes:
+                        input: key
                         conditions: VAR_keyheld_alt=1 and key=s and keydown=1
-                        output2: set-sync-type
-                -
-                    name: binding
-                    attributes:
                         output1: toggle-variable
-                        parameters1: var=VAR_midisync and maxvalue=1
-                        input: key
-                        parameters2: midisync=VAR_midisync
-                        conditions: VAR_keyheld_shift=1 and key=f2 and keydown=1
-                        output2: set-midi-sync
+                        parameters2: type=VAR_synctype
+                        output2: set-sync-type
+                        parameters1: var=VAR_synctype and maxvalue=1
                 -
                     name: binding
                     attributes:
-                        parameters: pulse=0 and newlen=1
-                        output: tap-pulse
+                        input: key
+                        conditions: VAR_keyheld_shift=1 and key=f2 and keydown=1
+                        output1: toggle-variable
+                        parameters2: midisync=VAR_midisync
+                        output2: set-midi-sync
+                        parameters1: var=VAR_midisync and maxvalue=1
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=f2 and keydown=1
+                        parameters: pulse=0 and newlen=1
+                        output: tap-pulse
                 -
                     name: binding
                     attributes:
-                        output1: toggle-variable
-                        parameters1: var=VAR_switch_metronome and                                             maxvalue=1
                         input: key
-                        parameters2: pulse=0 and                                              metronome=VAR_switch_metronome
                         conditions: VAR_laptopkeymode=1 and key=f5 and                                       keydown=1
-                        output2: switch-metronome
-                -
-                    name: binding
-                    attributes:
                         output1: toggle-variable
-                        parameters1: var=VAR_switch_metronome and                                             maxvalue=1
-                        input: key
                         parameters2: pulse=0 and                                              metronome=VAR_switch_metronome
-                        conditions: key=f11 and keydown=1
                         output2: switch-metronome
+                        parameters1: var=VAR_switch_metronome and                                             maxvalue=1
                 -
                     name: binding
                     attributes:
-                        parameters: pulse=-1
-                        output: select-pulse
+                        input: key
+                        conditions: key=f11 and keydown=1
+                        output1: toggle-variable
+                        parameters2: pulse=0 and                                              metronome=VAR_switch_metronome
+                        output2: switch-metronome
+                        parameters1: var=VAR_switch_metronome and                                             maxvalue=1
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: VAR_laptopkeymode=1 and key=f6 and                                       keydown=1
-                -
-                    name: binding
-                    attributes:
                         parameters: pulse=-1
                         output: select-pulse
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=f12 and keydown=1
+                        parameters: pulse=-1
+                        output: select-pulse
                 -
                     name: binding
                     attributes:
-                        parameters: var=VAR_keyheld_space and                                         value=keydown
-                        output: set-variable
                         input: key
                         conditions: key=space
-                -
-                    name: binding
-                    attributes:
-                        output1: set-variable
-                        parameters1: var=VAR_keyheld_up and                                           value=keydown
-                        input: key
-                        parameters2: setid=0 and ampfactor=1.0/VAR_loopamp_adj
-                        conditions: key=up and VAR_keyheld_ctrl=1
-                        output2: adjust-selected-loops-amp
-                -
-                    name: binding
-                    attributes:
-                        parameters: var=VAR_keyheld_up and                                         value=keydown
+                        parameters: var=VAR_keyheld_space and                                         value=keydown
                         output: set-variable
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=up and VAR_keyheld_ctrl=1
+                        output1: set-variable
+                        parameters2: setid=0 and ampfactor=1.0/VAR_loopamp_adj
+                        output2: adjust-selected-loops-amp
+                        parameters1: var=VAR_keyheld_up and                                           value=keydown
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=up
-                -
-                    name: binding
-                    attributes:
-                        output1: set-variable
-                        parameters1: var=VAR_keyheld_down and                                           value=keydown
-                        input: key
-                        parameters2: setid=0 and ampfactor=VAR_loopamp_adj
-                        conditions: key=down and VAR_keyheld_ctrl=1
-                        output2: adjust-selected-loops-amp
-                -
-                    name: binding
-                    attributes:
-                        parameters: var=VAR_keyheld_down and                                         value=keydown
+                        parameters: var=VAR_keyheld_up and                                         value=keydown
                         output: set-variable
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=down and VAR_keyheld_ctrl=1
+                        output1: set-variable
+                        parameters2: setid=0 and ampfactor=VAR_loopamp_adj
+                        output2: adjust-selected-loops-amp
+                        parameters1: var=VAR_keyheld_down and                                           value=keydown
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=down
-                -
-                    name: binding
-                    attributes:
-                        output1: set-variable
-                        parameters1: var=VAR_keyheld_shift and                                          value=keydown
-                        input: key
-                        parameters2: interfaceid=0 and                                                displayid=DISPLAY_scenes and                                                show=keydown
-                        conditions: key=leftshift
-                        output2: video-show-display
-                -
-                    name: binding
-                    attributes:
-                        output1: set-variable
-                        parameters1: var=VAR_keyheld_shift and                                          value=keydown
-                        input: key
-                        parameters2: interfaceid=0 and                                                displayid=DISPLAY_scenes and                                                show=keydown
-                        conditions: key=rightshift
-                        output2: video-show-display
-                -
-                    name: binding
-                    attributes:
-                        output1: set-variable
-                        parameters1: var=VAR_keyheld_ctrl and                                           value=keydown
-                        input: key
-                        parameters2: interfaceid=0 and                                                displayid=DISPLAY_scenes and                                                show=keydown
-                        conditions: key=leftctrl
-                        output2: video-show-display
-                -
-                    name: binding
-                    attributes:
-                        output1: set-variable
-                        parameters1: var=VAR_keyheld_ctrl and                                           value=keydown
-                        input: key
-                        parameters2: interfaceid=0 and                                                displayid=DISPLAY_scenes and                                                show=keydown
-                        conditions: key=rightctrl
-                        output2: video-show-display
-                -
-                    name: binding
-                    attributes:
-                        parameters: var=VAR_keyheld_alt and                                         value=keydown
+                        parameters: var=VAR_keyheld_down and                                         value=keydown
                         output: set-variable
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=leftshift
+                        output1: set-variable
+                        parameters2: interfaceid=0 and                                                displayid=DISPLAY_scenes and                                                show=keydown
+                        output2: video-show-display
+                        parameters1: var=VAR_keyheld_shift and                                          value=keydown
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=rightshift
+                        output1: set-variable
+                        parameters2: interfaceid=0 and                                                displayid=DISPLAY_scenes and                                                show=keydown
+                        output2: video-show-display
+                        parameters1: var=VAR_keyheld_shift and                                          value=keydown
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=leftctrl
+                        output1: set-variable
+                        parameters2: interfaceid=0 and                                                displayid=DISPLAY_scenes and                                                show=keydown
+                        output2: video-show-display
+                        parameters1: var=VAR_keyheld_ctrl and                                           value=keydown
+                -
+                    name: binding
+                    attributes:
+                        input: key
+                        conditions: key=rightctrl
+                        output1: set-variable
+                        parameters2: interfaceid=0 and                                                displayid=DISPLAY_scenes and                                                show=keydown
+                        output2: video-show-display
+                        parameters1: var=VAR_keyheld_ctrl and                                           value=keydown
+                -
+                    name: binding
+                    attributes:
                         input: key
                         conditions: key=leftalt
+                        parameters: var=VAR_keyheld_alt and                                         value=keydown
+                        output: set-variable
                 -
                     name: binding
                     attributes:
-                        parameters: var=VAR_keyheld_alt and                                         value=keydown
-                        output: set-variable
                         input: key
                         conditions: key=rightalt
+                        parameters: var=VAR_keyheld_alt and                                         value=keydown
+                        output: set-variable
         -
             name: graphics
             children:
                 -
                     name: display
                     attributes:
+                        title: Xp 
                         pos: 0.0,0.9
                         font: small
-                        title: Xp 
                         type: text
                         var: SYSTEM_midi_transpose
                 -
                     name: display
                     attributes:
-                        font: main
-                        orientation: vertical
                         thickness: 0.03
-                        type: bar
-                        title: CPU
                         pos: 0.05,0.8
+                        title: CPU
+                        barscale: 0.3
+                        orientation: vertical
                         var: SYSTEM_audio_cpu_load/100
-                        barscale: 0.3
+                        type: bar
+                        font: main
                 -
                     name: display
                     attributes:
-                        font: main
-                        orientation: vertical
                         thickness: 0.07
-                        type: bar
-                        title: IN
                         pos: 0.245,0.8
+                        title: IN
+                        marks: 1
+                        barscale: 0.3
+                        dbscale: 1
+                        orientation: vertical
                         var: SYSTEM_master_in_volume
-                        dbscale: 1
-                        marks: 1
-                        barscale: 0.3
+                        type: bar
+                        font: main
                 -
                     name: display
                     attributes:
-                        orientation: vertical
-                        thickness: 0.025
+                        switchvar: SYSTEM_in_1_record
+                        pos: 0.20,0.8
+                        barscale: 0.3
+                        dbscale: 1
                         type: bar-switch
+                        thickness: 0.025
+                        orientation: vertical
                         var: SYSTEM_in_1_volume
-                        pos: 0.20,0.8
-                        dbscale: 1
-                        switchvar: SYSTEM_in_1_record
-                        barscale: 0.3
                 -
                     name: display
                     attributes:
-                        orientation: vertical
-                        thickness: 0.025
+                        switchvar: SYSTEM_in_2_record
+                        pos: 0.23,0.8
+                        barscale: 0.3
+                        dbscale: 1
                         type: bar-switch
+                        thickness: 0.025
+                        orientation: vertical
                         var: SYSTEM_in_2_volume
-                        pos: 0.23,0.8
-                        dbscale: 1
-                        switchvar: SYSTEM_in_2_record
-                        barscale: 0.3
                 -
                     name: display
                     attributes:
-                        orientation: vertical
-                        thickness: 0.025
+                        switchvar: SYSTEM_in_3_record
+                        pos: 0.26,0.8
+                        barscale: 0.3
+                        dbscale: 1
                         type: bar-switch
+                        thickness: 0.025
+                        orientation: vertical
                         var: SYSTEM_in_3_volume
-                        pos: 0.26,0.8
-                        dbscale: 1
-                        switchvar: SYSTEM_in_3_record
-                        barscale: 0.3
                 -
                     name: display
                     attributes:
-                        orientation: vertical
+                        switchvar: SYSTEM_in_4_record
+                        pos: 0.29,0.8
+                        barscale: 0.3
+                        dbscale: 1
+                        type: bar-switch
                         thickness: 0.025
-                        type: bar-switch
+                        orientation: vertical
                         var: SYSTEM_in_4_volume
-                        pos: 0.29,0.8
-                        dbscale: 1
-                        switchvar: SYSTEM_in_4_record
-                        barscale: 0.3
                 -
                     name: display
                     attributes:
-                        calibrate: 0.9
-                        orientation: vertical
-                        thickness: 0.015
-                        type: bar-switch
-                        var: SYSTEM_in_1_peak
-                        pos: 0.20,0.8
-                        dbscale: 1
                         switchvar: SYSTEM_in_1_record
+                        pos: 0.20,0.8
+                        calibrate: 0.9
                         barscale: 0.3
+                        dbscale: 1
                         color: 2
+                        type: bar-switch
+                        thickness: 0.015
+                        orientation: vertical
+                        var: SYSTEM_in_1_peak
                 -
                     name: display
                     attributes:
-                        calibrate: 0.9
-                        orientation: vertical
-                        thickness: 0.015
-                        type: bar-switch
-                        var: SYSTEM_in_2_peak
-                        pos: 0.23,0.8
-                        dbscale: 1
                         switchvar: SYSTEM_in_2_record
+                        pos: 0.23,0.8
+                        calibrate: 0.9
                         barscale: 0.3
+                        dbscale: 1
                         color: 2
+                        type: bar-switch
+                        thickness: 0.015
+                        orientation: vertical
+                        var: SYSTEM_in_2_peak
                 -
                     name: display
                     attributes:
-                        calibrate: 0.9
-                        orientation: vertical
-                        thickness: 0.015
-                        type: bar-switch
-                        var: SYSTEM_in_3_peak
-                        pos: 0.26,0.8
-                        dbscale: 1
                         switchvar: SYSTEM_in_3_record
-                        barscale: 0.3
-                        color: 2
-                -
-                    name: display
-                    attributes:
+                        pos: 0.26,0.8
                         calibrate: 0.9
-                        orientation: vertical
-                        thickness: 0.015
-                        type: bar-switch
-                        var: SYSTEM_in_4_peak
-                        pos: 0.29,0.8
-                        dbscale: 1
-                        switchvar: SYSTEM_in_4_record
                         barscale: 0.3
+                        dbscale: 1
                         color: 2
+                        type: bar-switch
+                        thickness: 0.015
+                        orientation: vertical
+                        var: SYSTEM_in_3_peak
                 -
                     name: display
                     attributes:
-                        font: main
+                        switchvar: SYSTEM_in_4_record
+                        pos: 0.29,0.8
+                        calibrate: 0.9
+                        barscale: 0.3
+                        dbscale: 1
+                        color: 2
+                        type: bar-switch
+                        thickness: 0.015
                         orientation: vertical
+                        var: SYSTEM_in_4_peak
+                -
+                    name: display
+                    attributes:
                         thickness: 0.03
-                        type: bar
-                        title: OUT
                         pos: 0.45,0.8
+                        title: OUT
+                        marks: 1
+                        barscale: 0.3
+                        dbscale: 1
+                        orientation: vertical
                         var: SYSTEM_master_out_volume
-                        dbscale: 1
-                        marks: 1
-                        barscale: 0.3
+                        type: bar
+                        font: main
                 -
                     name: display
                     attributes:
-                        font: main
-                        orientation: vertical
                         thickness: 0.03
-                        type: bar
-                        title: LMT
                         pos: 0.6,0.8
-                        var: SYSTEM_cur_limiter_gain
-                        dbscale: 1
+                        title: LMT
                         marks: 1
                         barscale: 0.3
+                        dbscale: 1
+                        orientation: vertical
+                        var: SYSTEM_cur_limiter_gain
+                        type: bar
+                        font: main
                 -
                     name: display
                     attributes:
-                        font: main
-                        orientation: vertical
                         thickness: 0.03
-                        type: bar
-                        title: FBK
                         pos: 0.75,0.8
-                        var: VAR_overdubfeedback
+                        title: FBK
                         barscale: 0.3
+                        orientation: vertical
+                        var: VAR_overdubfeedback
+                        type: bar
+                        font: main
                 -
                     name: display
                     attributes:
                         size1: 0.02
-                        type: circle-switch
-                        var: SYSTEM_num_recording_loops_in_map
                         pos: 0.95,0.815
                         size0: 0.01
                         flash: 0
+                        type: circle-switch
+                        var: SYSTEM_num_recording_loops_in_map
                 -
                     name: display
                     attributes:
+                        title: SYNTH
                         pos: 0.895,0.64
                         font: small
-                        title: SYNTH
                         type: switch
                         var: SYSTEM_fluidsynth_enabled
                 -
                     name: display
                     attributes:
+                        title: SAVE
                         pos: 0.914,0.68
                         font: small
-                        title: SAVE
                         type: switch
                         var: VAR_auto_loop_save
                 -
                     name: display
                     attributes:
+                        title: XFR
                         pos: 0.925,0.6
                         font: small
-                        title: XFR
                         type: switch
                         var: VAR_xferloop
                 -
                     name: display
                     attributes:
+                        title: DUB
                         pos: 0.925,0.72
                         font: small
-                        title: DUB
                         type: switch
                         var: VAR_overdubmode
                 -
                     name: display
                     attributes:
+                        title: CUT
                         pos: 0.925,0.76
                         font: small
-                        title: CUT
                         type: switch
                         var: VAR_cutmode
                 -
                     name: display
                     attributes:
-                        id: DISPLAY_syncpanel
-                        font: small
-                        type: panel
-                        title: Sync Panel
                         pos: 0.69,0.5
+                        title: Sync Panel
                         size: 0.3,0.17
+                        id: DISPLAY_syncpanel
                         show: 0
+                        type: panel
+                        font: small
                     children:
                         -
                             name: display
                             attributes:
-                                id: 1000
-                                font: small
-                                type: text
-                                title: sync 
                                 pos: 0.0,0.07
+                                title: sync 
+                                id: 1000
                                 var: VAR_numsync_per_pulse
+                                type: text
+                                font: small
                         -
                             name: display
                             attributes:
-                                id: 1001
-                                font: small
                                 text1: beats per pulse
-                                text0: bars per pulse
-                                type: text-switch
-                                var: VAR_synctype
                                 pos: 0.1,0.07
+                                text0: bars per pulse
+                                id: 1001
+                                var: VAR_synctype
+                                type: text-switch
+                                font: small
                         -
                             name: display
                             attributes:
-                                id: 1002
-                                font: small
-                                type: circle-switch
-                                title: Jack Sync
+                                size1: 0.012
                                 pos: 0.02,0.12
-                                flash: 0
+                                title: Jack Sync
                                 size0: 0.01
+                                id: 1002
                                 var: SYSTEM_sync_active
-                                size1: 0.012
+                                type: circle-switch
+                                flash: 0
+                                font: small
                         -
                             name: display
                             attributes:
-                                id: 1003
-                                font: small
-                                type: circle-switch
-                                title: Jack Sync XMit
+                                size1: 0.012
                                 pos: 0.02,0.16
-                                flash: 0
+                                title: Jack Sync XMit
                                 size0: 0.01
+                                id: 1003
                                 var: SYSTEM_sync_transmit
-                                size1: 0.012
+                                type: circle-switch
+                                flash: 0
+                                font: small
                         -
                             name: display
                             attributes:
-                                id: 1004
-                                font: small
-                                type: circle-switch
-                                title: MIDI Sync Xmit
-                                pos: 0.02,0.20
-                                flash: 0
-                                size0: 0.01
-                                var: SYSTEM_midisync_transmit
                                 size1: 0.012
+                                pos: 0.02,0.20
+                                title: MIDI Sync Xmit
+                                size0: 0.01
+                                id: 1004
+                                var: SYSTEM_midisync_transmit
+                                type: circle-switch
+                                flash: 0
+                                font: small
                 -
                     name: display
                     attributes:
-                        id: DISPLAY_scenes
-                        font: small
-                        type: snapshots
-                        title: SNAPS
                         pos: 0.69,0.15
-                        interfaceid: 0
                         size: 0.3,0.22
+                        id: DISPLAY_scenes
+                        title: SNAPS
                         show: 0
+                        type: snapshots
+                        interfaceid: 0
+                        font: small

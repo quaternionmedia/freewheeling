@@ -9,287 +9,287 @@
                     name: declare
                     attributes:
                         var: VAR_midi_modwheel
-                        init: 1
                         type: int
+                        init: 1
                 -
                     name: declare
                     attributes:
                         var: VAR_midi_modwheel_val
-                        init: 0
                         type: int
+                        init: 0
                 -
                     name: declare
                     attributes:
                         var: VAR_midi_channelpressure
-                        init: 0
                         type: int
+                        init: 0
                 -
                     name: declare
                     attributes:
                         var: VAR_b3_patchbank_tag
-                        init: 999
                         type: int
+                        init: 999
                 -
                     name: declare
                     attributes:
                         var: VAR_mercurymode
-                        init: 1
                         type: char
+                        init: 1
                 -
                     name: declare
                     attributes:
                         var: VAR_midi_breathcontrol
-                        init: 2
                         type: int
+                        init: 2
                 -
                     name: declare
                     attributes:
                         var: VAR_midi_breathcontrol_val
-                        init: 0
                         type: int
+                        init: 0
                 -
                     name: declare
                     attributes:
                         var: VAR_midi_breathcontrol_hold
-                        init: 0
                         type: int
+                        init: 0
                 -
                     name: declare
                     attributes:
                         var: VAR_midi_holdpedal
-                        init: 64
                         type: int
+                        init: 64
                 -
                     name: declare
                     attributes:
                         var: VAR_midi_exppedal
-                        init: 11
                         type: int
+                        init: 11
                 -
                     name: declare
                     attributes:
                         var: VAR_midi_exppedal_val
-                        init: 0
                         type: int
+                        init: 0
                 -
                     name: binding
                     attributes:
-                        output5: set-variable
-                        output4: set-variable
-                        parameters4: var=VAR_notechan and value=1
-                        output2: set-variable
-                        input: start-interface
-                        output3: set-variable
-                        parameters6: direction=-1
-                        parameters3: var=VAR_laptopkeymode and value=1
-                        output7: browser-select-item
                         parameters7: browserid=DISPLAY_browser_patch
                         output6: patchbrowser-move-to-bank
-                        parameters2: var=VAR_midi_footswitch and value=67
-                        parameters5: var=VAR_noterange and value=48>59
-                        output1: show-debug-info
+                        parameters6: direction=-1
                         parameters1: show=0
+                        output2: set-variable
+                        input: start-interface
+                        parameters5: var=VAR_noterange and value=48>59
+                        parameters4: var=VAR_notechan and value=1
+                        output5: set-variable
+                        parameters3: var=VAR_laptopkeymode and value=1
+                        output3: set-variable
+                        output4: set-variable
+                        output7: browser-select-item
+                        parameters2: var=VAR_midi_footswitch and value=67
+                        output1: show-debug-info
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=80
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=70 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=82
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=71 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=83
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=72 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=84
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=73 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=85
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=74 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=81
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=75 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=86
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=76 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=88
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=77 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=89
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=78 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=70
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=92 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=71
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=91 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=72
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=80 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=73
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=81 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=74
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=82 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midicontroller
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=75
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=21 and                                          controlval=controlval
-                -
-                    name: binding
-                    attributes:
+                        input: midicontroller
                         output: midicontroller
+                -
+                    name: binding
+                    attributes:
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=76
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                          controlnum=22 and                                          controlval=controlval
+                        input: midicontroller
+                        output: midicontroller
                 -
                     name: binding
                     attributes:
-                        output: midiprogramchange
                         conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=77 and controlval=VAR_switch_on
-                        input: midicontroller
                         parameters: routethroughpatch=1 and                                             programval=40
-                -
-                    name: binding
-                    attributes:
-                        output: midiprogramchange
-                        conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=77
                         input: midicontroller
-                        parameters: routethroughpatch=1 and                                             programval=39
+                        output: midiprogramchange
                 -
                     name: binding
                     attributes:
-                        conditions: VAR_mercurymode=1
+                        conditions: SYSTEM_cur_patchbank_tag=VAR_b3_patchbank_tag and controlnum=77
+                        parameters: routethroughpatch=1 and                                             programval=39
+                        input: midicontroller
+                        output: midiprogramchange
+                -
+                    name: binding
+                    attributes:
                         parameters2: routethroughpatch=1 and                                            controlnum=VAR_midi_modwheel and                                            controlval=VAR_midi_channelpressure+                                                       VAR_midi_modwheel_val
+                        parameters1: var=VAR_midi_channelpressure and                                          value=pressureval
                         output2: midicontroller
                         input: midichannelpressure
-                        parameters1: var=VAR_midi_channelpressure and                                          value=pressureval
+                        conditions: VAR_mercurymode=1
                         output1: set-variable
                 -
                     name: binding
                     attributes:
-                        conditions: VAR_mercurymode=1 and                                                 controlnum=VAR_midi_modwheel
                         parameters2: routethroughpatch=1 and                                            controlnum=VAR_midi_modwheel and                                            controlval=VAR_midi_channelpressure+                                                       VAR_midi_modwheel_val
-                        output2: midicontroller
-                        input: midicontroller
                         parameters1: var=VAR_midi_modwheel_val and                                          value=controlval
+                        output2: midicontroller
+                        input: midicontroller
+                        conditions: VAR_mercurymode=1 and                                                 controlnum=VAR_midi_modwheel
                         output1: set-variable
                 -
                     name: binding
                     attributes:
-                        conditions: VAR_mercurymode=1 and VAR_midi_breathcontrol_hold=0 and                  controlnum=VAR_midi_breathcontrol
                         parameters2: routethroughpatch=1 and                   controlnum=VAR_midi_exppedal and                   controlval=VAR_midi_exppedal_val+VAR_midi_breathcontrol_val
-                        output2: midicontroller
-                        input: midicontroller
                         parameters1: var=VAR_midi_breathcontrol_val and                                          value=controlval
-                        output1: set-variable
-                -
-                    name: binding
-                    attributes:
-                        conditions: VAR_mercurymode=1 and                                                 controlnum=VAR_midi_exppedal
-                        parameters2: routethroughpatch=1 and                   controlnum=VAR_midi_exppedal and                   controlval=VAR_midi_exppedal_val+VAR_midi_breathcontrol_val
                         output2: midicontroller
                         input: midicontroller
-                        parameters1: var=VAR_midi_exppedal_val and                                          value=controlval
+                        conditions: VAR_mercurymode=1 and VAR_midi_breathcontrol_hold=0 and                  controlnum=VAR_midi_breathcontrol
                         output1: set-variable
                 -
                     name: binding
                     attributes:
-                        output: toggle-select-loop
+                        parameters2: routethroughpatch=1 and                   controlnum=VAR_midi_exppedal and                   controlval=VAR_midi_exppedal_val+VAR_midi_breathcontrol_val
+                        parameters1: var=VAR_midi_exppedal_val and                                          value=controlval
+                        output2: midicontroller
+                        input: midicontroller
+                        conditions: VAR_mercurymode=1 and                                                 controlnum=VAR_midi_exppedal
+                        output1: set-variable
+                -
+                    name: binding
+                    attributes:
                         conditions: VAR_mercurymode=1 and midichannel=VAR_notechan and                   notenum=VAR_noterange+VAR_selectoctave and                   keydown=1
-                        input: midikey
                         parameters: setid=0 and                   loopid=notenum-VAR_selectoctave+VAR_loopid_pianostart
+                        input: midikey
+                        output: toggle-select-loop
         -
             name: graphics
             children:
                 -
                     name: display
                     attributes:
-                        font: main
-                        xbox: 0.1,0.1, 0.9,0.9
-                        xpand: 1
-                        id: DISPLAY_browser_patch
                         browsetype: BROWSE_patch
-                        xdelay: 5.0
-                        interfaceid: 0
                         show: 1
-                        pos: 0.0,0.96
+                        interfaceid: 0
+                        xdelay: 5.0
+                        font: main
                         type: browser
+                        xbox: 0.1,0.1, 0.9,0.9
+                        id: DISPLAY_browser_patch
+                        pos: 0.0,0.96
+                        xpand: 1
                     children:
                         -
                             name: patchbank
                             attributes:
+                                patches: patches-receptor-1.xml
                                 bypasscc: 116
                                 midiport: 1
                                 separatechannels: 0
-                                patches: patches-receptor-1.xml
                                 suppressprogramchanges: 1
                         -
                             name: patchbank
                             attributes:
+                                patches: patches-receptor-2.xml
                                 bypasscc: 116
                                 midiport: 1
                                 separatechannels: 0
-                                patches: patches-receptor-2.xml
                                 suppressprogramchanges: 1
                         -
                             name: patchbank
@@ -301,9 +301,9 @@
                             name: patchbank
                             attributes:
                                 separatechannels: 0
-                                bypasstime1: 60
-                                suppressprogramchanges: 1
-                                bypasscc: 116
-                                bypasstime2: 10
                                 midiport: 1
+                                bypasstime2: 10
+                                bypasstime1: 60
+                                bypasscc: 116
                                 patches: patches-channels.xml
+                                suppressprogramchanges: 1

@@ -8,357 +8,357 @@
                 -
                     name: declare
                     attributes:
+                        init: 50
                         type: int
                         var: VAR_pcrm_midishift_midicontrol
-                        init: 50
                 -
                     name: declare
                     attributes:
+                        init: 0
                         type: char
                         var: VAR_keyheld_midishift
-                        init: 0
                 -
                     name: declare
                     attributes:
+                        init: 87
                         type: int
                         var: VAR_pcrm_overdubfeedback_midicontrol
-                        init: 87
                 -
                     name: declare
                     attributes:
+                        init: 89
                         type: int
                         var: VAR_pcrm_triggervol_selected_midicontrol
-                        init: 89
                 -
                     name: declare
                     attributes:
+                        init: 88
                         type: int
                         var: VAR_pcrm_patchbank_midicontrol
-                        init: 88
                 -
                     name: declare
                     attributes:
+                        init: 53
                         type: int
                         var: VAR_pcrm_patchbank_back_midicontrol
-                        init: 53
                 -
                     name: declare
                     attributes:
+                        init: 54
                         type: int
                         var: VAR_pcrm_patchbank_forward_midicontrol
-                        init: 54
                 -
                     name: declare
                     attributes:
+                        init: 51
                         type: int
                         var: VAR_pcrm_undo_midicontrol
-                        init: 51
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=80
                         output: set-master-in-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=81
                         output: set-master-out-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: input=1 and vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=82
                         output: set-in-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: input=2 and vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=83
                         output: set-in-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: input=3 and vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=84
                         output: set-in-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: input=4 and vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=85
                         output: set-in-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_0 and                   vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=100
                         output: set-trigger-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_1 and                   vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=101
                         output: set-trigger-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_2 and                   vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=102
                         output: set-trigger-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_3 and                   vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=103
                         output: set-trigger-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_4 and                   vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=104
                         output: set-trigger-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_5 and                   vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=105
                         output: set-trigger-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_6 and                   vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=106
                         output: set-trigger-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_7 and                   vol=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=107
                         output: set-trigger-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_0 and                   amp=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=90
                         output: set-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_1 and                   amp=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=91
                         output: set-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_2 and                   amp=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=92
                         output: set-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_3 and                   amp=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=93
                         output: set-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_4 and                   amp=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=94
                         output: set-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_5 and                   amp=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=95
                         output: set-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_6 and                   amp=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=96
                         output: set-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: loopid=SYSTEM_loopid_lastrecord_7 and                   amp=controlval/127.0*2.0
+                        input: midicontroller
                         conditions: controlnum=97
                         output: set-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: var=VAR_overdubfeedback and                                        value=controlval/127
+                        input: midicontroller
                         conditions: controlnum=VAR_pcrm_overdubfeedback_midicontrol
                         output: set-variable
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         parameters: setid=0 and vol=controlval*2.0/127
+                        input: midicontroller
                         conditions: controlnum=VAR_pcrm_triggervol_selected_midicontrol
                         output: set-selected-loops-trigger-volume
                 -
                     name: binding
                     attributes:
-                        parameters1: loopid=SYSTEM_loopid_lastrecord_0
-                        input: midicontroller
-                        parameters2: var=VAR_xferloop and value=0
-                        output2: set-variable
-                        conditions: controlnum=VAR_pcrm_undo_midicontrol and                  controlval=VAR_switch_on
                         output1: erase-loop
+                        input: midicontroller
+                        output2: set-variable
+                        parameters1: loopid=SYSTEM_loopid_lastrecord_0
+                        conditions: controlnum=VAR_pcrm_undo_midicontrol and                  controlval=VAR_switch_on
+                        parameters2: var=VAR_xferloop and value=0
                 -
                     name: binding
                     attributes:
-                        parameters1: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=0
+                        output1: video-show-display
                         input: midicontroller
-                        parameters3: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=1
-                        parameters2: var=VAR_cur_browser and                                           value=DISPLAY_browser_patch
-                        output3: video-show-display
                         output2: set-variable
-                        parameters4: index=controlval*SYSTEM_num_patchbanks/128
-                        conditions: controlnum=VAR_pcrm_patchbank_midicontrol
                         output4: patchbrowser-move-to-bank-by-index
-                        output1: video-show-display
+                        parameters3: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=1
+                        parameters4: index=controlval*SYSTEM_num_patchbanks/128
+                        parameters1: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=0
+                        conditions: controlnum=VAR_pcrm_patchbank_midicontrol
+                        parameters2: var=VAR_cur_browser and                                           value=DISPLAY_browser_patch
+                        output3: video-show-display
                 -
                     name: binding
                     attributes:
-                        parameters1: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=0
+                        output1: video-show-display
                         input: midicontroller
-                        parameters3: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=1
-                        parameters2: var=VAR_cur_browser and                                           value=DISPLAY_browser_patch
-                        output3: video-show-display
                         output2: set-variable
+                        output4: patchbrowser-move-to-bank
+                        parameters3: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=1
                         parameters4: direction=-1
-                        conditions: controlnum=VAR_pcrm_patchbank_back_midicontrol and                  controlval=VAR_switch_on
-                        output4: patchbrowser-move-to-bank
-                        output1: video-show-display
-                -
-                    name: binding
-                    attributes:
                         parameters1: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=0
-                        input: midicontroller
-                        parameters3: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=1
+                        conditions: controlnum=VAR_pcrm_patchbank_back_midicontrol and                  controlval=VAR_switch_on
                         parameters2: var=VAR_cur_browser and                                           value=DISPLAY_browser_patch
                         output3: video-show-display
-                        output2: set-variable
-                        parameters4: direction=1
-                        conditions: controlnum=VAR_pcrm_patchbank_forward_midicontrol and                  controlval=VAR_switch_on
-                        output4: patchbrowser-move-to-bank
+                -
+                    name: binding
+                    attributes:
                         output1: video-show-display
+                        input: midicontroller
+                        output2: set-variable
+                        output4: patchbrowser-move-to-bank
+                        parameters3: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=1
+                        parameters4: direction=1
+                        parameters1: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=0
+                        conditions: controlnum=VAR_pcrm_patchbank_forward_midicontrol and                  controlval=VAR_switch_on
+                        parameters2: var=VAR_cur_browser and                                           value=DISPLAY_browser_patch
+                        output3: video-show-display
                 -
                     name: binding
                     attributes:
+                        output1: set-variable
+                        input: midicontroller
+                        output2: set-variable
                         parameters1: var=VAR_keyheld_midishift and                                          value=1
-                        input: midicontroller
-                        parameters2: var=VAR_keyheld_space and                                          value=1
-                        output2: set-variable
                         conditions: controlnum=VAR_pcrm_midishift_midicontrol and                  controlval=VAR_switch_on
-                        output1: set-variable
+                        parameters2: var=VAR_keyheld_space and                                          value=1
                 -
                     name: binding
                     attributes:
-                        parameters1: var=VAR_keyheld_midishift and                                          value=0
+                        output1: set-variable
                         input: midicontroller
-                        parameters2: var=VAR_keyheld_space and                                          value=0
                         output2: set-variable
+                        parameters1: var=VAR_keyheld_midishift and                                          value=0
                         conditions: controlnum=VAR_pcrm_midishift_midicontrol and                  controlval=VAR_switch_off
-                        output1: set-variable
+                        parameters2: var=VAR_keyheld_space and                                          value=0
                 -
                     name: binding
                     attributes:
-                        parameters1: var=VAR_cur_program and value=programval
+                        output1: set-variable
                         input: midiprogramchange
-                        parameters2: browserid=VAR_cur_browser and                                                  adjust=1 and jumpadjust=0
                         output2: browser-move-to-item
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: programval=VAR_cur_program+1 and VAR_keyheld_midishift=0
-                        output1: set-variable
-                -
-                    name: binding
-                    attributes:
-                        parameters1: var=VAR_cur_program and value=programval
-                        input: midiprogramchange
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=1 and jumpadjust=0
+                -
+                    name: binding
+                    attributes:
+                        output1: set-variable
+                        input: midiprogramchange
                         output2: browser-move-to-item
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: VAR_keyheld_midishift=0 and VAR_cur_program=127 and programval=0
-                        output1: set-variable
+                        parameters2: browserid=VAR_cur_browser and                                                  adjust=1 and jumpadjust=0
                 -
                     name: binding
                     attributes:
-                        parameters1: var=VAR_cur_program and value=programval
+                        output1: set-variable
                         input: midiprogramchange
-                        parameters2: browserid=VAR_cur_browser and                                                  adjust=-1 and jumpadjust=0
                         output2: browser-move-to-item
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: programval=VAR_cur_program-1 and VAR_keyheld_midishift=0
-                        output1: set-variable
-                -
-                    name: binding
-                    attributes:
-                        parameters1: var=VAR_cur_program and value=programval
-                        input: midiprogramchange
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=-1 and jumpadjust=0
+                -
+                    name: binding
+                    attributes:
+                        output1: set-variable
+                        input: midiprogramchange
                         output2: browser-move-to-item
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: VAR_keyheld_midishift=0 and VAR_cur_program=0 and programval=127
-                        output1: set-variable
+                        parameters2: browserid=VAR_cur_browser and                                                  adjust=-1 and jumpadjust=0
                 -
                     name: binding
                     attributes:
-                        parameters1: var=VAR_cur_program and value=programval
+                        output1: set-variable
                         input: midiprogramchange
-                        parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=1
                         output2: browser-move-to-item
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: programval=VAR_cur_program+1 and VAR_keyheld_midishift=1
-                        output1: set-variable
-                -
-                    name: binding
-                    attributes:
-                        parameters1: var=VAR_cur_program and value=programval
-                        input: midiprogramchange
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=1
+                -
+                    name: binding
+                    attributes:
+                        output1: set-variable
+                        input: midiprogramchange
                         output2: browser-move-to-item
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: VAR_keyheld_midishift=1 and VAR_cur_program=127 and programval=0
-                        output1: set-variable
+                        parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=1
                 -
                     name: binding
                     attributes:
-                        parameters1: var=VAR_cur_program and value=programval
+                        output1: set-variable
                         input: midiprogramchange
-                        parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=-1
                         output2: browser-move-to-item
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: programval=VAR_cur_program-1 and VAR_keyheld_midishift=1
-                        output1: set-variable
+                        parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=-1
                 -
                     name: binding
                     attributes:
-                        parameters1: var=VAR_cur_program and value=programval
-                        input: midiprogramchange
-                        parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=-1
-                        output2: browser-move-to-item
-                        conditions: VAR_keyheld_midishift=1 and VAR_cur_program=0 and programval=127
                         output1: set-variable
+                        input: midiprogramchange
+                        output2: browser-move-to-item
+                        parameters1: var=VAR_cur_program and value=programval
+                        conditions: VAR_keyheld_midishift=1 and VAR_cur_program=0 and programval=127
+                        parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=-1
                 -
                     name: binding
                     attributes:

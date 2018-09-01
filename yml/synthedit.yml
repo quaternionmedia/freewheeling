@@ -32,34 +32,34 @@
                 -
                     name: binding
                     attributes:
-                        output1: set-variable
                         input: start-interface
                         parameters1: var=VAR_synthedit_interfaceid and value=interfaceid
+                        output1: set-variable
         -
             name: graphics
             children:
                 -
                     name: display
                     attributes:
-                        title: SynthEdit Ch 
-                        type: text
                         show: 0
-                        font: small
+                        type: text
                         pos: 0.05,0.07
-                        var: VAR_synthedit_midichannel
                         id: DISPLAY_synthedit_chanselect
+                        title: SynthEdit Ch 
+                        font: small
+                        var: VAR_synthedit_midichannel
                 -
                     name: display
                     attributes:
+                        show: 0
                         name: synthedit
-                        title: Synth Editor
                         type: paramset
                         numactiveparams: 8
-                        show: 0
-                        font: tiny
                         pos: 0.05,0.1
-                        size: 0.9,0.22
                         id: DISPLAY_synthedit
+                        size: 0.9,0.22
+                        font: tiny
+                        title: Synth Editor
                     children:
                         -
                             name: bank

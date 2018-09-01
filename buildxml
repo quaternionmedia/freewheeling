@@ -37,7 +37,11 @@ xmltoyml() {
 for i in $(ls ~/.fweelin/*.xml); do
 	FILENAME=$(basename $i .xml)
 	echo converting $FILENAME
-	./xy -x2y $i > $YML_DIR/$FILENAME.yml
+	RESULT="$(./xy -x2y $i)"
+ 	if [ -n "$RESULT" ] ; then
+		echo "$RESULT" > $YML_DIR/$FILENAME.yml
+
+	fi
 done
 
 exit 0
@@ -50,8 +54,10 @@ for i in $(ls $YML_DIR) ; do
 
 	if [ $YML_DIR/$i -nt $XML_DIR/$FILENAME.xml ] ; then
 		echo "updating $i"
-		./xy -y2x $YML_DIR/$i > $XML_DIR/$FILENAME.xml && UPDATED=$((UPDATED+1))
-
+		RESULT="$(./xy -y2x $YML_DIR/$i)"
+		if [ -n "$RESULT" ] ; then 
+			echo "$RESULT" > $XML_DIR/$FILENAME.xml && UPDATED=$((UPDATED+1))
+		fi
 	fi
 done
 
