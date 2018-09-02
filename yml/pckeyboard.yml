@@ -8,78 +8,78 @@
                 -
                     name: declare
                     attributes:
-                        var: VAR_loopid_pckeystart
                         init: 0
                         type: int
+                        var: VAR_loopid_pckeystart
                 -
                     name: declare
                     attributes:
-                        var: VAR_pckeyfullrange
                         init: 0>322
                         type: range
+                        var: VAR_pckeyfullrange
                 -
                     name: declare
                     attributes:
-                        var: VAR_pckeyrange
                         init: 97>122
                         type: range
+                        var: VAR_pckeyrange
                 -
                     name: binding
                     attributes:
-                        input: start-interface
                         output1: video-show-loop
+                        input: start-interface
                         parameters1: layoutid=0 and                   loopid=VAR_pckeyfullrange+VAR_loopid_pckeystart
                 -
                     name: binding
                     attributes:
+                        output: slide-loop-amplifier
+                        input: key
                         conditions: VAR_keyheld_up=1 and key=VAR_pckeyrange
-                        input: key
                         parameters: loopid=key+VAR_loopid_pckeystart and                   slide=keydown*VAR_slide_speed/2
-                        output: slide-loop-amplifier
                 -
                     name: binding
                     attributes:
+                        output: slide-loop-amplifier
+                        input: key
                         conditions: VAR_keyheld_down=1 and key=VAR_pckeyrange
-                        input: key
                         parameters: loopid=key+VAR_loopid_pckeystart and                   slide=-keydown*VAR_slide_speed/2
-                        output: slide-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        conditions: VAR_cutmode=1 and key=VAR_pckeyrange
-                        input: key
-                        parameters: loopid=key+VAR_loopid_pckeystart and vol=1.0*keydown
                         output: set-trigger-volume
+                        input: key
+                        conditions: VAR_cutmode=1 and key=VAR_pckeyrange
+                        parameters: loopid=key+VAR_loopid_pckeystart and vol=1.0*keydown
                 -
                     name: binding
                     attributes:
-                        conditions: VAR_keyheld_space=1 and key=VAR_pckeyrange and keydown=1
-                        input: key
-                        parameters: loopid=key+VAR_loopid_pckeystart
                         output: erase-loop
+                        input: key
+                        conditions: VAR_keyheld_space=1 and key=VAR_pckeyrange and keydown=1
+                        parameters: loopid=key+VAR_loopid_pckeystart
                 -
                     name: binding
                     attributes:
-                        conditions: VAR_xferloop=1 and key=VAR_pckeyrange and keydown=1
-                        input: key
-                        parameters2: var=VAR_xferloop and value=0
                         output2: set-variable
                         output1: move-loop
+                        input: key
+                        parameters2: var=VAR_xferloop and value=0
+                        conditions: VAR_xferloop=1 and key=VAR_pckeyrange and keydown=1
                         parameters1: oldloopid=VAR_xferidx and                  newloopid=key+VAR_loopid_pckeystart
                 -
                     name: binding
                     attributes:
-                        conditions: VAR_overdubmode=1 and key=VAR_pckeyrange and keydown=1
-                        input: key
-                        parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=key+VAR_loopid_pckeystart and vol=1.0
                         output: trigger-loop
+                        input: key
+                        conditions: VAR_overdubmode=1 and key=VAR_pckeyrange and keydown=1
+                        parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=key+VAR_loopid_pckeystart and vol=1.0
                 -
                     name: binding
                     attributes:
-                        conditions: key=VAR_pckeyrange and keydown=1
-                        input: key
-                        parameters: loopid=key+VAR_loopid_pckeystart and vol=1.0
                         output: trigger-loop
+                        input: key
+                        conditions: key=VAR_pckeyrange and keydown=1
+                        parameters: loopid=key+VAR_loopid_pckeystart and vol=1.0
         -
             name: graphics
             children:
@@ -87,22 +87,22 @@
                     name: layout
                     attributes:
                         elabel: 1
-                        scale: 1.0,1.0
-                        id: 0
                         name: PC Keyboard
-                        pos: 0.00,0.00
-                        label: 0
+                        scale: 1.0,1.0
                         show: 0
+                        label: 0
+                        pos: 0.00,0.00
+                        id: 0
                     children:
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.0,0.0
+                                loopsize: 0.1
+                                name: Q
                                 id: 113
                                 looppos: 0.05,0.05
-                                base: 0.0,0.0
-                                name: Q
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -112,12 +112,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.1,0.0
+                                loopsize: 0.1
+                                name: W
                                 id: 119
                                 looppos: 0.05,0.05
-                                base: 0.1,0.0
-                                name: W
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -127,12 +127,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.2,0.0
+                                loopsize: 0.1
+                                name: E
                                 id: 101
                                 looppos: 0.05,0.05
-                                base: 0.2,0.0
-                                name: E
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -142,12 +142,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.3,0.0
+                                loopsize: 0.1
+                                name: R
                                 id: 114
                                 looppos: 0.05,0.05
-                                base: 0.3,0.0
-                                name: R
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -157,12 +157,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.4,0.0
+                                loopsize: 0.1
+                                name: T
                                 id: 116
                                 looppos: 0.05,0.05
-                                base: 0.4,0.0
-                                name: T
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -172,12 +172,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.5,0.0
+                                loopsize: 0.1
+                                name: Y
                                 id: 121
                                 looppos: 0.05,0.05
-                                base: 0.5,0.0
-                                name: Y
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -187,12 +187,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.6,0.0
+                                loopsize: 0.1
+                                name: U
                                 id: 117
                                 looppos: 0.05,0.05
-                                base: 0.6,0.0
-                                name: U
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -202,12 +202,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.7,0.0
+                                loopsize: 0.1
+                                name: I
                                 id: 105
                                 looppos: 0.05,0.05
-                                base: 0.7,0.0
-                                name: I
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -217,12 +217,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.8,0.0
+                                loopsize: 0.1
+                                name: O
                                 id: 111
                                 looppos: 0.05,0.05
-                                base: 0.8,0.0
-                                name: O
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -232,12 +232,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.9,0.0
+                                loopsize: 0.1
+                                name: P
                                 id: 112
                                 looppos: 0.05,0.05
-                                base: 0.9,0.0
-                                name: P
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -247,12 +247,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.03,0.1
+                                loopsize: 0.1
+                                name: A
                                 id: 97
                                 looppos: 0.05,0.05
-                                base: 0.03,0.1
-                                name: A
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -262,12 +262,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.13,0.1
+                                loopsize: 0.1
+                                name: S
                                 id: 115
                                 looppos: 0.05,0.05
-                                base: 0.13,0.1
-                                name: S
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -277,12 +277,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.23,0.1
+                                loopsize: 0.1
+                                name: D
                                 id: 100
                                 looppos: 0.05,0.05
-                                base: 0.23,0.1
-                                name: D
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -292,12 +292,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.33,0.1
+                                loopsize: 0.1
+                                name: F
                                 id: 102
                                 looppos: 0.05,0.05
-                                base: 0.33,0.1
-                                name: F
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -307,12 +307,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.43,0.1
+                                loopsize: 0.1
+                                name: G
                                 id: 103
                                 looppos: 0.05,0.05
-                                base: 0.43,0.1
-                                name: G
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -322,12 +322,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.53,0.1
+                                loopsize: 0.1
+                                name: H
                                 id: 104
                                 looppos: 0.05,0.05
-                                base: 0.53,0.1
-                                name: H
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -337,12 +337,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.63,0.1
+                                loopsize: 0.1
+                                name: J
                                 id: 106
                                 looppos: 0.05,0.05
-                                base: 0.63,0.1
-                                name: J
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -352,12 +352,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.73,0.1
+                                loopsize: 0.1
+                                name: K
                                 id: 107
                                 looppos: 0.05,0.05
-                                base: 0.73,0.1
-                                name: K
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -367,12 +367,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.83,0.1
+                                loopsize: 0.1
+                                name: L
                                 id: 108
                                 looppos: 0.05,0.05
-                                base: 0.83,0.1
-                                name: L
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -382,12 +382,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.06,0.2
+                                loopsize: 0.1
+                                name: Z
                                 id: 122
                                 looppos: 0.05,0.05
-                                base: 0.06,0.2
-                                name: Z
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -397,12 +397,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.16,0.2
+                                loopsize: 0.1
+                                name: X
                                 id: 120
                                 looppos: 0.05,0.05
-                                base: 0.16,0.2
-                                name: X
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -412,12 +412,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.26,0.2
+                                loopsize: 0.1
+                                name: C
                                 id: 99
                                 looppos: 0.05,0.05
-                                base: 0.26,0.2
-                                name: C
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -427,12 +427,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.36,0.2
+                                loopsize: 0.1
+                                name: V
                                 id: 118
                                 looppos: 0.05,0.05
-                                base: 0.36,0.2
-                                name: V
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -442,12 +442,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.46,0.2
+                                loopsize: 0.1
+                                name: B
                                 id: 98
                                 looppos: 0.05,0.05
-                                base: 0.46,0.2
-                                name: B
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -457,12 +457,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.56,0.2
+                                loopsize: 0.1
+                                name: N
                                 id: 110
                                 looppos: 0.05,0.05
-                                base: 0.56,0.2
-                                name: N
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
@@ -472,12 +472,12 @@
                         -
                             name: element
                             attributes:
-                                namepos: 0.01,0.00
+                                base: 0.66,0.2
+                                loopsize: 0.1
+                                name: M
                                 id: 109
                                 looppos: 0.05,0.05
-                                base: 0.66,0.2
-                                name: M
-                                loopsize: 0.1
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box

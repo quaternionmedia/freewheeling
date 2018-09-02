@@ -5,38 +5,38 @@
         -
             name: interface
             attributes:
-                switchable: 0
                 setup: coreinterface.xml
+                switchable: 0
         -
             name: interface
             attributes:
-                switchable: 0
                 setup: mercury.xml
+                switchable: 0
         -
             name: interface
             attributes:
-                switchable: 0
                 setup: synthedit.xml
+                switchable: 0
         -
             name: interface
             attributes:
-                switchable: 0
                 setup: bcf2000-synthedit.xml
+                switchable: 0
         -
             name: interface
             attributes:
-                switchable: 0
                 setup: rme-hdsp.xml
+                switchable: 0
         -
             name: interface
             attributes:
-                switchable: 0
                 setup: browsers.xml
+                switchable: 0
         -
             name: interface
             attributes:
-                switchable: 0
                 setup: midifootswitch.xml
+                switchable: 0
         -
             name: interface
             attributes:

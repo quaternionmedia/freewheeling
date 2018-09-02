@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# holophonor script
+
+# start jack if not already started
+jackd -d alsa -d hw:3,0 -p 16 &
+
+# build jinja templates and save to ~/.fweelin
+python3 templates.py
+
+# run fweelin
+fweelin
+
+# configure jack
+# midi in/out
+# audio in/out
+
+

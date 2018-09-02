@@ -1,0 +1,85 @@
+{
+  "basics": {
+    "var": [
+      {
+        "@numloopids": "1024"
+      },
+      {
+        "@maxsnapshots": "100"
+      },
+      {
+        "@librarypath": "fw-lib/"
+      },
+      {
+        "@midiouts": "4"
+      },
+      {
+        "@midisyncouts": "1"
+      },
+      {
+        "@externalaudioinputs": "MMSS"
+      },
+      {
+        "@audioinputmonitoring": "NNNN"
+      },
+      {
+        "@streaminputs": "NYYN"
+      },
+      {
+        "@streamfinalmix": "N"
+      },
+      {
+        "@streamloopmix": "Y"
+      },
+      {
+        "@maxplayvol": "0.0"
+      },
+      {
+        "@maxlimitergain": "1.0"
+      },
+      {
+        "@limiterthreshhold": "0.75"
+      },
+      {
+        "@limiterreleaserate": "0.000020"
+      },
+      {
+        "@fadermaxdb": "6"
+      },
+      {
+        "@loopoutformat": "OGG"
+      },
+      {
+        "@streamoutformat": "OGG"
+      },
+      {
+        "@oggquality": "0.5"
+      }
+    ],
+    "fluidsynth": [
+      {
+        "@stereo": "1"
+      },
+      {
+        "@param": "synth.polyphony",
+        "@setint": "64"
+      },
+      {
+        "@param": "synth.parallel-render",
+        "@setint": "0"
+      },
+      {
+        "@interpolation": "1"
+      },
+      {
+        "@channel": "0"
+      },
+      {
+        "@tuning": "-31.76"
+      },
+      {
+        "@soundfont": "basic.sf2"
+      }
+    ]
+  }
+}

@@ -1,7 +1,6 @@
-{% set name = 'basics' %}
 ---
 -
-    name: {{ name }}
+    name: basics
     children:
         -
             name: var
@@ -82,13 +81,13 @@
         -
             name: fluidsynth
             attributes:
-                param: synth.polyphony
                 setint: 64
+                param: synth.polyphony
         -
             name: fluidsynth
             attributes:
-                param: synth.parallel-render
                 setint: 0
+                param: synth.parallel-render
         -
             name: fluidsynth
             attributes:

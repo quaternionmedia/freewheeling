@@ -10,30 +10,30 @@
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 12>55
+                        channel: 0
                 -
                     name: zone
                     attributes:
-                        channel: 1
                         keyrange: 46>64
+                        channel: 1
                 -
                     name: zone
                     attributes:
-                        channel: 2
                         keyrange: 55>76
+                        channel: 2
                 -
                     name: zone
                     attributes:
-                        channel: 3
                         keyrange: 60>76
+                        channel: 3
                 -
                     name: zone
                     attributes:
-                        channel: 12
                         keyrange: 77>127
-                        bank: 32
                         program: 18
+                        channel: 12
+                        bank: 32
         -
             name: combi
             attributes:
@@ -42,80 +42,80 @@
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 12>55
+                        channel: 0
                 -
                     name: zone
                     attributes:
-                        channel: 1
                         keyrange: 46>64
+                        channel: 1
                 -
                     name: zone
                     attributes:
-                        channel: 2
                         keyrange: 55>76
+                        channel: 2
                 -
                     name: zone
                     attributes:
-                        channel: 12
                         keyrange: 60>127
-                        bank: 0
                         program: 73
+                        channel: 12
+                        bank: 0
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 0
                 name: Viola
+                channel: 12
                 program: 41
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 0
                 name: Cello
+                channel: 12
                 program: 42
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 32
                 name: Cellos
+                channel: 12
                 program: 13
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 0
                 name: Bass
+                channel: 12
                 program: 43
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 0
                 name: Flute
+                channel: 12
                 program: 73
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 32
                 name: 2 Clarinet
+                channel: 12
                 program: 19
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 0
                 name: Oboe
+                channel: 12
                 program: 68
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 0
                 name: Bassoon
+                channel: 12
                 program: 70
         -
             name: combi
@@ -125,37 +125,37 @@
                 -
                     name: zone
                     attributes:
-                        channel: 12
                         keyrange: 12>59
-                        bank: 0
                         program: 70
+                        channel: 12
+                        bank: 0
                 -
                     name: zone
                     attributes:
-                        channel: 13
                         keyrange: 53>127
-                        bank: 0
                         program: 68
+                        channel: 13
+                        bank: 0
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 32
                 name: Big Ol Flutes
+                channel: 12
                 program: 0
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 32
                 name: Big Ol Clarinets
+                channel: 12
                 program: 10
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 32
                 name: Hybrid Flute
+                channel: 12
                 program: 14
         -
             name: combi
@@ -165,17 +165,17 @@
                 -
                     name: zone
                     attributes:
-                        channel: 12
                         keyrange: 0>127
-                        bank: 32
                         program: 11
+                        channel: 12
+                        bank: 32
                 -
                     name: zone
                     attributes:
-                        channel: 13
                         keyrange: 0>127
-                        bank: 32
                         program: 12
+                        channel: 13
+                        bank: 32
         -
             name: combi
             attributes:
@@ -184,50 +184,50 @@
                 -
                     name: zone
                     attributes:
-                        channel: 8
                         keyrange: 12>55
+                        channel: 8
                 -
                     name: zone
                     attributes:
-                        channel: 9
                         keyrange: 46>64
+                        channel: 9
                 -
                     name: zone
                     attributes:
-                        channel: 10
                         keyrange: 55>76
+                        channel: 10
                 -
                     name: zone
                     attributes:
-                        channel: 11
                         keyrange: 60>127
+                        channel: 11
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 0
                 name: Trumpet (NO MOD)
+                channel: 12
                 program: 56
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 0
                 name: Trombone (NO MOD)
+                channel: 12
                 program: 57
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 0
                 name: English Horn (NO MOD)
+                channel: 12
                 program: 69
         -
             name: patch
             attributes:
-                channel: 12
                 bank: 32
                 name: Horn (NO MOD)
+                channel: 12
                 program: 9
         -
             name: combi
@@ -237,23 +237,23 @@
                 -
                     name: zone
                     attributes:
-                        channel: 6
                         keyrange: 33>55
+                        channel: 6
                 -
                     name: zone
                     attributes:
-                        channel: 4
                         keyrange: 46>64
+                        channel: 4
                 -
                     name: zone
                     attributes:
-                        channel: 5
                         keyrange: 55>76
+                        channel: 5
                 -
                     name: zone
                     attributes:
-                        channel: 7
                         keyrange: 60>127
+                        channel: 7
         -
             name: combi
             attributes:
@@ -262,17 +262,17 @@
                 -
                     name: zone
                     attributes:
-                        channel: 12
                         keyrange: 0>72
-                        bank: 0
                         program: 57
+                        channel: 12
+                        bank: 0
                 -
                     name: zone
                     attributes:
-                        channel: 13
                         keyrange: 60>127
-                        bank: 0
                         program: 56
+                        channel: 13
+                        bank: 0
         -
             name: combi
             attributes:
@@ -281,17 +281,17 @@
                 -
                     name: zone
                     attributes:
-                        channel: 12
                         keyrange: 0>127
-                        bank: 32
                         program: 15
+                        channel: 12
+                        bank: 32
                 -
                     name: zone
                     attributes:
-                        channel: 13
                         keyrange: 0>127
-                        bank: 32
                         program: 16
+                        channel: 13
+                        bank: 32
         -
             name: combi
             attributes:
@@ -300,17 +300,17 @@
                 -
                     name: zone
                     attributes:
-                        channel: 12
                         keyrange: 0>127
-                        bank: 32
                         program: 17
+                        channel: 12
+                        bank: 32
                 -
                     name: zone
                     attributes:
-                        channel: 13
                         keyrange: 0>127
-                        bank: 32
                         program: 16
+                        channel: 13
+                        bank: 32
         -
             name: combi
             attributes:
@@ -319,24 +319,24 @@
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 60>127
+                        channel: 0
                         midiport: 1
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 12>55
+                        channel: 0
                 -
                     name: zone
                     attributes:
-                        channel: 1
                         keyrange: 46>64
+                        channel: 1
                 -
                     name: zone
                     attributes:
-                        channel: 2
                         keyrange: 55>67
+                        channel: 2
         -
             name: combi
             attributes:
@@ -345,24 +345,24 @@
                 -
                     name: zone
                     attributes:
-                        channel: 1
                         keyrange: 0>60
+                        channel: 1
                         midiport: 1
                 -
                     name: zone
                     attributes:
-                        channel: 1
                         keyrange: 55>64
+                        channel: 1
                 -
                     name: zone
                     attributes:
-                        channel: 2
                         keyrange: 55>76
+                        channel: 2
                 -
                     name: zone
                     attributes:
-                        channel: 3
                         keyrange: 60>127
+                        channel: 3
         -
             name: combi
             attributes:
@@ -371,29 +371,29 @@
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 0>127
+                        channel: 0
                         midiport: 1
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 12>55
+                        channel: 0
                 -
                     name: zone
                     attributes:
-                        channel: 1
                         keyrange: 46>64
+                        channel: 1
                 -
                     name: zone
                     attributes:
-                        channel: 2
                         keyrange: 55>76
+                        channel: 2
                 -
                     name: zone
                     attributes:
-                        channel: 3
                         keyrange: 60>127
+                        channel: 3
         -
             name: combi
             attributes:
@@ -402,16 +402,16 @@
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 0>127
+                        channel: 0
                         midiport: 1
                 -
                     name: zone
                     attributes:
-                        channel: 14
                         keyrange: 0>127
-                        bank: 32
                         program: 13
+                        channel: 14
+                        bank: 32
         -
             name: combi
             attributes:
@@ -420,16 +420,16 @@
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 0>127
+                        channel: 0
                         midiport: 1
                 -
                     name: zone
                     attributes:
-                        channel: 14
                         keyrange: 0>127
-                        bank: 0
                         program: 70
+                        channel: 14
+                        bank: 0
         -
             name: combi
             attributes:
@@ -438,14 +438,14 @@
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 0>127
+                        channel: 0
                         midiport: 1
                 -
                     name: zone
                     attributes:
-                        channel: 1
                         keyrange: 0>127
+                        channel: 1
                         midiport: 2
         -
             name: combi
@@ -455,12 +455,12 @@
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 0>127
+                        channel: 0
                         midiport: 1
                 -
                     name: zone
                     attributes:
-                        channel: 0
                         keyrange: 0>127
+                        channel: 0
                         midiport: 2

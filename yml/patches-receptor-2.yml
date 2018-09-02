@@ -5,80 +5,80 @@
         -
             name: patch
             attributes:
+                name: Syn Cello
                 channel: 0
-                name: OUTPUT TO MIDI CHANNEL 1
         -
             name: patch
             attributes:
+                name: Tine Piano
                 channel: 1
-                name: OUTPUT TO MIDI CHANNEL 2
         -
             name: patch
             attributes:
+                name: Mono Bass
                 channel: 2
-                name: OUTPUT TO MIDI CHANNEL 3
         -
             name: patch
             attributes:
+                name: CS Flute
                 channel: 3
-                name: OUTPUT TO MIDI CHANNEL 4
         -
             name: patch
             attributes:
+                name: Chunky Guitar
                 channel: 4
-                name: OUTPUT TO MIDI CHANNEL 5
         -
             name: patch
             attributes:
+                name: Wah Clav
                 channel: 5
-                name: OUTPUT TO MIDI CHANNEL 6
         -
             name: patch
             attributes:
+                name: Piano
                 channel: 6
-                name: OUTPUT TO MIDI CHANNEL 7
         -
             name: patch
             attributes:
+                name: Kohl Drum
                 channel: 7
-                name: OUTPUT TO MIDI CHANNEL 8
         -
             name: patch
             attributes:
+                name: Kit Drums
                 channel: 8
-                name: OUTPUT TO MIDI CHANNEL 9
         -
             name: patch
             attributes:
-                channel: 9
                 name: OUTPUT TO MIDI CHANNEL 10
+                channel: 9
         -
             name: patch
             attributes:
-                channel: 10
                 name: OUTPUT TO MIDI CHANNEL 11
+                channel: 10
         -
             name: patch
             attributes:
-                channel: 11
                 name: OUTPUT TO MIDI CHANNEL 12
+                channel: 11
         -
             name: patch
             attributes:
-                channel: 12
                 name: OUTPUT TO MIDI CHANNEL 13
+                channel: 12
         -
             name: patch
             attributes:
-                channel: 13
                 name: OUTPUT TO MIDI CHANNEL 14
+                channel: 13
         -
             name: patch
             attributes:
-                channel: 14
                 name: OUTPUT TO MIDI CHANNEL 15
+                channel: 14
         -
             name: patch
             attributes:
-                channel: 15
                 name: OUTPUT TO MIDI CHANNEL 16
+                channel: 15

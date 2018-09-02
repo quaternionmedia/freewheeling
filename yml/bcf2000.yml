@@ -9,780 +9,780 @@
                     name: declare
                     attributes:
                         var: VAR_bcf2000_channel
-                        type: int
                         init: 15
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_outport
-                        type: int
                         init: 2
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_ate_midicc
-                        type: int
                         init: 0
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_any_midicc
-                        type: range
                         init: 0>127
+                        type: range
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_looppage
-                        type: int
                         init: 0
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_loopidrangechange
-                        type: int
                         init: 8
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_triggerselected_midicontrol
-                        type: int
                         init: 124
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_selectnone_midicontrol
-                        type: int
                         init: 122
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_selectallplay_midicontrol
-                        type: int
                         init: 123
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_pulseselect_midicontrol
-                        type: int
                         init: 125
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_prevlooppage_midicontrol
-                        type: int
                         init: 120
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_nextlooppage_midicontrol
-                        type: int
                         init: 121
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_scenebrowse_fine_midicontrol
-                        type: int
                         init: 75
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_scenebrowse_coarse_midicontrol
-                        type: int
                         init: 74
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_scenebrowse_select_midicontrol
-                        type: int
                         init: 76
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_scenebrowse_save_midicontrol
-                        type: int
                         init: 77
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_scenemode_midicontrol
-                        type: int
                         init: 73
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_scene_mode
-                        type: int
                         init: 0
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_patchselect_midicontrol
-                        type: int
                         init: 72
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_midishift_midicontrol
-                        type: int
                         init: 118
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_keyheld_midishift
-                        type: char
                         init: 0
+                        type: char
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_overdubfeedback_midicontrol
-                        type: int
                         init: 86
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_triggervol_selected_midicontrol
-                        type: int
                         init: 89
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_patchbank_midicontrol
-                        type: int
                         init: 31
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_patchbank_back_midicontrol
-                        type: int
                         init: 32
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_patchbank_forward_midicontrol
-                        type: int
                         init: 33
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_undo_midicontrol
-                        type: int
                         init: 119
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_loopid_bcf2000
-                        type: int
                         init: 350
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000range
-                        type: range
                         init: 0>7
+                        type: range
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000controlrange1
-                        type: range
                         init: 0>7
+                        type: range
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000controlrange2
-                        type: range
                         init: 8>15
+                        type: range
                 -
                     name: declare
                     attributes:
                         var: VAR_damp_speed
-                        type: float
                         init: 0.04
+                        type: float
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_loopamp_adj
-                        type: float
                         init: 0.05
+                        type: float
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000selectcc
-                        type: int
                         init: 40
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000miscknobcc
-                        type: int
                         init: 50
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000auxtriggercc
-                        type: int
                         init: 100
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000capturecc
-                        type: int
                         init: 110
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000ampcc
-                        type: int
                         init: 90
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000fadercc
-                        type: int
                         init: 80
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_fadermode
-                        type: char
                         init: 1
+                        type: char
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_fadermode_midicontrol
-                        type: int
                         init: 70
+                        type: int
                 -
                     name: declare
                     attributes:
                         var: VAR_controlpage
-                        type: char
                         init: 0
+                        type: char
                 -
                     name: declare
                     attributes:
                         var: VAR_bcf2000_interfaceid
-                        type: int
                         init: 0
+                        type: int
                 -
                     name: binding
                     attributes:
-                        input: start-interface
-                        output2: set-variable
                         parameters1: layoutid=0 and                   loopid=VAR_bcf2000range+VAR_loopid_bcf2000
                         parameters2: var=VAR_bcf2000_interfaceid and value=interfaceid
+                        input: start-interface
+                        output2: set-variable
                         output1: video-show-loop
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000controlrange1+VAR_bcf2000ampcc and controlval=0>64
-                        parameters: loopid=VAR_loopid_bcf2000+controlnum-VAR_bcf2000ampcc and                  ampfactor=controlval*VAR_bcf2000_loopamp_adj+1.0
+                        input: midicontroller
                         output: adjust-loop-amplifier
+                        parameters: loopid=VAR_loopid_bcf2000+controlnum-VAR_bcf2000ampcc and                  ampfactor=controlval*VAR_bcf2000_loopamp_adj+1.0
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000controlrange1+VAR_bcf2000ampcc and controlval=64>127
-                        parameters: loopid=VAR_loopid_bcf2000+controlnum-VAR_bcf2000ampcc and                  ampfactor=controlval-128*VAR_bcf2000_loopamp_adj+1.0
+                        input: midicontroller
                         output: adjust-loop-amplifier
+                        parameters: loopid=VAR_loopid_bcf2000+controlnum-VAR_bcf2000ampcc and                  ampfactor=controlval-128*VAR_bcf2000_loopamp_adj+1.0
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=DISPLAY_browser_scene and adjust=controlval and jumpadjust=0
-                        output2: browser-move-to-item
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenebrowse_fine_midicontrol and                  controlval=0>64
                         parameters1: sub=100 and param1=DISPLAY_browser_scene
+                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenebrowse_fine_midicontrol and                  controlval=0>64
+                        input: midicontroller
+                        output2: browser-move-to-item
                         output1: go-sub
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=DISPLAY_browser_scene and adjust=controlval-128 and jumpadjust=0
-                        output2: browser-move-to-item
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenebrowse_fine_midicontrol and                  controlval=64>127
                         parameters1: sub=100 and param1=DISPLAY_browser_scene
+                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenebrowse_fine_midicontrol and                  controlval=64>127
+                        input: midicontroller
+                        output2: browser-move-to-item
                         output1: go-sub
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=DISPLAY_browser_scene
-                        output2: browser-select-item
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenebrowse_select_midicontrol and                  controlval=VAR_switch_on
                         parameters1: sub=100 and param1=DISPLAY_browser_scene
+                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenebrowse_select_midicontrol and                  controlval=VAR_switch_on
+                        input: midicontroller
+                        output2: browser-select-item
                         output1: go-sub
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenebrowse_save_midicontrol and                  controlval=VAR_switch_on
+                        input: midicontroller
                         output: save-current-scene
                 -
                     name: binding
                     attributes:
                         parameters2: interfaceid=0 and                                                 displayid=DISPLAY_scenes and                                                show=VAR_scene_mode
-                        output2: video-show-display
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenemode_midicontrol and                  controlval=VAR_switch_on
                         parameters1: var=VAR_scene_mode and value=1
+                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenemode_midicontrol and                  controlval=VAR_switch_on
+                        input: midicontroller
+                        output2: video-show-display
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: interfaceid=0 and                                                displayid=DISPLAY_scenes and                                                show=VAR_scene_mode
-                        output2: video-show-display
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenemode_midicontrol
                         parameters1: var=VAR_scene_mode and value=0
+                        conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_scenemode_midicontrol
+                        input: midicontroller
+                        output2: video-show-display
                         output1: set-variable
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                   VAR_scene_mode=1 and                  controlnum=VAR_bcf2000_prevlooppage_midicontrol and                   controlval=VAR_switch_on
+                        input: midicontroller
+                        output: video-show-snapshot-page
                         parameters: interfaceid=0 and                                                    displayid=DISPLAY_scenes and                                                    page=-1
-                        output: video-show-snapshot-page
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                   VAR_scene_mode=1 and                  controlnum=VAR_bcf2000_nextlooppage_midicontrol and                   controlval=VAR_switch_on
-                        parameters: interfaceid=0 and                                                    displayid=DISPLAY_scenes and                                                    page=1
+                        input: midicontroller
                         output: video-show-snapshot-page
+                        parameters: interfaceid=0 and                                                    displayid=DISPLAY_scenes and                                                    page=1
                 -
                     name: binding
                     attributes:
-                        output3: video-show-loop
                         parameters2: var=VAR_bcf2000_looppage and                                          value=VAR_bcf2000_looppage+1
-                        output2: set-variable
-                        input: key
+                        output3: video-show-loop
+                        parameters3: layoutid=0 and loopid=VAR_bcf2000range+VAR_loopid_bcf2000
+                        parameters1: var=VAR_loopid_bcf2000 and                                           value=VAR_loopid_bcf2000+                                                VAR_loopidrangechange
                         conditions: SYSTEM_cur_switchable_interface=VAR_bcf2000_interfaceid and key=x and keydown=1
-                        parameters1: var=VAR_loopid_bcf2000 and                                           value=VAR_loopid_bcf2000+                                                VAR_loopidrangechange
-                        parameters3: layoutid=0 and loopid=VAR_bcf2000range+VAR_loopid_bcf2000
-                        output1: set-variable
-                -
-                    name: binding
-                    attributes:
-                        output3: video-show-loop
-                        parameters2: var=VAR_bcf2000_looppage and                                          value=VAR_bcf2000_looppage-1
-                        output2: set-variable
                         input: key
-                        conditions: SYSTEM_cur_switchable_interface=VAR_bcf2000_interfaceid and key=z and keydown=1
-                        parameters1: var=VAR_loopid_bcf2000 and                                           value=VAR_loopid_bcf2000-                                                VAR_loopidrangechange
-                        parameters3: layoutid=0 and loopid=VAR_bcf2000range+VAR_loopid_bcf2000
+                        output2: set-variable
                         output1: set-variable
                 -
                     name: binding
                     attributes:
-                        output3: video-show-loop
                         parameters2: var=VAR_bcf2000_looppage and                                          value=VAR_bcf2000_looppage-1
-                        output2: set-variable
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_prevlooppage_midicontrol and                   controlval=VAR_switch_on
-                        parameters1: var=VAR_loopid_bcf2000 and                                           value=VAR_loopid_bcf2000-                                                VAR_loopidrangechange
-                        parameters3: layoutid=0 and loopid=VAR_bcf2000range+VAR_loopid_bcf2000
-                        output1: set-variable
-                -
-                    name: binding
-                    attributes:
                         output3: video-show-loop
-                        parameters2: var=VAR_bcf2000_looppage and                                          value=VAR_bcf2000_looppage+1
-                        output2: set-variable
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_nextlooppage_midicontrol and                   controlval=VAR_switch_on
-                        parameters1: var=VAR_loopid_bcf2000 and                                           value=VAR_loopid_bcf2000+                                                VAR_loopidrangechange
                         parameters3: layoutid=0 and loopid=VAR_bcf2000range+VAR_loopid_bcf2000
+                        parameters1: var=VAR_loopid_bcf2000 and                                           value=VAR_loopid_bcf2000-                                                VAR_loopidrangechange
+                        conditions: SYSTEM_cur_switchable_interface=VAR_bcf2000_interfaceid and key=z and keydown=1
+                        input: key
+                        output2: set-variable
                         output1: set-variable
                 -
                     name: binding
                     attributes:
+                        parameters2: var=VAR_bcf2000_looppage and                                          value=VAR_bcf2000_looppage-1
+                        output3: video-show-loop
+                        parameters3: layoutid=0 and loopid=VAR_bcf2000range+VAR_loopid_bcf2000
+                        parameters1: var=VAR_loopid_bcf2000 and                                           value=VAR_loopid_bcf2000-                                                VAR_loopidrangechange
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_prevlooppage_midicontrol and                   controlval=VAR_switch_on
                         input: midicontroller
+                        output2: set-variable
+                        output1: set-variable
+                -
+                    name: binding
+                    attributes:
+                        parameters2: var=VAR_bcf2000_looppage and                                          value=VAR_bcf2000_looppage+1
+                        output3: video-show-loop
+                        parameters3: layoutid=0 and loopid=VAR_bcf2000range+VAR_loopid_bcf2000
+                        parameters1: var=VAR_loopid_bcf2000 and                                           value=VAR_loopid_bcf2000+                                                VAR_loopidrangechange
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_nextlooppage_midicontrol and                   controlval=VAR_switch_on
+                        input: midicontroller
+                        output2: set-variable
+                        output1: set-variable
+                -
+                    name: binding
+                    attributes:
                         conditions: VAR_keyheld_space=1 and                  midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_pulseselect_midicontrol and                  controlval=VAR_switch_on
-                        parameters: pulse=0
+                        input: midicontroller
                         output: delete-pulse
-                -
-                    name: binding
-                    attributes:
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_pulseselect_midicontrol and                  controlval=VAR_switch_on
                         parameters: pulse=0
-                        output: select-pulse
                 -
                     name: binding
                     attributes:
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_pulseselect_midicontrol and                  controlval=VAR_switch_on
                         input: midicontroller
+                        output: select-pulse
+                        parameters: pulse=0
+                -
+                    name: binding
+                    attributes:
                         conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_fadermode_midicontrol and                   controlval=VAR_switch_on
-                        parameters: var=VAR_fadermode and maxvalue=1
+                        input: midicontroller
                         output: toggle-variable
+                        parameters: var=VAR_fadermode and maxvalue=1
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=VAR_cur_browser and                   idx=controlval/127.*16
-                        output2: browser-move-to-item-absolute
-                        input: midicontroller
-                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+7
                         parameters1: sub=100 and param1=DISPLAY_browser_patch
+                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+7
+                        input: midicontroller
+                        output2: browser-move-to-item-absolute
                         output1: go-sub
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_patchselect_midicontrol
-                        parameters: browserid=VAR_cur_browser
+                        input: midicontroller
                         output: browser-select-item
+                        parameters: browserid=VAR_cur_browser
                 -
                     name: binding
                     attributes:
                         parameters2: sub=800 and param1=controlval/127.0
-                        output2: go-sub
-                        input: midicontroller
-                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+4
                         parameters1: fadervol=controlval/127.0
+                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+4
+                        input: midicontroller
+                        output2: go-sub
                         output1: set-master-in-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
-                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+5
                         parameters1: fadervol=controlval/127.0
+                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+5
+                        input: midicontroller
                         output1: set-master-out-volume
                 -
                     name: binding
                     attributes:
                         parameters2: sub=801 and param1=controlval/127.0
-                        output2: go-sub
-                        input: midicontroller
-                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+0
                         parameters1: input=1 and fadervol=controlval/127.0
+                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+0
+                        input: midicontroller
+                        output2: go-sub
                         output1: set-in-volume
                 -
                     name: binding
                     attributes:
                         parameters2: sub=802 and param1=controlval/127.0
-                        output2: go-sub
-                        input: midicontroller
-                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+1
                         parameters1: input=2 and fadervol=controlval/127.0
+                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+1
+                        input: midicontroller
+                        output2: go-sub
                         output1: set-in-volume
                 -
                     name: binding
                     attributes:
                         parameters2: sub=803 and param1=controlval/127.0
-                        output2: go-sub
-                        input: midicontroller
-                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+2
                         parameters1: input=3 and fadervol=controlval/127.0
+                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+2
+                        input: midicontroller
+                        output2: go-sub
                         output1: set-in-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
-                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+3
                         parameters1: input=4 and fadervol=controlval/127.0
+                        conditions: VAR_fadermode=1 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000fadercc+3
+                        input: midicontroller
                         output1: set-in-volume
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: VAR_fadermode=0 and VAR_controlpage=0 and midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000controlrange1+VAR_bcf2000fadercc
-                        parameters: loopid=VAR_loopid_bcf2000+controlnum-VAR_bcf2000fadercc and                  vol=controlval/127.0*2.0
+                        input: midicontroller
                         output: set-trigger-volume
+                        parameters: loopid=VAR_loopid_bcf2000+controlnum-VAR_bcf2000fadercc and                  vol=controlval/127.0*2.0
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_overdubfeedback_midicontrol
-                        parameters: var=VAR_overdubfeedback and                                        value=controlval/127
+                        input: midicontroller
                         output: set-variable
+                        parameters: var=VAR_overdubfeedback and                                        value=controlval/127
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_triggervol_selected_midicontrol
-                        parameters: setid=0 and vol=controlval*2.0/127
+                        input: midicontroller
                         output: set-selected-loops-trigger-volume
+                        parameters: setid=0 and vol=controlval*2.0/127
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: VAR_keyheld_space=1 and                   midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000_undo_midicontrol and                  controlval=VAR_switch_on
+                        input: midicontroller
                         output: erase-all-loops
                 -
                     name: binding
                     attributes:
                         parameters2: var=VAR_xferloop and value=0
-                        output2: set-variable
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_undo_midicontrol and                  controlval=VAR_switch_on
                         parameters1: loopid=SYSTEM_loopid_lastrecord_0
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_undo_midicontrol and                  controlval=VAR_switch_on
+                        input: midicontroller
+                        output2: set-variable
                         output1: erase-loop
                 -
                     name: binding
                     attributes:
-                        output3: video-show-display
                         parameters2: var=VAR_cur_browser and                                           value=DISPLAY_browser_patch
-                        output4: patchbrowser-move-to-bank-by-index
-                        output2: set-variable
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_patchbank_midicontrol
-                        parameters1: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=0
+                        output3: video-show-display
                         parameters3: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=1
-                        output1: video-show-display
+                        output4: patchbrowser-move-to-bank-by-index
+                        parameters1: interfaceid=0 and                                                displayid=VAR_cur_browser and                                                show=0
                         parameters4: index=controlval*SYSTEM_num_patchbanks/128
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_patchbank_midicontrol
+                        input: midicontroller
+                        output2: set-variable
+                        output1: video-show-display
                 -
                     name: binding
                     attributes:
-                        output3: video-show-display
                         parameters2: var=VAR_cur_browser and                                           value=DISPLAY_browser_patch
-                        output4: patchbrowser-move-to-bank
-                        output2: set-variable
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_patchbank_back_midicontrol and                  controlval=VAR_switch_on
-                        parameters1: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=0
+                        output3: video-show-display
                         parameters3: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=1
-                        output1: video-show-display
+                        output4: patchbrowser-move-to-bank
+                        parameters1: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=0
                         parameters4: direction=-1
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_patchbank_back_midicontrol and                  controlval=VAR_switch_on
+                        input: midicontroller
+                        output2: set-variable
+                        output1: video-show-display
                 -
                     name: binding
                     attributes:
-                        output3: video-show-display
                         parameters2: var=VAR_cur_browser and                                           value=DISPLAY_browser_patch
-                        output4: patchbrowser-move-to-bank
-                        output2: set-variable
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_patchbank_forward_midicontrol and                  controlval=VAR_switch_on
-                        parameters1: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=0
+                        output3: video-show-display
                         parameters3: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=1
-                        output1: video-show-display
+                        output4: patchbrowser-move-to-bank
+                        parameters1: interfaceid=0 and                                                 displayid=VAR_cur_browser and                                                show=0
                         parameters4: direction=1
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_patchbank_forward_midicontrol and                  controlval=VAR_switch_on
+                        input: midicontroller
+                        output2: set-variable
+                        output1: video-show-display
                 -
                     name: binding
                     attributes:
                         parameters2: var=VAR_keyheld_space and                                          value=1
-                        output2: set-variable
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_midishift_midicontrol and                  controlval=VAR_switch_on
                         parameters1: var=VAR_keyheld_midishift and                                          value=1
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_midishift_midicontrol and                  controlval=VAR_switch_on
+                        input: midicontroller
+                        output2: set-variable
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: var=VAR_keyheld_space and                                          value=0
-                        output2: set-variable
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_midishift_midicontrol and                  controlval=VAR_switch_off
                         parameters1: var=VAR_keyheld_midishift and                                          value=0
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_midishift_midicontrol and                  controlval=VAR_switch_off
+                        input: midicontroller
+                        output2: set-variable
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=1 and jumpadjust=0
-                        output2: browser-move-to-item
-                        input: midiprogramchange
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: programval=VAR_cur_program+1 and VAR_keyheld_midishift=0
-                        parameters1: var=VAR_cur_program and value=programval
+                        input: midiprogramchange
+                        output2: browser-move-to-item
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=1 and jumpadjust=0
-                        output2: browser-move-to-item
-                        input: midiprogramchange
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: VAR_keyheld_midishift=0 and VAR_cur_program=127 and programval=0
-                        parameters1: var=VAR_cur_program and value=programval
+                        input: midiprogramchange
+                        output2: browser-move-to-item
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=-1 and jumpadjust=0
-                        output2: browser-move-to-item
-                        input: midiprogramchange
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: programval=VAR_cur_program-1 and VAR_keyheld_midishift=0
-                        parameters1: var=VAR_cur_program and value=programval
+                        input: midiprogramchange
+                        output2: browser-move-to-item
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=-1 and jumpadjust=0
-                        output2: browser-move-to-item
-                        input: midiprogramchange
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: VAR_keyheld_midishift=0 and VAR_cur_program=0 and programval=127
-                        parameters1: var=VAR_cur_program and value=programval
+                        input: midiprogramchange
+                        output2: browser-move-to-item
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=1
-                        output2: browser-move-to-item
-                        input: midiprogramchange
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: programval=VAR_cur_program+1 and VAR_keyheld_midishift=1
-                        parameters1: var=VAR_cur_program and value=programval
+                        input: midiprogramchange
+                        output2: browser-move-to-item
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=1
-                        output2: browser-move-to-item
-                        input: midiprogramchange
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: VAR_keyheld_midishift=1 and VAR_cur_program=127 and programval=0
-                        parameters1: var=VAR_cur_program and value=programval
+                        input: midiprogramchange
+                        output2: browser-move-to-item
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=-1
-                        output2: browser-move-to-item
-                        input: midiprogramchange
+                        parameters1: var=VAR_cur_program and value=programval
                         conditions: programval=VAR_cur_program-1 and VAR_keyheld_midishift=1
-                        parameters1: var=VAR_cur_program and value=programval
+                        input: midiprogramchange
+                        output2: browser-move-to-item
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         parameters2: browserid=VAR_cur_browser and                                                  adjust=0 and jumpadjust=-1
-                        output2: browser-move-to-item
-                        input: midiprogramchange
-                        conditions: VAR_keyheld_midishift=1 and VAR_cur_program=0 and programval=127
                         parameters1: var=VAR_cur_program and value=programval
+                        conditions: VAR_keyheld_midishift=1 and VAR_cur_program=0 and programval=127
+                        input: midiprogramchange
+                        output2: browser-move-to-item
                         output1: set-variable
                 -
                     name: binding
                     attributes:
                         input: midiprogramchange
-                        parameters: var=VAR_cur_program and value=programval
                         output: set-variable
+                        parameters: var=VAR_cur_program and value=programval
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                  VAR_scene_mode=1 and                  controlnum=VAR_bcf2000range+VAR_bcf2000capturecc and                   controlval=VAR_switch_on
-                        parameters: sub=101 and param1=controlnum-VAR_bcf2000capturecc+                  SYSTEM_snapshot_page_firstidx
+                        input: midicontroller
                         output: go-sub
+                        parameters: sub=101 and param1=controlnum-VAR_bcf2000capturecc+                  SYSTEM_snapshot_page_firstidx
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                  VAR_scene_mode=1 and                  controlnum=VAR_bcf2000range+VAR_bcf2000auxtriggercc and                   controlval=VAR_switch_on
-                        parameters: snapid=controlnum-VAR_bcf2000auxtriggercc+                  SYSTEM_snapshot_page_firstidx
+                        input: midicontroller
                         output: create-snapshot
+                        parameters: snapid=controlnum-VAR_bcf2000auxtriggercc+                  SYSTEM_snapshot_page_firstidx
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                  controlnum=VAR_bcf2000_triggerselected_midicontrol and                  controlval=VAR_switch_on
-                        parameters: setid=0 and vol=1.0 and                                                  toggleloops=1
+                        input: midicontroller
                         output: trigger-selected-loops
+                        parameters: setid=0 and vol=1.0 and                                                  toggleloops=1
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                  VAR_keyheld_space=1 and                  controlnum=VAR_bcf2000_selectnone_midicontrol and                  controlval=VAR_switch_on
+                        input: midicontroller
+                        output: select-all-loops
                         parameters: setid=0 and select=1
-                        output: select-all-loops
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                  VAR_keyheld_space=1 and                  controlnum=VAR_bcf2000_selectallplay_midicontrol and                  controlval=VAR_switch_on
-                        parameters: setid=0
+                        input: midicontroller
                         output: invert-selection
+                        parameters: setid=0
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                  controlnum=VAR_bcf2000_selectnone_midicontrol and                  controlval=VAR_switch_on
-                        parameters: setid=0 and select=0
+                        input: midicontroller
                         output: select-all-loops
+                        parameters: setid=0 and select=0
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                  controlnum=VAR_bcf2000_selectallplay_midicontrol and                  controlval=VAR_switch_on
-                        parameters: setid=0 and playing=1
+                        input: midicontroller
                         output: select-only-playing-loops
+                        parameters: setid=0 and playing=1
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                  controlnum=VAR_bcf2000range+VAR_bcf2000selectcc and                  controlval=VAR_switch_on
-                        parameters: setid=0 and loopid=controlnum-VAR_bcf2000selectcc+                  VAR_loopid_bcf2000
+                        input: midicontroller
                         output: toggle-select-loop
+                        parameters: setid=0 and loopid=controlnum-VAR_bcf2000selectcc+                  VAR_loopid_bcf2000
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                           controlnum=VAR_bcf2000range+VAR_bcf2000miscknobcc and                           controlval=0>64
+                        input: midicontroller
+                        output: adjust-selected-loops-amp
                         parameters: setid=0 and                  ampfactor=controlval*VAR_bcf2000_loopamp_adj+1.0
-                        output: adjust-selected-loops-amp
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                           controlnum=VAR_bcf2000range+VAR_bcf2000miscknobcc and                           controlval=64>127
-                        parameters: setid=0 and                  ampfactor=controlval-128*VAR_bcf2000_loopamp_adj+1.0
+                        input: midicontroller
                         output: adjust-selected-loops-amp
+                        parameters: setid=0 and                  ampfactor=controlval-128*VAR_bcf2000_loopamp_adj+1.0
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: VAR_keyheld_space=1 and                   midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000range+VAR_bcf2000capturecc and                   controlval=VAR_switch_on
-                        parameters: loopid=controlnum-VAR_bcf2000capturecc+VAR_loopid_bcf2000
+                        input: midicontroller
                         output: erase-loop
+                        parameters: loopid=controlnum-VAR_bcf2000capturecc+VAR_loopid_bcf2000
                 -
                     name: binding
                     attributes:
                         parameters2: var=VAR_xferloop and value=0
-                        output2: set-variable
-                        input: midicontroller
-                        conditions: VAR_xferloop=1 and                   midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000range+VAR_bcf2000capturecc and                  controlval=VAR_switch_on
                         parameters1: oldloopid=VAR_xferidx and                    newloopid=controlnum-VAR_bcf2000capturecc+VAR_loopid_bcf2000
+                        conditions: VAR_xferloop=1 and                   midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000range+VAR_bcf2000capturecc and                  controlval=VAR_switch_on
+                        input: midicontroller
+                        output2: set-variable
                         output1: move-loop
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and                   controlnum=VAR_bcf2000range+VAR_bcf2000auxtriggercc and                   controlval=VAR_switch_on
-                        parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=controlnum-VAR_bcf2000auxtriggercc+VAR_loopid_bcf2000                  and vol=1.0
+                        input: midicontroller
                         output: trigger-loop
+                        parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=controlnum-VAR_bcf2000auxtriggercc+VAR_loopid_bcf2000                  and vol=1.0
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
-                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000range+VAR_bcf2000capturecc and                   controlval=VAR_switch_on
                         parameters1: loopid=controlnum-VAR_bcf2000capturecc+VAR_loopid_bcf2000 and vol=1.0
+                        conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000range+VAR_bcf2000capturecc and                   controlval=VAR_switch_on
+                        input: midicontroller
                         output1: trigger-loop
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
                         conditions: midichannel=VAR_bcf2000_channel and controlnum=VAR_bcf2000_any_midicc
-                        parameters: var=VAR_bcf2000_ate_midicc and value=controlnum
+                        input: midicontroller
                         output: set-variable
+                        parameters: var=VAR_bcf2000_ate_midicc and value=controlnum
         -
             name: graphics
             children:
                 -
                     name: layout
                     attributes:
-                        pos: 0.00,0.10
-                        show: 0
                         scale: 0.35,0.45
                         id: 0
-                        namepos: 0.0,0.16
-                        label: 1
-                        name: BCF2000
+                        pos: 0.00,0.10
+                        show: 0
                         elabel: 0
+                        label: 1
+                        namepos: 0.0,0.16
+                        name: BCF2000
                     children:
                         -
                             name: element
                             attributes:
-                                base: 0.0,0.0
                                 looppos: 0.17,0.17
                                 id: 0
-                                namepos: 0.0,0.35
-                                name: LOOP1
                                 loopsize: 0.35
+                                name: LOOP1
+                                namepos: 0.0,0.35
+                                base: 0.0,0.0
                             children:
                                 -
                                     name: box
@@ -792,12 +792,12 @@
                         -
                             name: element
                             attributes:
-                                base: 0.35,0.0
                                 looppos: 0.17,0.17
                                 id: 1
-                                namepos: 0.0,0.35
-                                name: LOOP2
                                 loopsize: 0.35
+                                name: LOOP2
+                                namepos: 0.0,0.35
+                                base: 0.35,0.0
                             children:
                                 -
                                     name: box
@@ -807,12 +807,12 @@
                         -
                             name: element
                             attributes:
-                                base: 0.7,0.0
                                 looppos: 0.17,0.17
                                 id: 2
-                                namepos: 0.0,0.35
-                                name: LOOP3
                                 loopsize: 0.35
+                                name: LOOP3
+                                namepos: 0.0,0.35
+                                base: 0.7,0.0
                             children:
                                 -
                                     name: box
@@ -822,12 +822,12 @@
                         -
                             name: element
                             attributes:
-                                base: 1.05,0.0
                                 looppos: 0.17,0.17
                                 id: 3
-                                namepos: 0.35,0.50
-                                name: LOOP4
                                 loopsize: 0.35
+                                name: LOOP4
+                                namepos: 0.35,0.50
+                                base: 1.05,0.0
                             children:
                                 -
                                     name: box
@@ -837,12 +837,12 @@
                         -
                             name: element
                             attributes:
-                                base: 1.4,0.0
                                 looppos: 0.17,0.17
                                 id: 4
-                                namepos: 0.15,1.10
-                                name: LOOP5
                                 loopsize: 0.35
+                                name: LOOP5
+                                namepos: 0.15,1.10
+                                base: 1.4,0.0
                             children:
                                 -
                                     name: box
@@ -852,12 +852,12 @@
                         -
                             name: element
                             attributes:
-                                base: 1.75,0.0
                                 looppos: 0.17,0.17
                                 id: 5
-                                namepos: 0.15,1.10
-                                name: LOOP6
                                 loopsize: 0.35
+                                name: LOOP6
+                                namepos: 0.15,1.10
+                                base: 1.75,0.0
                             children:
                                 -
                                     name: box
@@ -867,12 +867,12 @@
                         -
                             name: element
                             attributes:
-                                base: 2.1,0.0
                                 looppos: 0.17,0.17
                                 id: 6
-                                namepos: 0.25,0.50
-                                name: LOOP7
                                 loopsize: 0.35
+                                name: LOOP7
+                                namepos: 0.25,0.50
+                                base: 2.1,0.0
                             children:
                                 -
                                     name: box
@@ -882,12 +882,12 @@
                         -
                             name: element
                             attributes:
-                                base: 2.45,0.0
                                 looppos: 0.17,0.17
                                 id: 7
-                                namepos: 0.15,1.10
-                                name: LOOP8
                                 loopsize: 0.35
+                                name: LOOP8
+                                namepos: 0.15,1.10
+                                base: 2.45,0.0
                             children:
                                 -
                                     name: box
@@ -897,12 +897,12 @@
                         -
                             name: element
                             attributes:
-                                base: 0.0,0.45
                                 looppos: 0.17,0.17
                                 id: 8
-                                namepos: 0.0,0.35
-                                name: LOOP9
                                 loopsize: 0.35
+                                name: LOOP9
+                                namepos: 0.0,0.35
+                                base: 0.0,0.45
                             children:
                                 -
                                     name: box
@@ -912,12 +912,12 @@
                         -
                             name: element
                             attributes:
-                                base: 0.35,0.45
                                 looppos: 0.17,0.17
                                 id: 9
-                                namepos: 0.0,0.35
-                                name: LOOP10
                                 loopsize: 0.35
+                                name: LOOP10
+                                namepos: 0.0,0.35
+                                base: 0.35,0.45
                             children:
                                 -
                                     name: box
@@ -927,12 +927,12 @@
                         -
                             name: element
                             attributes:
-                                base: 0.7,0.45
                                 looppos: 0.17,0.17
                                 id: 10
-                                namepos: 0.0,0.35
-                                name: LOOP11
                                 loopsize: 0.35
+                                name: LOOP11
+                                namepos: 0.0,0.35
+                                base: 0.7,0.45
                             children:
                                 -
                                     name: box
@@ -942,12 +942,12 @@
                         -
                             name: element
                             attributes:
-                                base: 1.05,0.45
                                 looppos: 0.17,0.17
                                 id: 11
-                                namepos: 0.35,0.50
-                                name: LOOP12
                                 loopsize: 0.35
+                                name: LOOP12
+                                namepos: 0.35,0.50
+                                base: 1.05,0.45
                             children:
                                 -
                                     name: box
@@ -957,12 +957,12 @@
                         -
                             name: element
                             attributes:
-                                base: 1.4,0.45
                                 looppos: 0.17,0.17
                                 id: 12
-                                namepos: 0.50,1.35
-                                name: LOOP13
                                 loopsize: 0.35
+                                name: LOOP13
+                                namepos: 0.50,1.35
+                                base: 1.4,0.45
                             children:
                                 -
                                     name: box
@@ -972,12 +972,12 @@
                         -
                             name: element
                             attributes:
-                                base: 1.75,0.45
                                 looppos: 0.17,0.17
                                 id: 13
-                                namepos: 0.15,1.35
-                                name: LOOP14
                                 loopsize: 0.35
+                                name: LOOP14
+                                namepos: 0.15,1.35
+                                base: 1.75,0.45
                             children:
                                 -
                                     name: box
@@ -987,12 +987,12 @@
                         -
                             name: element
                             attributes:
-                                base: 2.1,0.45
                                 looppos: 0.17,0.17
                                 id: 14
-                                namepos: 0.25,1.35
-                                name: LOOP15
                                 loopsize: 0.35
+                                name: LOOP15
+                                namepos: 0.25,1.35
+                                base: 2.1,0.45
                             children:
                                 -
                                     name: box
@@ -1002,12 +1002,12 @@
                         -
                             name: element
                             attributes:
-                                base: 2.45,0.45
                                 looppos: 0.17,0.17
                                 id: 15
-                                namepos: 0.15,1.35
-                                name: LOOP16
                                 loopsize: 0.35
+                                name: LOOP16
+                                namepos: 0.15,1.35
+                                base: 2.45,0.45
                             children:
                                 -
                                     name: box

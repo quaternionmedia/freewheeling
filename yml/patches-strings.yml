@@ -1,0 +1,25 @@
+---
+-
+    name: patchlist
+    children:
+        -
+            name: patch
+            attributes:
+                name: 1st Violins Legato
+                channel: 0
+                bank: 0
+                program: 0
+        -
+            name: patch
+            attributes:
+                name: Basses Con Sordino
+                channel: 1
+                bank: 0
+                program: 0
+        -
+            name: patch
+            attributes:
+                name: String Ensemble Legato
+                channel: 2
+                bank: 0
+                program: 0

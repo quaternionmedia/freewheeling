@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+
+USAGE_TEXT = """
+XML to JSON ... and back again!
+
+Read a file, convert, and write results to stdout.
+
+Usage: ./xj <option> <in_file>
+
+Options:
+	-h	Display help info
+	-j	Convert JSON file to XML document
+	-x	Convert XML document to JSON
+	-v	Show version info
+"""
+
+def usage():
+    print(USAGE_TEXT)
+    sys.exit(-1)
+
+import sys
+import xmltodict, json
+
+def readFile(path):
+	with open(path, 'r') as f:
+		return f.read()
+
+def xToJ(x):
+    result = json.dumps(xmltodict.parse(readFile(x)))
+    sys.stdout.write(result)
+
+def jToX(j):
+    result =  xmltodict.unparse(json.loads(readFile(j)))
+    sys.stdout.write(result)
+
+def main():
+    args = sys.argv[1:]
+    if len(args) != 2:
+        usage()
+    option = args[0]
+    inFileName = args[1]
+    if option == '-x':
+        xToJ(inFileName)
+    elif option == '-j':
+        jToX(inFileName)
+    else:
+        usage()
+
+if __name__ == '__main__':
+    main()

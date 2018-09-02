@@ -13,24 +13,24 @@
         -
             name: font
             attributes:
-                size: 20
-                file: verabd.ttf
                 name: main
-        -
-            name: font
-            attributes:
-                size: 14
                 file: verabd.ttf
+                size: 20
+        -
+            name: font
+            attributes:
                 name: small
+                file: verabd.ttf
+                size: 14
         -
             name: font
             attributes:
-                size: 10
-                file: vera.ttf
                 name: tiny
+                file: vera.ttf
+                size: 10
         -
             name: font
             attributes:
-                size: 16
-                file: vera.ttf
                 name: help
+                file: vera.ttf
+                size: 16

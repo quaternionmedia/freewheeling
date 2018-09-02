@@ -37,7 +37,7 @@ xmltoyml() {
 for i in $(ls ~/.fweelin/*.xml); do
 	FILENAME=$(basename $i .xml)
 	echo converting $FILENAME
-	RESULT="$(./xy -x2y $YML_DIR/$i)"
+	RESULT="$(./xy -x2y $i)"
  	if [ -n "$RESULT" ] ; then
 		echo "$RESULT" > $YML_DIR/$FILENAME.yml
 

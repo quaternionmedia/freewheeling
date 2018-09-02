@@ -8,119 +8,119 @@
                 -
                     name: declare
                     attributes:
-                        type: float
-                        init: 16384.0
                         var: VAR_fadertolin_input1
+                        init: 16384.0
+                        type: float
                 -
                     name: declare
                     attributes:
-                        type: float
-                        init: 16384.0
                         var: VAR_fadertolin_input2
+                        init: 16384.0
+                        type: float
                 -
                     name: declare
                     attributes:
-                        type: float
-                        init: 16384.0
                         var: VAR_fadertolin_input3
-                -
-                    name: declare
-                    attributes:
-                        type: float
-                        init: 1.0
-                        var: VAR_fadertolin_masterin
-                -
-                    name: declare
-                    attributes:
-                        type: float
                         init: 16384.0
+                        type: float
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_fadertolin_masterin
+                        init: 1.0
+                        type: float
+                -
+                    name: declare
+                    attributes:
                         var: VAR_hdsp_mixerscale
+                        init: 16384.0
+                        type: float
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 0
                         var: VAR_hdsp_hwid
+                        init: 0
+                        type: int
                 -
                     name: declare
                     attributes:
-                        type: int
-                        init: 5
                         var: VAR_hdsp_mixer_numid
+                        init: 5
+                        type: int
                 -
                     name: binding
                     attributes:
-                        output1: alsa-mixer-control-set
                         parameters2: hwid=VAR_hdsp_hwid and numid=VAR_hdsp_mixer_numid and val1=0 and val2=27 and val3=VAR_fadertolin_input1*VAR_fadertolin_masterin
                         output2: alsa-mixer-control-set
-                        input: go-sub
                         parameters1: hwid=VAR_hdsp_hwid and numid=VAR_hdsp_mixer_numid and val1=0 and val2=26 and val3=VAR_fadertolin_input1*VAR_fadertolin_masterin
+                        output1: alsa-mixer-control-set
+                        input: go-sub
                         conditions: sub=901
                 -
                     name: binding
                     attributes:
-                        output1: alsa-mixer-control-set
                         parameters2: hwid=VAR_hdsp_hwid and numid=VAR_hdsp_mixer_numid and val1=1 and val2=27 and val3=VAR_fadertolin_input2*VAR_fadertolin_masterin
                         output2: alsa-mixer-control-set
-                        input: go-sub
                         parameters1: hwid=VAR_hdsp_hwid and numid=VAR_hdsp_mixer_numid and val1=1 and val2=26 and val3=VAR_fadertolin_input2*VAR_fadertolin_masterin
+                        output1: alsa-mixer-control-set
+                        input: go-sub
                         conditions: sub=902
                 -
                     name: binding
                     attributes:
-                        output1: alsa-mixer-control-set
                         parameters2: hwid=VAR_hdsp_hwid and numid=VAR_hdsp_mixer_numid and val1=17 and val2=27 and val3=VAR_fadertolin_input3*VAR_fadertolin_masterin
                         output2: alsa-mixer-control-set
-                        input: go-sub
                         parameters1: hwid=VAR_hdsp_hwid and numid=VAR_hdsp_mixer_numid and val1=16 and val2=26 and val3=VAR_fadertolin_input3*VAR_fadertolin_masterin
+                        output1: alsa-mixer-control-set
+                        input: go-sub
                         conditions: sub=903
                 -
                     name: binding
                     attributes:
-                        output1: log-fader-to-linear
-                        output3: go-sub
-                        parameters3: sub=902
                         parameters2: sub=901
-                        parameters4: sub=903
-                        output2: go-sub
-                        input: go-sub
-                        parameters1: var=VAR_fadertolin_masterin and fadervol=param1 and scale=1.0
-                        conditions: sub=800
                         output4: go-sub
+                        parameters3: sub=902
+                        output2: go-sub
+                        parameters1: var=VAR_fadertolin_masterin and fadervol=param1 and scale=1.0
+                        output3: go-sub
+                        output1: log-fader-to-linear
+                        input: go-sub
+                        parameters4: sub=903
+                        conditions: sub=800
                 -
                     name: binding
                     attributes:
-                        output1: log-fader-to-linear
                         parameters2: sub=901
                         output2: go-sub
-                        input: go-sub
                         parameters1: var=VAR_fadertolin_input1 and fadervol=param1 and scale=VAR_hdsp_mixerscale
+                        output1: log-fader-to-linear
+                        input: go-sub
                         conditions: sub=801
                 -
                     name: binding
                     attributes:
-                        output1: log-fader-to-linear
                         parameters2: sub=902
                         output2: go-sub
-                        input: go-sub
                         parameters1: var=VAR_fadertolin_input2 and fadervol=param1 and scale=VAR_hdsp_mixerscale
+                        output1: log-fader-to-linear
+                        input: go-sub
                         conditions: sub=802
                 -
                     name: binding
                     attributes:
-                        output1: log-fader-to-linear
                         parameters2: sub=903
                         output2: go-sub
-                        input: go-sub
                         parameters1: var=VAR_fadertolin_input3 and fadervol=param1 and scale=VAR_hdsp_mixerscale
+                        output1: log-fader-to-linear
+                        input: go-sub
                         conditions: sub=803
                 -
                     name: binding
                     attributes:
-                        output2: go-sub
-                        output3: go-sub
+                        parameters2: sub=902
                         parameters3: sub=903
+                        output2: go-sub
+                        parameters1: sub=901
+                        output3: go-sub
                         output1: go-sub
                         input: start-interface
-                        parameters1: sub=901
-                        parameters2: sub=902
