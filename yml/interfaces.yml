@@ -46,9 +46,9 @@
         #     attributes:
         #         setup: bcf2000.xml
         -
-            name: interface
-            attributes:
-                setup: midikeyboard.xml
+            # name: interface
+            # attributes:
+            #     setup: midikeyboard.xml
         # -
         #     name: interface
         #     attributes:
