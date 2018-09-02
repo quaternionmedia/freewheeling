@@ -7,45 +7,49 @@
             attributes:
                 setup: coreinterface.xml
                 switchable: 0
-        -
-            name: interface
-            attributes:
-                setup: mercury.xml
-                switchable: 0
-        -
-            name: interface
-            attributes:
-                setup: synthedit.xml
-                switchable: 0
-        -
-            name: interface
-            attributes:
-                setup: bcf2000-synthedit.xml
-                switchable: 0
-        -
-            name: interface
-            attributes:
-                setup: rme-hdsp.xml
-                switchable: 0
+        # -
+        #     name: interface
+        #     attributes:
+        #         setup: mercury.xml
+        #         switchable: 0
+        # -
+        #     name: interface
+        #     attributes:
+        #         setup: synthedit.xml
+        #         switchable: 0
+        # -
+        #     name: interface
+        #     attributes:
+        #         setup: bcf2000-synthedit.xml
+        #         switchable: 0
+        # -
+        #     name: interface
+        #     attributes:
+        #         setup: rme-hdsp.xml
+        #         switchable: 0
         -
             name: interface
             attributes:
                 setup: browsers.xml
                 switchable: 0
-        -
-            name: interface
-            attributes:
-                setup: midifootswitch.xml
-                switchable: 0
-        -
-            name: interface
-            attributes:
-                setup: bcf2000.xml
+        # -
+        #     name: interface
+        #     attributes:
+        #         setup: midifootswitch.xml
+        #         switchable: 0
+        # -
+        #     name: interface
+        #     attributes:
+        #         setup: bcf2000.xml
         -
             name: interface
             attributes:
                 setup: midikeyboard.xml
+        # -
+        #     name: interface
+        #     attributes:
+        #         setup: dancemat.xml
         -
             name: interface
             attributes:
-                setup: dancemat.xml
+                setup: launchpad.xml
