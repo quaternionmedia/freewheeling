@@ -30,7 +30,7 @@
         {
           "@var": "VAR_noterange",
           "@type": "range",
-          "@init": "36>47"
+          "@init": "0>127"
         },
         {
           "@var": "VAR_notechan",

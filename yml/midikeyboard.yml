@@ -38,7 +38,7 @@
                 -
                     name: declare
                     attributes:
-                        init: 0>127
+                        init: 36>47
                         var: VAR_noterange
                         type: range
                 -
@@ -50,13 +50,13 @@
                 -
                     name: declare
                     attributes:
-                        init: 1
+                        init: 12
                         var: VAR_selectoctave
                         type: int
                 -
                     name: declare
                     attributes:
-                        init: 1
+                        init: 12
                         var: VAR_noterangechange
                         type: int
                 -

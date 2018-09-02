@@ -5,7 +5,7 @@
         -
             name: var
             attributes:
-                numloopids: 1024
+                numloopids: 2048
         -
             name: var
             attributes:
@@ -29,11 +29,11 @@
         -
             name: var
             attributes:
-                audioinputmonitoring: NNNN
+                audioinputmonitoring: NNNNNNNN
         -
             name: var
             attributes:
-                streaminputs: NYYN
+                streaminputs: YYYYYYYY
         -
             name: var
             attributes:
