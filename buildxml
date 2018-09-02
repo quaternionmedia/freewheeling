@@ -49,12 +49,13 @@ exit 0
 
 ymltoxml() {
 UPDATED=0
-for i in $(ls $YML_DIR) ; do
+for i in $(ls $YML_DIR/*.yml) ; do
+
 	FILENAME=$(basename $i .yml)
 
-	if [ $YML_DIR/$i -nt $XML_DIR/$FILENAME.xml ] ; then
+	if [ $i -nt $XML_DIR/$FILENAME.xml ] ; then
 		echo "updating $i"
-		RESULT="$(./xy -y2x $i)"
+		RESULT="$(./xy -y2x $FILENAME.yml)"
 		if [ -n "$RESULT" ] ; then 
 			echo "$RESULT" > $XML_DIR/$FILENAME.xml && UPDATED=$((UPDATED+1))
 		fi

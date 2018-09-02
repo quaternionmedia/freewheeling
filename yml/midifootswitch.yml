@@ -8,95 +8,95 @@
                 -
                     name: declare
                     attributes:
-                        var: VAR_midi_footswitch
                         type: int
-                        init: 64
+                        init: 1
+                        var: VAR_midi_footswitch
                 -
                     name: declare
                     attributes:
-                        var: VAR_loopid_footswitch
                         type: int
                         init: 340
+                        var: VAR_loopid_footswitch
                 -
                     name: binding
                     attributes:
-                        input: start-interface
-                        output1: video-show-loop
                         parameters1: layoutid=0 and                   loopid=VAR_loopid_footswitch
-                        parameters2: loopid=VAR_loopid_footswitch
+                        output1: video-show-loop
                         output2: set-load-loop-id
+                        input: start-interface
+                        parameters2: loopid=VAR_loopid_footswitch
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
-                        conditions: VAR_keyheld_up=1 and controlnum=VAR_midi_footswitch and                  controlval=VAR_switch_on
                         parameters: loopid=VAR_loopid_footswitch and slide=VAR_slide_speed/2
+                        conditions: VAR_keyheld_up=1 and controlnum=VAR_midi_footswitch and                  controlval=VAR_switch_on
+                        input: midicontroller
                         output: slide-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        input: midicontroller
-                        conditions: VAR_keyheld_down=1 and controlnum=VAR_midi_footswitch and                  controlval=VAR_switch_on
                         parameters: loopid=VAR_loopid_footswitch and slide=-VAR_slide_speed/2
+                        conditions: VAR_keyheld_down=1 and controlnum=VAR_midi_footswitch and                  controlval=VAR_switch_on
+                        input: midicontroller
                         output: slide-loop-amplifier
                 -
                     name: binding
                     attributes:
-                        conditions: VAR_keyheld_space=1 and controlnum=VAR_midi_footswitch and                   controlval=VAR_switch_on
-                        output2: set-variable
-                        input: midicontroller
-                        parameters1: loopid=VAR_loopid_footswitch
                         output1: erase-loop
+                        output2: set-variable
+                        input: midicontroller
                         parameters2: var=VAR_xferloop and value=0
+                        parameters1: loopid=VAR_loopid_footswitch
+                        conditions: VAR_keyheld_space=1 and controlnum=VAR_midi_footswitch and                   controlval=VAR_switch_on
                 -
                     name: binding
                     attributes:
-                        conditions: VAR_overdubmode=1 and controlnum=VAR_midi_footswitch                  and controlval=VAR_switch_on
-                        parameters3: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
-                        output3: set-variable
+                        output1: trigger-loop
                         output2: set-variable
-                        input: midicontroller
+                        output3: set-variable
+                        parameters2: var=VAR_xferloop and value=1
                         parameters1: overdub=1 and overdubfeedback=VAR_overdubfeedback and                   loopid=VAR_loopid_footswitch and vol=1.0
-                        output1: trigger-loop
-                        parameters2: var=VAR_xferloop and value=1
+                        input: midicontroller
+                        parameters3: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
+                        conditions: VAR_overdubmode=1 and controlnum=VAR_midi_footswitch                  and controlval=VAR_switch_on
                 -
                     name: binding
                     attributes:
-                        conditions: controlnum=VAR_midi_footswitch and controlval=VAR_switch_on
-                        parameters3: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
-                        output3: set-variable
-                        output2: set-variable
-                        input: midicontroller
-                        parameters1: loopid=VAR_loopid_footswitch and vol=1.0
                         output1: trigger-loop
+                        output2: set-variable
+                        output3: set-variable
                         parameters2: var=VAR_xferloop and value=1
+                        parameters1: loopid=VAR_loopid_footswitch and vol=1.0
+                        input: midicontroller
+                        parameters3: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
+                        conditions: controlnum=VAR_midi_footswitch and controlval=VAR_switch_on
         -
             name: graphics
             children:
                 -
                     name: layout
                     attributes:
-                        name: Footswitch
+                        label: 1
+                        id: 0
+                        name: Footswitch-test
+                        pos: 0.10,0.10
+                        elabel: 1
                         show: 1
                         namepos: 0.02,0.02
-                        pos: 0.90,0.85
-                        label: 0
-                        scale: 1.0,1.3
-                        elabel: 1
-                        id: 0
+                        scale: 2.0,2.3
                     children:
                         -
                             name: element
                             attributes:
-                                name: SW
-                                namepos: 0.01,0.00
-                                base: 0.0,0.0
                                 loopsize: 0.1
-                                looppos: 0.05,0.05
                                 id: 0
+                                name: SW
+                                base: 0.0,0.0
+                                looppos: 0.05,0.05
+                                namepos: 0.01,0.00
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
