@@ -7,11 +7,11 @@
             attributes:
                 switchable: 1
                 setup: coreinterface.xml
-        # -
-        #     name: interface
-        #     attributes:
-        #         switchable: 0
-        #         setup: mercury.xml
+         -
+            name: interface
+            attributes:
+                switchable: 0
+                setup: mercury.xml
         # -
         #     name: interface
         #     attributes:
