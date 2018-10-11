@@ -9,59 +9,59 @@
                     name: display
                     attributes:
                         xpand: 1
-                        xdelay: 5.0
-                        font: main
-                        id: DISPLAY_browser_patch
-                        pos: 0.0,0.96
-                        xbox: 0.1,0.1, 0.9,0.9
-                        browsetype: BROWSE_patch
                         show: 1
                         type: browser
+                        id: DISPLAY_browser_patch
+                        xdelay: 5.0
+                        xbox: 0.1,0.1, 0.9,0.9
+                        font: main
+                        browsetype: BROWSE_patch
                         interfaceid: 0
+                        pos: 0.0,0.96
                     children:
                         -
                             name: patchbank
                             attributes:
-                                separatechannels: 0
                                 suppressprogramchanges: 1
                                 midiport: 1
                                 patches: patches-channels.xml
+                                separatechannels: 0
                 -
                     name: display
                     attributes:
                         xpand: 1
-                        xdelay: 5.0
-                        font: small
+                        show: 0
+                        type: browser
                         id: DISPLAY_browser_loop
-                        pos: 0.0,0.96
+                        xdelay: 5.0
                         xbox: 0.1,0.1, 0.9,0.9
+                        font: small
                         browsetype: BROWSE_loop
-                        show: 0
-                        type: browser
                         interfaceid: 0
+                        pos: 0.0,0.96
                 -
                     name: display
                     attributes:
                         xpand: 1
-                        xdelay: 5.0
-                        font: small
-                        id: DISPLAY_browser_scene
-                        pos: 0.0,0.96
-                        xbox: 0.1,0.1, 0.9,0.9
-                        browsetype: BROWSE_scene
                         show: 0
                         type: browser
+                        id: DISPLAY_browser_scene
+                        xdelay: 5.0
+                        xbox: 0.1,0.1, 0.9,0.9
+                        font: small
+                        browsetype: BROWSE_scene
                         interfaceid: 0
+                        pos: 0.0,0.96
                 -
                     name: display
                     attributes:
                         xpand: 0
-                        font: tiny
-                        id: DISPLAY_loop_tray
-                        pos: 0.015,0.92
-                        xbox: 0.05,0.6, 0.95,0.9
-                        loopsize: 0.05
-                        browsetype: BROWSE_loop_tray
                         show: 1
                         type: browser
+                        loopsize: 0.05
+                        id: DISPLAY_loop_tray
+                        xbox: 0.05,0.6, 0.95,0.9
+                        font: tiny
+                        browsetype: BROWSE_loop_tray
                         interfaceid: 0
+                        pos: 0.015,0.92

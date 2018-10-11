@@ -12,3 +12,4 @@ src/elastin/.deps/
 src/elastin/.dirstamp
 src/elastin/*.o
 **/fweelin-stackdump
+fw-lib/*

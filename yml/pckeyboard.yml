@@ -8,77 +8,77 @@
                 -
                     name: declare
                     attributes:
-                        init: 0
                         type: int
+                        init: 0
                         var: VAR_loopid_pckeystart
                 -
                     name: declare
                     attributes:
-                        init: 0>322
                         type: range
+                        init: 0>322
                         var: VAR_pckeyfullrange
                 -
                     name: declare
                     attributes:
-                        init: 97>122
                         type: range
+                        init: 97>122
                         var: VAR_pckeyrange
                 -
                     name: binding
                     attributes:
-                        output1: video-show-loop
                         input: start-interface
                         parameters1: layoutid=0 and                   loopid=VAR_pckeyfullrange+VAR_loopid_pckeystart
+                        output1: video-show-loop
                 -
                     name: binding
                     attributes:
-                        output: slide-loop-amplifier
-                        input: key
                         conditions: VAR_keyheld_up=1 and key=VAR_pckeyrange
+                        input: key
+                        output: slide-loop-amplifier
                         parameters: loopid=key+VAR_loopid_pckeystart and                   slide=keydown*VAR_slide_speed/2
                 -
                     name: binding
                     attributes:
-                        output: slide-loop-amplifier
-                        input: key
                         conditions: VAR_keyheld_down=1 and key=VAR_pckeyrange
+                        input: key
+                        output: slide-loop-amplifier
                         parameters: loopid=key+VAR_loopid_pckeystart and                   slide=-keydown*VAR_slide_speed/2
                 -
                     name: binding
                     attributes:
-                        output: set-trigger-volume
-                        input: key
                         conditions: VAR_cutmode=1 and key=VAR_pckeyrange
+                        input: key
+                        output: set-trigger-volume
                         parameters: loopid=key+VAR_loopid_pckeystart and vol=1.0*keydown
                 -
                     name: binding
                     attributes:
-                        output: erase-loop
-                        input: key
                         conditions: VAR_keyheld_space=1 and key=VAR_pckeyrange and keydown=1
+                        input: key
+                        output: erase-loop
                         parameters: loopid=key+VAR_loopid_pckeystart
                 -
                     name: binding
                     attributes:
-                        output2: set-variable
-                        output1: move-loop
-                        input: key
-                        parameters2: var=VAR_xferloop and value=0
                         conditions: VAR_xferloop=1 and key=VAR_pckeyrange and keydown=1
+                        input: key
                         parameters1: oldloopid=VAR_xferidx and                  newloopid=key+VAR_loopid_pckeystart
+                        output1: move-loop
+                        output2: set-variable
+                        parameters2: var=VAR_xferloop and value=0
                 -
                     name: binding
                     attributes:
-                        output: trigger-loop
-                        input: key
                         conditions: VAR_overdubmode=1 and key=VAR_pckeyrange and keydown=1
+                        input: key
+                        output: trigger-loop
                         parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=key+VAR_loopid_pckeystart and vol=1.0
                 -
                     name: binding
                     attributes:
-                        output: trigger-loop
-                        input: key
                         conditions: key=VAR_pckeyrange and keydown=1
+                        input: key
+                        output: trigger-loop
                         parameters: loopid=key+VAR_loopid_pckeystart and vol=1.0
         -
             name: graphics
@@ -86,401 +86,401 @@
                 -
                     name: layout
                     attributes:
-                        elabel: 1
-                        name: PC Keyboard
-                        scale: 1.0,1.0
-                        show: 0
-                        label: 0
                         pos: 0.00,0.00
+                        scale: 1.0,1.0
+                        elabel: 1
                         id: 0
+                        label: 0
+                        show: 0
+                        name: PC Keyboard
                     children:
                         -
                             name: element
                             attributes:
-                                base: 0.0,0.0
-                                loopsize: 0.1
-                                name: Q
+                                namepos: 0.01,0.00
                                 id: 113
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: Q
+                                base: 0.0,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.1,0.0
-                                loopsize: 0.1
-                                name: W
+                                namepos: 0.01,0.00
                                 id: 119
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: W
+                                base: 0.1,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.2,0.0
-                                loopsize: 0.1
-                                name: E
+                                namepos: 0.01,0.00
                                 id: 101
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: E
+                                base: 0.2,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.3,0.0
-                                loopsize: 0.1
-                                name: R
+                                namepos: 0.01,0.00
                                 id: 114
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: R
+                                base: 0.3,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.4,0.0
-                                loopsize: 0.1
-                                name: T
+                                namepos: 0.01,0.00
                                 id: 116
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: T
+                                base: 0.4,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.5,0.0
-                                loopsize: 0.1
-                                name: Y
+                                namepos: 0.01,0.00
                                 id: 121
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: Y
+                                base: 0.5,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.6,0.0
-                                loopsize: 0.1
-                                name: U
+                                namepos: 0.01,0.00
                                 id: 117
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: U
+                                base: 0.6,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.7,0.0
-                                loopsize: 0.1
-                                name: I
+                                namepos: 0.01,0.00
                                 id: 105
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: I
+                                base: 0.7,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.8,0.0
-                                loopsize: 0.1
-                                name: O
+                                namepos: 0.01,0.00
                                 id: 111
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: O
+                                base: 0.8,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.9,0.0
-                                loopsize: 0.1
-                                name: P
+                                namepos: 0.01,0.00
                                 id: 112
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: P
+                                base: 0.9,0.0
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.03,0.1
-                                loopsize: 0.1
-                                name: A
+                                namepos: 0.01,0.00
                                 id: 97
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: A
+                                base: 0.03,0.1
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.13,0.1
-                                loopsize: 0.1
-                                name: S
+                                namepos: 0.01,0.00
                                 id: 115
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: S
+                                base: 0.13,0.1
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.23,0.1
-                                loopsize: 0.1
-                                name: D
+                                namepos: 0.01,0.00
                                 id: 100
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: D
+                                base: 0.23,0.1
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.33,0.1
-                                loopsize: 0.1
-                                name: F
+                                namepos: 0.01,0.00
                                 id: 102
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: F
+                                base: 0.33,0.1
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.43,0.1
-                                loopsize: 0.1
-                                name: G
+                                namepos: 0.01,0.00
                                 id: 103
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: G
+                                base: 0.43,0.1
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.53,0.1
-                                loopsize: 0.1
-                                name: H
+                                namepos: 0.01,0.00
                                 id: 104
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: H
+                                base: 0.53,0.1
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.63,0.1
-                                loopsize: 0.1
-                                name: J
+                                namepos: 0.01,0.00
                                 id: 106
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: J
+                                base: 0.63,0.1
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.73,0.1
-                                loopsize: 0.1
-                                name: K
+                                namepos: 0.01,0.00
                                 id: 107
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: K
+                                base: 0.73,0.1
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.83,0.1
-                                loopsize: 0.1
-                                name: L
+                                namepos: 0.01,0.00
                                 id: 108
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: L
+                                base: 0.83,0.1
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.06,0.2
-                                loopsize: 0.1
-                                name: Z
+                                namepos: 0.01,0.00
                                 id: 122
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: Z
+                                base: 0.06,0.2
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.16,0.2
-                                loopsize: 0.1
-                                name: X
+                                namepos: 0.01,0.00
                                 id: 120
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: X
+                                base: 0.16,0.2
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.26,0.2
-                                loopsize: 0.1
-                                name: C
+                                namepos: 0.01,0.00
                                 id: 99
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: C
+                                base: 0.26,0.2
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.36,0.2
-                                loopsize: 0.1
-                                name: V
+                                namepos: 0.01,0.00
                                 id: 118
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: V
+                                base: 0.36,0.2
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.46,0.2
-                                loopsize: 0.1
-                                name: B
+                                namepos: 0.01,0.00
                                 id: 98
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: B
+                                base: 0.46,0.2
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.56,0.2
-                                loopsize: 0.1
-                                name: N
+                                namepos: 0.01,0.00
                                 id: 110
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: N
+                                base: 0.56,0.2
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR
                         -
                             name: element
                             attributes:
-                                base: 0.66,0.2
-                                loopsize: 0.1
-                                name: M
+                                namepos: 0.01,0.00
                                 id: 109
                                 looppos: 0.05,0.05
-                                namepos: 0.01,0.00
+                                loopsize: 0.1
+                                name: M
+                                base: 0.66,0.2
                             children:
                                 -
                                     name: box
                                     attributes:
-                                        outline: TBLR
                                         pos: 0.00,0.00, 0.10,0.10
+                                        outline: TBLR

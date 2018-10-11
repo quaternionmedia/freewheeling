@@ -33,6 +33,11 @@ def jToX(j):
     result =  xmltodict.unparse(json.loads(readFile(j)))
     sys.stdout.write(result)
 
+
+def buildLaunchpad():
+    return
+
+
 def main():
     args = sys.argv[1:]
     if len(args) != 2:

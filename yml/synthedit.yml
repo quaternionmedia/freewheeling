@@ -8,58 +8,58 @@
                 -
                     name: declare
                     attributes:
-                        var: DISPLAY_synthedit
+                        type: int
                         init: 1000
-                        type: int
+                        var: DISPLAY_synthedit
                 -
                     name: declare
                     attributes:
-                        var: DISPLAY_synthedit_chanselect
+                        type: int
                         init: 1001
-                        type: int
+                        var: DISPLAY_synthedit_chanselect
                 -
                     name: declare
                     attributes:
+                        type: int
+                        init: 0
                         var: VAR_synthedit_interfaceid
-                        init: 0
-                        type: int
                 -
                     name: declare
                     attributes:
-                        var: VAR_synthedit_midichannel
-                        init: 0
                         type: int
+                        init: 0
+                        var: VAR_synthedit_midichannel
                 -
                     name: binding
                     attributes:
-                        output1: set-variable
-                        input: start-interface
                         parameters1: var=VAR_synthedit_interfaceid and value=interfaceid
+                        input: start-interface
+                        output1: set-variable
         -
             name: graphics
             children:
                 -
                     name: display
                     attributes:
-                        show: 0
-                        pos: 0.05,0.07
-                        var: VAR_synthedit_midichannel
-                        font: small
                         title: SynthEdit Ch 
+                        pos: 0.05,0.07
                         id: DISPLAY_synthedit_chanselect
+                        show: 0
                         type: text
+                        font: small
+                        var: VAR_synthedit_midichannel
                 -
                     name: display
                     attributes:
-                        numactiveparams: 8
-                        show: 0
                         pos: 0.05,0.1
-                        name: synthedit
                         title: Synth Editor
                         size: 0.9,0.22
-                        font: tiny
                         id: DISPLAY_synthedit
+                        show: 0
+                        numactiveparams: 8
                         type: paramset
+                        font: tiny
+                        name: synthedit
                     children:
                         -
                             name: bank
