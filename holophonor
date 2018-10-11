@@ -6,7 +6,7 @@
 jackd -d alsa -d hw:3,0 -p 16 &
 
 # build jinja templates and save to ~/.fweelin
-python3 templates.py
+./scripts/buildxml
 
 # run fweelin
 fweelin
