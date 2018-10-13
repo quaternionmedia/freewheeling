@@ -22,11 +22,11 @@
         #     attributes:
         #         switchable: 0
         #         setup: bcf2000-synthedit.xml
-        -
-            name: interface
-            attributes:
-                switchable: 1
-                setup: rme-hdsp.xml
+        # -
+        #     name: interface
+        #     attributes:
+        #         switchable: 1
+        #         setup: rme-hdsp.xml
         # -
         #     name: interface
         #     attributes:

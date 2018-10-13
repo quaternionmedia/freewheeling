@@ -348,14 +348,14 @@
         -
             name: patch
             attributes:
-                name: X: strings
+                name: "X: strings"
                 channel: 0
                 program: 49
                 bank: 0
         -
             name: patch
             attributes:
-                name: X2: strings
+                name: "X2: strings"
                 channel: 0
                 program: 50
                 bank: 0

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/local/bin/python3.7
 
 USAGE_TEXT = """
 XML to JSON ... and back again!

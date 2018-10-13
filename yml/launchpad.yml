@@ -35,14 +35,14 @@
                         init: 0
                         var: VAR_launchpadcapture_set
                         type: char
-                  -
+                -
                       name: binding
                       attributes:
                           parameters1: layoutid=0 and                   loopid=VAR_noterange+VAR_loopid_launchpad
                           output1: video-show-loop
-                          # output2: set-load-loop-id
+                         # output2: set-load-loop-id
                           input: start-interface
-                          # parameters2: loopid=VAR_noterange+VAR_loopid_launchpad
+                         # parameters2: loopid=VAR_noterange+VAR_loopid_launchpad
                 # -
                 #     name: binding
                 #     attributes:
@@ -104,12 +104,12 @@
                     name: layout
                     attributes:
                         #background: '#88FF00FF'
-                        label: 1
+                        label: 0
                         id: 0
                         name: launchpad
                         pos: 0.00,0.00
-                        elabel: 1
-                        #show: 0
+                        elabel: 0
+                        show: 1
                         namepos: 0.02,0.02
                         scale: 1,1
                     children:
