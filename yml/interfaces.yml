@@ -6,7 +6,7 @@
             name: interface
             attributes:
                 setup: coreinterface.xml
-                switchable: 0
+                switchable: 1
         # -
         #     name: interface
         #     attributes:
@@ -52,4 +52,5 @@
         -
             name: interface
             attributes:
-                setup: launchpad.xml
+                setup: panorama.xml
+                switchable: 1
