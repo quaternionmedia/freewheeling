@@ -75,28 +75,28 @@
                         parameters2: var=VAR_xferloop and value=0
                         parameters1: loopid=VAR_panoramacapture+VAR_loopid_panorama
                         conditions: VAR_keyheld_space=1 and controlnum=VAR_noterange and                   controlval=VAR_switch_on
-                -
-                    name: binding
-                    attributes:
-                        output1: trigger-loop
-                        output2: set-variable
-                        output3: set-variable
-                        parameters2: var=VAR_xferloop and value=1
-                        parameters1: overdub=1 and overdubfeedback=VAR_overdubfeedback and                   loopid=VAR_panoramacapture+VAR_loopid_panorama and vol=1.0
-                        input: midicontroller
-                        parameters3: var=VAR_xferidx and                                          value=VAR_panoramacapture+VAR_loopid_panorama
-                        conditions: VAR_overdubmode=1 and controlnum=VAR_noterange                  and controlval=VAR_switch_on
-                -
-                    name: binding
-                    attributes:
-                        output1: trigger-loop
-                        output2: set-variable
-                        output3: set-variable
-                        parameters2: var=VAR_xferloop and value=1
-                        parameters1: loopid=VAR_panoramacapture+VAR_loopid_panorama and vol=1.0
-                        input: midicontroller
-                        parameters3: var=VAR_xferidx and                                          value=VAR_panoramacapture+VAR_loopid_panorama
-                        conditions: controlnum=VAR_noterange and controlval=VAR_switch_on
+                # -
+                #     name: binding
+                #     attributes:
+                #         output1: trigger-loop
+                #         output2: set-variable
+                #         output3: set-variable
+                #         parameters2: var=VAR_xferloop and value=1
+                #         parameters1: overdub=1 and overdubfeedback=VAR_overdubfeedback and                   loopid=VAR_panoramacapture+VAR_loopid_panorama and vol=1.0
+                #         input: midicontroller
+                #         parameters3: var=VAR_xferidx and                                          value=VAR_panoramacapture+VAR_loopid_panorama
+                #         conditions: VAR_overdubmode=1 and controlnum=VAR_noterange                  and controlval=VAR_switch_on
+                # -
+                #     name: binding
+                #     attributes:
+                #         output1: trigger-loop
+                #         output2: set-variable
+                #         output3: set-variable
+                #         parameters2: var=VAR_xferloop and value=1
+                #         parameters1: loopid=VAR_panoramacapture+VAR_loopid_panorama and vol=1.0
+                #         input: midicontroller
+                #         parameters3: var=VAR_xferidx and                                          value=VAR_panoramacapture+VAR_loopid_panorama
+                #         conditions: controlnum=VAR_noterange and controlval=VAR_switch_on
         -
             name: graphics
             children:
