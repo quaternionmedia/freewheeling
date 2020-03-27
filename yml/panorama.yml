@@ -96,6 +96,34 @@
                         output: set-master-out-volume
                         parameters: vol=1.0
                         conditions: controlnum=12 and controlval=0
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-input-record
+                        parameters: input=1
+                        conditions: controlnum=56
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-input-record
+                        parameters: input=2
+                        conditions: controlnum=57
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-input-record
+                        parameters: input=3
+                        conditions: controlnum=58
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-input-record
+                        parameters: input=4
+                        conditions: controlnum=59
                 # -
                 #     name: binding
                 #     attributes:
