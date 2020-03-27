@@ -124,6 +124,20 @@
                         output: toggle-input-record
                         parameters: input=4
                         conditions: controlnum=59
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: set-variable
+                        parameters: var=VAR_overdubmode and value=1
+                        conditions: controlnum=113 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: set-variable
+                        parameters: var=VAR_overdubmode and value=0
+                        conditions: controlnum=113 and controlval=0
                 # -
                 #     name: binding
                 #     attributes:
