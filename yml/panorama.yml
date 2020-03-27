@@ -15,7 +15,7 @@
                     name: declare
                     attributes:
                         type: int
-                        init: 350
+                        init: 351
                         var: VAR_loopid_panorama
                 -
                     name: declare
