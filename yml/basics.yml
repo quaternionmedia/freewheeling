@@ -25,7 +25,7 @@
         -
             name: var
             attributes:
-                externalaudioinputs: MMSS
+                externalaudioinputs: MMMM
         -
             name: var
             attributes:
@@ -33,7 +33,7 @@
         -
             name: var
             attributes:
-                streaminputs: NYYN
+                streaminputs: NNNN
         -
             name: var
             attributes:
