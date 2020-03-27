@@ -82,6 +82,20 @@
                         output: set-master-out-volume
                         parameters: vol=controlval/127
                         conditions: controlnum=3
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: set-master-out-volume
+                        parameters: vol=0.0
+                        conditions: controlnum=12 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: set-master-out-volume
+                        parameters: vol=1.0
+                        conditions: controlnum=12 and controlval=0
                 # -
                 #     name: binding
                 #     attributes:
