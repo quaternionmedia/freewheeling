@@ -186,6 +186,13 @@
                     attributes:
                         input: midicontroller
                         output: select-all-loops
+                        parameters: setid=0 and select=0
+                        conditions: controlnum=109 and controlval=0
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: select-all-loops
                         parameters: setid=0 and select=1
                         conditions: controlnum=109 and controlval=127
                 # -
