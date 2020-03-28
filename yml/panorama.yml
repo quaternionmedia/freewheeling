@@ -180,7 +180,20 @@
                         output: tap-pulse
                         parameters: pulse=0 and newlen=1
                         conditions: controlnum=117
-
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: select-only-playing-loops
+                        parameters: setid=0 and playing=0
+                        conditions: controlnum=110 and controlval=0
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: select-only-playing-loops
+                        parameters: setid=0 and playing=1
+                        conditions: controlnum=110 and controlval=127
                 -
                     name: binding
                     attributes:
