@@ -166,6 +166,14 @@
                         output: trigger-selected-loops
                         parameters: setid=0 and vol=1.0 and toggleloops=1
                         conditions: controlnum=112
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-variable
+                        parameters: var=VAR_cutmode and maxvalue=1
+                        conditions: controlnum=118
+
                 # -
                 #     name: binding
                 #     attributes:
