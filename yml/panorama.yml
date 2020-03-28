@@ -159,6 +159,13 @@
                         output: erase-loop
                         parameters: loopid=SYSTEM_loopid_lastrecord_0
                         conditions: controlnum=116 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: trigger-selected-loops
+                        parameters: setid=0 and vol=1.0 and toggleloops=1
+                        conditions: controlnum=112
                 # -
                 #     name: binding
                 #     attributes:
