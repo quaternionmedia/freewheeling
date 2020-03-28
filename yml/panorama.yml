@@ -181,6 +181,13 @@
                         parameters: pulse=0 and newlen=1
                         conditions: controlnum=117
 
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: select-all-loops
+                        parameters: setid=0 and select=1
+                        conditions: controlnum=109 and controlval=127
                 # -
                 #     name: binding
                 #     attributes:
