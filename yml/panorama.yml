@@ -173,6 +173,13 @@
                         output: toggle-variable
                         parameters: var=VAR_cutmode and maxvalue=1
                         conditions: controlnum=118
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: tap-pulse
+                        parameters: pulse=0 and newlen=1
+                        conditions: controlnum=117
 
                 # -
                 #     name: binding
