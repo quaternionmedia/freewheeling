@@ -208,6 +208,13 @@
                         output: select-all-loops
                         parameters: setid=0 and select=1
                         conditions: controlnum=109 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: invert-selection
+                        parameters: setid=0
+                        conditions: controlnum=111
                 # -
                 #     name: binding
                 #     attributes:
