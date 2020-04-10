@@ -29,7 +29,7 @@
         -
             name: var
             attributes:
-                audioinputmonitoring: NNNN
+                audioinputmonitoring: YYYY
         -
             name: var
             attributes:
@@ -41,7 +41,7 @@
         -
             name: var
             attributes:
-                streamloopmix: Y
+                streamloopmix: N
         -
             name: var
             attributes:
