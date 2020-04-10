@@ -1313,14 +1313,14 @@
                         flash: 0
                         var: SYSTEM_num_recording_loops_in_map
                         size1: 0.02
-                -
-                    name: display
-                    attributes:
-                        pos: 0.895,0.64
-                        var: SYSTEM_fluidsynth_enabled
-                        title: SYNTH
-                        type: switch
-                        font: small
+                # -
+                #     name: display
+                #     attributes:
+                #         pos: 0.895,0.64
+                #         var: SYSTEM_fluidsynth_enabled
+                #         title: SYNTH
+                #         type: switch
+                #         font: small
                 -
                     name: display
                     attributes:
