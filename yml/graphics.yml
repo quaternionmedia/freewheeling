@@ -14,23 +14,23 @@
             name: font
             attributes:
                 name: main
-                file: verabd.ttf
+                file: truetype/ttf-bitstream-vera/VeraBd.ttf
                 size: 20
         -
             name: font
             attributes:
                 name: small
-                file: verabd.ttf
+                file: truetype/ttf-bitstream-vera/VeraBd.ttf
                 size: 14
         -
             name: font
             attributes:
                 name: tiny
-                file: vera.ttf
+                file: truetype/ttf-bitstream-vera/Vera.ttf
                 size: 10
         -
             name: font
             attributes:
                 name: help
-                file: vera.ttf
+                file: truetype/ttf-bitstream-vera/Vera.ttf
                 size: 16
