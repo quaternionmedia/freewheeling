@@ -153,17 +153,17 @@
                         input: midikey
                         output: trigger-loop
                         parameters: overdub=1 and overdubfeedback=VAR_overdubfeedback and                  loopid=notenum+VAR_loopid_pianostart and vol=velocity/127
-                -
-                    name: binding
-                    attributes:
-                        output3: set-variable
-                        input: midikey
-                        parameters2: var=VAR_xferloop and value=1
-                        output2: set-variable
-                        conditions: notenum=VAR_pianocapture and keydown=1
-                        output1: trigger-loop
-                        parameters3: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
-                        parameters1: loopid=VAR_loopid_footswitch and vol=velocity/127
+                # -
+                #     name: binding
+                #     attributes:
+                #         output3: set-variable
+                #         input: midikey
+                #         parameters2: var=VAR_xferloop and value=1
+                #         output2: set-variable
+                #         conditions: notenum=VAR_pianocapture and keydown=1
+                #         output1: trigger-loop
+                #         parameters3: var=VAR_xferidx and                                          value=VAR_loopid_footswitch
+                #         parameters1: loopid=VAR_loopid_footswitch and vol=velocity/127
                 -
                     name: binding
                     attributes:
