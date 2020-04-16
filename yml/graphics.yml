@@ -5,11 +5,11 @@
         -
             name: var
             attributes:
-                resolution: 640,480
+                resolution: 1280,720
         -
             name: var
             attributes:
-                videodelay: 40
+                videodelay: 20
         -
             name: font
             attributes:

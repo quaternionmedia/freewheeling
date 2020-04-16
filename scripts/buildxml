@@ -1,7 +1,7 @@
 #!/bin/bash
 
-XML_DIR=../.fweelin
-YML_DIR=yml
+XML_DIR=$(dirname "$0")/../../.fweelin
+YML_DIR=$(dirname "$0")/../yml
 
 usage() {
 echo """
@@ -49,12 +49,13 @@ exit 0
 
 ymltoxml() {
 UPDATED=0
-for i in $(ls $YML_DIR) ; do
+for i in $(ls $YML_DIR/*.yml) ; do
+
 	FILENAME=$(basename $i .yml)
 
-	if [ $YML_DIR/$i -nt $XML_DIR/$FILENAME.xml ] ; then
+	if [ $i -nt $XML_DIR/$FILENAME.xml ] ; then
 		echo "updating $i"
-		RESULT="$(./xy -y2x $i)"
+		RESULT="$($(dirname "$0")/xy -y2x $FILENAME.yml)"
 		if [ -n "$RESULT" ] ; then 
 			echo "$RESULT" > $XML_DIR/$FILENAME.xml && UPDATED=$((UPDATED+1))
 		fi
@@ -62,7 +63,9 @@ for i in $(ls $YML_DIR) ; do
 done
 
 if [ $UPDATED -gt 0 ] ; then
-echo "Successfully converted $UPDATED records"
+	echo "Successfully converted $UPDATED records"
+else
+	echo "No records converted"
 fi
 
 exit 0

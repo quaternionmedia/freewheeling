@@ -5,7 +5,7 @@
         -
             name: var
             attributes:
-                numloopids: 1024
+                numloopids: 2048
         -
             name: var
             attributes:
@@ -57,7 +57,7 @@
         -
             name: var
             attributes:
-                limiterreleaserate: 0.000020
+                limiterreleaserate: 2e-05
         -
             name: var
             attributes:
@@ -81,13 +81,13 @@
         -
             name: fluidsynth
             attributes:
-                setint: 64
                 param: synth.polyphony
+                setint: 64
         -
             name: fluidsynth
             attributes:
-                setint: 0
                 param: synth.parallel-render
+                setint: 0
         -
             name: fluidsynth
             attributes:

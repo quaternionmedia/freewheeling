@@ -1,0 +1,50 @@
+---
+-
+    name: interface
+    children:
+        -
+            name: bindings
+            children:
+                {% for d in declare %}
+                -
+                    name: declare
+                    attributes:
+                        var: {{ d.var }}
+                        type: {{ d.type }}
+                        init: {{ d.init }}
+                {% endfor %}
+                {% for b in bindings %}
+                -
+                    name: binding
+                    attributes:
+                        input: {{ b.input }}
+                        {% for o in b.outputs %}
+                        output{{ loop.index + 1 }}: {{ o[loop.index] }}
+                        {% endfor %}
+                        {% for p in b.parameters %}
+                        parameters{{ loop.index + 1 }}: {{ p[loop.index] }}
+                        {% endfor %}
+                        conditions: {{ b.conditions }}
+                {% endfor %}
+    name: graphics
+    children:
+        {% for g in graphics %}
+        -
+            name: layout
+            attributes:
+                name: {{ g.name }}
+                show: {{ g.show }}
+                namepos: {{ g.namepos }}
+                pos: {{ g.pos }}
+                label: {{ g.label }}
+                scale: {{ g.scale }}}
+                elabel: {{ g.elabel }}
+                id: {{ g.id }}
+            children:
+                {% for c in g.children %}
+                -
+                    name: {{ c.name }}
+                    attributes:
+                        name: {{ c.attributes.name }}
+                {% endfor %}
+        {% endfor %}

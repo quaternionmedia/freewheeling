@@ -5,46 +5,52 @@
         -
             name: interface
             attributes:
-                setup: coreinterface.xml
                 switchable: 1
-        # -
-        #     name: interface
-        #     attributes:
-        #         setup: mercury.xml
-        #         switchable: 0
-        # -
-        #     name: interface
-        #     attributes:
-        #         setup: synthedit.xml
-        #         switchable: 0
-        # -
-        #     name: interface
-        #     attributes:
-        #         setup: bcf2000-synthedit.xml
-        #         switchable: 0
-        # -
-        #     name: interface
-        #     attributes:
-        #         setup: rme-hdsp.xml
-        #         switchable: 0
-        -
-            name: interface
-            attributes:
-                setup: browsers.xml
+                setup: coreinterface.xml
                 switchable: 0
         # -
+        #    name: interface
+        #    attributes:
+        #        switchable: 0
+        #        setup: mercury.xml
+        # -
         #     name: interface
         #     attributes:
-        #         setup: midifootswitch.xml
-        #         switchable: 0
+        #         switchable: 1
+        #         setup: synthedit.xml
         # -
+        #     name: interface
+        #     attributes:
+        #         switchable: 0
+        #         setup: bcf2000-synthedit.xml
+        # -
+        #     name: interface
+        #     attributes:
+        #         switchable: 1
+        #         setup: rme-hdsp.xml
+        # -
+        #     name: interface
+        #     attributes:
+        #         switchable: 0
+        #         setup: browsers.xml
+        -
+          name: interface
+          attributes:
+            switchable: 1
+            setup: launchpad.xml
+        # -
+        #     name: interface
+        #     attributes:
+        #         switchable: 1
+        #         setup: midifootswitch.xml
+        -
         #     name: interface
         #     attributes:
         #         setup: bcf2000.xml
         -
-            name: interface
-            attributes:
-                setup: midikeyboard.xml
+            # name: interface
+            # attributes:
+            #     setup: midikeyboard.xml
         # -
         #     name: interface
         #     attributes:
@@ -54,3 +60,7 @@
             attributes:
                 setup: panorama.xml
                 switchable: 1
+        # -
+        #     name: interface
+        #     attributes:
+        #         setup: pckeyboard.xml
