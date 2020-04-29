@@ -1,6 +1,6 @@
 #!/bin/bash
 
-XML_DIR=$(dirname "$0")/../../.fweelin
+XML_DIR=~/.fweelin
 YML_DIR=$(dirname "$0")/../yml
 
 usage() {
