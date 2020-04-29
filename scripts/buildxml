@@ -49,24 +49,21 @@ exit 0
 
 ymltoxml() {
 UPDATED=0
+TOTAL=0
 for i in $(ls $YML_DIR/*.yml) ; do
-
+	TOTAL=$((TOTAL+1))
 	FILENAME=$(basename $i .yml)
 
 	if [ $i -nt $XML_DIR/$FILENAME.xml ] ; then
 		echo "updating $i"
 		RESULT="$($(dirname "$0")/xy -y2x $FILENAME.yml)"
-		if [ -n "$RESULT" ] ; then 
+		if [ -n "$RESULT" ] ; then
 			echo "$RESULT" > $XML_DIR/$FILENAME.xml && UPDATED=$((UPDATED+1))
 		fi
 	fi
 done
 
-if [ $UPDATED -gt 0 ] ; then
-	echo "Successfully converted $UPDATED records"
-else
-	echo "No records converted"
-fi
+echo "Converted $UPDATED of $TOTAL records"
 
 exit 0
 }
