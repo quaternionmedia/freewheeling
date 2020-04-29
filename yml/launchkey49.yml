@@ -1,0 +1,295 @@
+---
+-
+    name: interface
+    children:
+        -
+            name: bindings
+            children:
+                -
+                    name: declare
+                    attributes:
+                        type: int
+                        init: 1
+                        var: VAR_panorama
+                -
+                    name: declare
+                    attributes:
+                        type: int
+                        init: 390
+                        var: VAR_loopid_panorama
+                -
+                    name: declare
+                    attributes:
+                        init: 0>127
+                        var: VAR_noterange
+                        type: range
+                -
+                    name: declare
+                    attributes:
+                        init: 0
+                        var: VAR_panoramacapture
+                        type: int
+                -
+                    name: declare
+                    attributes:
+                        init: 0
+                        var: VAR_panoramacapture_set
+                        type: char
+                -
+                    name: binding
+                    attributes:
+                        parameters1: layoutid=0 and loopid=VAR_noterange+VAR_loopid_panorama
+                        output1: video-show-loop
+                        output2: set-load-loop-id
+                        input: start-interface
+                        parameters2: loopid=VAR_noterange+VAR_loopid_panorama
+                -
+                    name: binding
+                    attributes:
+                        conditions: VAR_panoramacapture_set=1 and keydown=1
+                        input: midikey
+                        output1: set-variable
+                        parameters2: var=VAR_panoramacapture_set and value=0
+                        parameters1: var=VAR_panoramacapture and value=VAR_noterange
+                        output2: set-variable
+                -
+                    name: binding
+                    attributes:
+                        parameters: loopid=VAR_panoramacapture+VAR_loopid_panorama and slide=VAR_slide_speed/2
+                        conditions: VAR_keyheld_up=1 and controlnum=VAR_noterange and controlval=VAR_switch_on
+                        input: midicontroller
+                        output: slide-loop-amplifier
+                -
+                    name: binding
+                    attributes:
+                        parameters: loopid=VAR_panoramacapture+VAR_loopid_panorama and slide=-VAR_slide_speed/2
+                        conditions: VAR_keyheld_down=1 and controlnum=VAR_noterange and controlval=VAR_switch_on
+                        input: midicontroller
+                        output: slide-loop-amplifier
+                -
+                    name: binding
+                    attributes:
+                        output1: erase-loop
+                        output2: set-variable
+                        input: midicontroller
+                        parameters2: var=VAR_xferloop and value=0
+                        parameters1: loopid=VAR_panoramacapture+VAR_loopid_panorama
+                        conditions: VAR_keyheld_space=1 and controlnum=VAR_noterange and                   controlval=VAR_switch_on
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: set-master-out-volume
+                        parameters: vol=controlval/127
+                        conditions: controlnum=7
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: set-master-out-volume
+                        parameters: vol=0.0
+                        conditions: controlnum=59 and controlval=127
+                # -
+                #     name: binding
+                #     attributes:
+                #         input: midicontroller
+                #         output: set-master-out-volume
+                #         parameters: vol=1.0
+                #         conditions: controlnum=59 and controlval=0
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-input-record
+                        parameters: input=1
+                        conditions: controlnum=51 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-input-record
+                        parameters: input=2
+                        conditions: controlnum= 52 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-input-record
+                        parameters: input=3
+                        conditions: controlnum=53 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-input-record
+                        parameters: input=4
+                        conditions: controlnum=54 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: set-variable
+                        parameters: var=VAR_overdubmode and value=1
+                        conditions: controlnum=113 and controlval=127
+                # -
+                #     name: binding
+                #     attributes:
+                #         input: midicontroller
+                #         output: set-variable
+                #         parameters: var=VAR_overdubmode and value=0
+                #         conditions: controlnum=113 and controlval=0
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: select-pulse
+                        parameters: pulse=0
+                        conditions: controlnum=116 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: delete-pulse
+                        parameters: pulse=0
+                        conditions: controlnum=108 and controlval=0
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: erase-loop
+                        parameters: loopid=SYSTEM_loopid_lastrecord_0
+                        conditions: controlnum=112 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: trigger-selected-loops
+                        parameters: setid=0 and vol=1.0 and toggleloops=1
+                        conditions: controlnum=115
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-variable
+                        parameters: var=VAR_cutmode and maxvalue=1
+                        conditions: controlnum=118
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: tap-pulse
+                        parameters: pulse=0 and newlen=1
+                        conditions: controlnum=114
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: select-only-playing-loops
+                        parameters: setid=0 and playing=0
+                        conditions: controlnum=110 and controlval=0
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: select-only-playing-loops
+                        parameters: setid=0 and playing=1
+                        conditions: controlnum=110 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: select-all-loops
+                        parameters: setid=0 and select=0
+                        conditions: controlnum=109 and controlval=0
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: select-all-loops
+                        parameters: setid=0 and select=1
+                        conditions: controlnum=106 and controlval=127
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: invert-selection
+                        parameters: setid=0
+                        conditions: controlnum=111
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: toggle-variable
+                        parameters: var=VAR_keyheld_space and maxvalue=1
+                        conditions: controlnum=104
+
+                -
+                    name: binding
+                    attributes:
+                        input: midicontroller
+                        output: delete-pulse
+                        parameters: pulse=0
+                        conditions: VAR_keyheld_space=1 and controlnum=117
+                # -
+                #     name: binding
+                #     attributes:
+                #         output1: trigger-loop
+                #         output2: set-variable
+                #         output3: set-variable
+                #         parameters2: var=VAR_xferloop and value=1
+                #         parameters1: overdub=1 and overdubfeedback=VAR_overdubfeedback and                   loopid=VAR_panoramacapture+VAR_loopid_panorama and vol=1.0
+                #         input: midicontroller
+                #         parameters3: var=VAR_xferidx and                                          value=VAR_panoramacapture+VAR_loopid_panorama
+                #         conditions: VAR_overdubmode=1 and controlnum=VAR_noterange                  and controlval=VAR_switch_on
+                # -
+                #     name: binding
+                #     attributes:
+                #         output1: trigger-loop
+                #         output2: set-variable
+                #         output3: set-variable
+                #         parameters2: var=VAR_xferloop and value=1
+                #         parameters1: loopid=VAR_panoramacapture+VAR_loopid_panorama and vol=1.0
+                #         input: midicontroller
+                #         parameters3: var=VAR_xferidx and                                          value=VAR_panoramacapture+VAR_loopid_panorama
+                #         conditions: controlnum=VAR_noterange and controlval=VAR_switch_on
+        -
+            name: graphics
+            children:
+                -
+                    name: layout
+                    attributes:
+                        #background: '#88FF00FF'
+                        label: 0
+                        id: 0
+                        name: panorama
+                        pos: 0.00,0.00
+                        elabel: 0
+                        #show: 0
+                        namepos: 0.02,0.02
+                        scale: 0.5,0.5
+                    children:
+                      {% set offset = [0, -2, 0, -2] %}
+                      {% for y in range(4) %}
+                        {% for x in range(4) %}
+                        -
+                            name: element
+                            attributes:
+                                loopsize: 0.25
+                                id: {{ y*4 + x + 4*offset[y] }}
+                                name: {{ y*4 + x + 4*offset[y] }}
+                                base: {{ '%.2f' | format(x/4) }},{{ '%.2f' | format(y/4) }}
+                                # looppos: {{ "%.2f" | format( (x + 0.5)/10) }},{{ "%.2f" | format((y + 0.5)/10) }}
+                                looppos: 0.125,0.125
+                                #namepos: {{ "%.2f" | format((x + 0.5)/10) }},{{ "%.2f" | format(y/10) }}
+                                #background: '#8800FFFF'
+                                namepos: 0,0, 0.1,0.1
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        #pos: 0.{{ x }},0.{{ y }}, {{ "%.2f" | format((x + 1)/10) }},{{ "%.2f" | format((y + 1)/10) }}
+                                        pos: 0,0, 0.25,0.25
+                                        outline: TBLR
+
+                        {% endfor %}
+                      {% endfor %}

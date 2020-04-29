@@ -15,7 +15,7 @@
                     name: declare
                     attributes:
                         type: int
-                        init: 340
+                        init: 350
                         var: VAR_loopid_launchpad
                 -
                     name: declare
@@ -113,15 +113,15 @@
                         namepos: 0.02,0.02
                         scale: 1,1
                     children:
-                      {% for x in range(9) %}
-                        {% for y in range(8) %}
+                      {% for x in range(8) %}
+                        {% for y in range(9) %}
                         -
                             name: element
                             attributes:
                                 loopsize: 0.1
-                                id: {{ x*8 + y }}
-                                name: {{ x*8 + y }}
-                                base: 0.{{ x }},0.{{ y }}
+                                id: {{ x*16 + y }}
+                                name: {{ x*16 + y }}
+                                base: 0.{{ y }},0.{{ x }}
                                 # looppos: {{ "%.2f" | format( (x + 0.5)/10) }},{{ "%.2f" | format((y + 0.5)/10) }}
                                 looppos: 0.05,0.05
                                 #namepos: {{ "%.2f" | format((x + 0.5)/10) }},{{ "%.2f" | format(y/10) }}
