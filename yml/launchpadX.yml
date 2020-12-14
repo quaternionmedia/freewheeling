@@ -36,6 +36,12 @@
                         var: VAR_launchpadcapture_set
                         type: char
                 -
+                    name: declare
+                    attributes:
+                        init: 0
+                        var: VAR_launchpad_shift
+                        type: char
+                -
                       name: binding
                       attributes:
                           parameters1: layoutid=0 and                   loopid=VAR_noterange+VAR_loopid_launchpad
@@ -43,6 +49,20 @@
                          # output2: set-load-loop-id
                           input: start-interface
                          # parameters2: loopid=VAR_noterange+VAR_loopid_launchpad
+                -
+                      name: binding
+                      attributes:
+                        input: midikey
+                        output: erase-loop
+                        conditions: VAR_launchpad_shift=1 and notenum=VAR_noterange and keydown=1
+                        parameters: loopid=notenum+VAR_loopid_launchpad
+                -
+                      name: binding
+                      attributes:
+                        input: midicontroller
+                        output: toggle-variable
+                        conditions: controlnum=98
+                        parameters: var=VAR_launchpad_shift and maxvalue=1
                 # -
                 #     name: binding
                 #     attributes:
@@ -113,15 +133,15 @@
                         namepos: 0.02,0.02
                         scale: 1,1
                     children:
-                      {% for x in range(8) %}
-                        {% for y in range(9) %}
+                      {% for y in range(4) %}
+                        {% for x in range(8) %}
                         -
                             name: element
                             attributes:
                                 loopsize: 0.1
-                                id: {{ x*16 + y }}
-                                name: {{ x*16 + y }}
-                                base: 0.{{ y }},0.{{ x }}
+                                id: {{ y*8 + x }}
+                                name: {{ y*8 + x }}
+                                base: 0.{{ x }},0.{{ y }}
                                 # looppos: {{ "%.2f" | format( (x + 0.5)/10) }},{{ "%.2f" | format((y + 0.5)/10) }}
                                 looppos: 0.05,0.05
                                 #namepos: {{ "%.2f" | format((x + 0.5)/10) }},{{ "%.2f" | format(y/10) }}

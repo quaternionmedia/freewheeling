@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.7
+#!/usr/bin/env python3.8
 
 # Convert a YAML file to XML and write it to stdout.
 #
@@ -13,14 +13,14 @@ from jinja2 import FileSystemLoader, Environment, select_autoescape
 env = Environment(loader=FileSystemLoader('yml'), autoescape=select_autoescape(['html', 'xml']))
 
 
-def convertYaml2Xml(inFileName): 
+def convertYaml2Xml(inFileName):
     rendered = env.get_template(inFileName)
     rendered = rendered.render().encode('utf-8')
     yamled = yaml.load(rendered)
     if yamled is None:
         sys.stdout.write('No such file!\n')
         sys.exit(-1)
-    
+
     out = []
     level = 0
     convertYaml2XmlAux(yamled, level, out)

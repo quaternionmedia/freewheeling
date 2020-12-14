@@ -25,15 +25,15 @@
         -
             name: var
             attributes:
-                externalaudioinputs: MMMMMMMM
+                externalaudioinputs: MMMM
         -
             name: var
             attributes:
-                audioinputmonitoring: NNNNNNNN
+                audioinputmonitoring: YYYY
         -
             name: var
             attributes:
-                streaminputs: YYYYYYYY
+                streaminputs: NNNN
         -
             name: var
             attributes:
@@ -41,7 +41,7 @@
         -
             name: var
             attributes:
-                streamloopmix: Y
+                streamloopmix: N
         -
             name: var
             attributes:

@@ -5,13 +5,13 @@
         -
             name: interface
             attributes:
-                switchable: 1
                 setup: coreinterface.xml
-         -
-            name: interface
-            attributes:
                 switchable: 0
-                setup: mercury.xml
+        # -
+        #    name: interface
+        #    attributes:
+        #        switchable: 0
+        #        setup: mercury.xml
         # -
         #     name: interface
         #     attributes:
@@ -27,33 +27,38 @@
         #     attributes:
         #         switchable: 1
         #         setup: rme-hdsp.xml
-        # -
-        #     name: interface
-        #     attributes:
-        #         switchable: 0
-        #         setup: browsers.xml
+        -
+            name: interface
+            attributes:
+                switchable: 0
+                setup: browsers.xml
         -
           name: interface
           attributes:
             switchable: 1
-            setup: launchpad.xml
+            setup: launchpadX.xml
         # -
         #     name: interface
         #     attributes:
         #         switchable: 1
         #         setup: midifootswitch.xml
-        -
+        # -
         #     name: interface
         #     attributes:
         #         setup: bcf2000.xml
         -
-            # name: interface
-            # attributes:
-            #     setup: midikeyboard.xml
+            name: interface
+            attributes:
+                setup: midikeyboard.xml
         # -
         #     name: interface
         #     attributes:
         #         setup: dancemat.xml
+        -
+            name: interface
+            attributes:
+                setup: panorama.xml
+                switchable: 1
         # -
         #     name: interface
         #     attributes:
