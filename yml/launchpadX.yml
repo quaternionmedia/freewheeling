@@ -1,0 +1,159 @@
+---
+-
+    name: interface
+    children:
+        -
+            name: bindings
+            children:
+                -
+                    name: declare
+                    attributes:
+                        type: int
+                        init: 0
+                        var: VAR_launchpad
+                -
+                    name: declare
+                    attributes:
+                        type: int
+                        init: 350
+                        var: VAR_loopid_launchpad
+                -
+                    name: declare
+                    attributes:
+                        init: 0>127
+                        var: VAR_noterange
+                        type: range
+                -
+                    name: declare
+                    attributes:
+                        init: 0
+                        var: VAR_launchpadcapture
+                        type: int
+                -
+                    name: declare
+                    attributes:
+                        init: 0
+                        var: VAR_launchpadcapture_set
+                        type: char
+                -
+                    name: declare
+                    attributes:
+                        init: 0
+                        var: VAR_launchpad_shift
+                        type: char
+                -
+                      name: binding
+                      attributes:
+                          parameters1: layoutid=0 and                   loopid=VAR_noterange+VAR_loopid_launchpad
+                          output1: video-show-loop
+                         # output2: set-load-loop-id
+                          input: start-interface
+                         # parameters2: loopid=VAR_noterange+VAR_loopid_launchpad
+                -
+                      name: binding
+                      attributes:
+                        input: midikey
+                        output: erase-loop
+                        conditions: VAR_launchpad_shift=1 and notenum=VAR_noterange and keydown=1
+                        parameters: loopid=notenum+VAR_loopid_launchpad
+                -
+                      name: binding
+                      attributes:
+                        input: midicontroller
+                        output: toggle-variable
+                        conditions: controlnum=98
+                        parameters: var=VAR_launchpad_shift and maxvalue=1
+                # -
+                #     name: binding
+                #     attributes:
+                #         conditions: VAR_launchpadcapture_set=1 and keydown=1
+                #         input: midikey
+                #         output1: set-variable
+                #         parameters2: var=VAR_launchpadcapture_set and value=0
+                #         parameters1: var=VAR_launchpadcapture and value=VAR_noterange
+                #         output2: set-variable
+                # # -
+                #     name: binding
+                #     attributes:
+                #         parameters: loopid=VAR_noterange and slide=VAR_slide_speed/2
+                #         conditions: VAR_keyheld_up=1 and controlnum=VAR_noterange and                  controlval=VAR_switch_on
+                #         input: midicontroller
+                #         output: slide-loop-amplifier
+                # -
+                #     name: binding
+                #     attributes:
+                #         parameters: loopid=VAR_noterange and slide=-VAR_slide_speed/2
+                #         conditions: VAR_keyheld_down=1 and controlnum=VAR_noterange and                  controlval=VAR_switch_on
+                #         input: midicontroller
+                #         output: slide-loop-amplifier
+                # -
+                #     name: binding
+                #     attributes:
+                #         output1: erase-loop
+                #         output2: set-variable
+                #         input: midicontroller
+                #         parameters2: var=VAR_xferloop and value=0
+                #         parameters1: loopid=VAR_noterange
+                #         conditions: VAR_keyheld_space=1 and controlnum=VAR_noterange and                   controlval=VAR_switch_on
+                # -
+                #     name: binding
+                #     attributes:
+                #         output1: trigger-loop
+                #         output2: set-variable
+                #         output3: set-variable
+                #         parameters2: var=VAR_xferloop and value=1
+                #         parameters1: overdub=1 and overdubfeedback=VAR_overdubfeedback and                   loopid=VAR_noterange and vol=1.0
+                #         input: midicontroller
+                #         parameters3: var=VAR_xferidx and                                          value=VAR_launchpadcapture+VAR_loopid_launchpad
+                #         conditions: VAR_overdubmode=1 and controlnum=VAR_noterange                  and controlval=VAR_switch_on
+                # -
+                #     name: binding
+                #     attributes:
+                #         output1: trigger-loop
+                #         output2: set-variable
+                #         output3: set-variable
+                #         parameters2: var=VAR_xferloop and value=1
+                #         parameters1: loopid=VAR_noterange and vol=1.0
+                #         input: midicontroller
+                #         parameters3: var=VAR_xferidx and                                          value=VAR_noterange
+                #         conditions: controlnum=VAR_noterange and controlval=VAR_switch_on
+        -
+            name: graphics
+            children:
+                -
+                    name: layout
+                    attributes:
+                        #background: '#88FF00FF'
+                        label: 0
+                        id: 0
+                        name: launchpad
+                        pos: 0.00,0.00
+                        elabel: 0
+                        show: 1
+                        namepos: 0.02,0.02
+                        scale: 1,1
+                    children:
+                      {% for y in range(4) %}
+                        {% for x in range(8) %}
+                        -
+                            name: element
+                            attributes:
+                                loopsize: 0.1
+                                id: {{ y*8 + x }}
+                                name: {{ y*8 + x }}
+                                base: 0.{{ x }},0.{{ y }}
+                                # looppos: {{ "%.2f" | format( (x + 0.5)/10) }},{{ "%.2f" | format((y + 0.5)/10) }}
+                                looppos: 0.05,0.05
+                                #namepos: {{ "%.2f" | format((x + 0.5)/10) }},{{ "%.2f" | format(y/10) }}
+                                #background: '#8800FFFF'
+                                namepos: 0,0, 0.1,0.1
+                            children:
+                                -
+                                    name: box
+                                    attributes:
+                                        #pos: 0.{{ x }},0.{{ y }}, {{ "%.2f" | format((x + 1)/10) }},{{ "%.2f" | format((y + 1)/10) }}
+                                        pos: 0,0, 0.1,0.1
+                                        outline: TBLR
+
+                        {% endfor %}
+                      {% endfor %}

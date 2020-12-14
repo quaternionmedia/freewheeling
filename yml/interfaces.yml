@@ -36,7 +36,7 @@
           name: interface
           attributes:
             switchable: 1
-            setup: launchpad.xml
+            setup: launchpadX.xml
         # -
         #     name: interface
         #     attributes:
