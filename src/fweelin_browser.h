@@ -52,7 +52,7 @@ enum BrowserItemType {
 class BrowserItem {
  public:
   // Initialize a browser item with name n
-  BrowserItem(char *n = 0, char default_name = 1) : 
+  BrowserItem(const char *n = 0, char default_name = 1) :
     default_name(default_name), next(0), prev(0) {
     if (n == 0)
       name = 0;
@@ -71,12 +71,12 @@ class BrowserItem {
   // Compare this item to a second item and return whether this item is
   // greater than (>0), less than (<0), or equal to (==0) second
   // Used for sorting browser items
-  virtual int Compare(BrowserItem *second) { return 0; };
+  virtual int Compare(BrowserItem */*second*/) { return 0; };
 
   // Return zero if the item described by 'itemmatch' matches this item
   // This is a type-neutral compare function to be overridden to provide
   // meaningful matches for different browsers
-  virtual int MatchItem(int itemmatch) { return 1; };
+  virtual int MatchItem(int /*itemmatch*/) { return 1; };
 
   char default_name; // Nonzero if the name for this item is a default name
   char *name;
@@ -120,7 +120,7 @@ class ItemRenamer : public EventHook {
   virtual ~ItemRenamer() {};
 
   // Hook events for typing new names
-  virtual char HookEvent(Event *ev, EventProducer *from);
+  virtual char HookEvent(Event *ev, EventProducer */*from*/);
 
   inline char *GetCurName() { return rename_tmpbuf; };
   inline RenameUIVars *UpdateUIVars() { 
@@ -201,9 +201,9 @@ class Browser : public FloDisplay, public EventListener, public EventProducer,
   void Rename();
 
   // Mouse button pressed (return nonzero to eat event, zero to ignore)
-  virtual char MouseButton(MouseButtonInputEvent *mev) { return 0; };
+  virtual char MouseButton(MouseButtonInputEvent */*evt*/) { return 0; };
   // Mouse moved (return nonzero to eat event, zero to ignore)
-  virtual char MouseMotion(MouseMotionInputEvent *mev) { return 0; };
+  virtual char MouseMotion(MouseMotionInputEvent */*evt*/) { return 0; };
 
   // Get the onscreen display name for a file with given name. 
   // (filename must refer to a file of the type this browser handles)
@@ -250,7 +250,7 @@ class Browser : public FloDisplay, public EventListener, public EventProducer,
   };
 
   // Receive events
-  virtual void ReceiveEvent(Event *ev, EventProducer *from);
+  virtual void ReceiveEvent(Event *ev, EventProducer */*from*/);
 
   // Draw to screen
   virtual void Draw(SDL_Surface *screen);
@@ -415,7 +415,7 @@ class PatchItem : public BrowserItem {
 public:
 
   PatchItem (int id = 0, int bank = 0, int prog = 0, int channel = 0,
-             char *name = 0, char bypasscc = 0, int bypasschannel = -1, float bypasstime1 = 0.0, float bypasstime2 = 10.0) :
+             const char *name = 0, char bypasscc = 0, int bypasschannel = -1, float bypasstime1 = 0.0, float bypasstime2 = 10.0) :
     BrowserItem(name), id(id), bank(bank), prog(prog), channel(channel),
     bypasscc(bypasscc), bypasschannel(bypasschannel), bypasstime1(bypasstime1), bypasstime2(bypasstime2), 
     zones(0), numzones(0) {};

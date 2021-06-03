@@ -18,6 +18,7 @@
    You should have received a copy of the GNU General Public License
    along with Freewheeling.  If not, see <http://www.gnu.org/licenses/>. */
 
+
 #if USE_FLUIDSYNTH
 
 #include <fluidsynth.h>
@@ -38,7 +39,7 @@ public:
 
   virtual void process(char pre, nframes_t len, AudioBuffers *ab);
 
-  virtual void ReceiveEvent(Event *ev, EventProducer *from);
+  virtual void ReceiveEvent(Event *ev, EventProducer */*from*/);
 
   // Send a new patch to synth
   void SendPatchChange(PatchItem *p);

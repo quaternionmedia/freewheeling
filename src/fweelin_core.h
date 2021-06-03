@@ -101,7 +101,7 @@ class Saveable {
  public:
   Saveable() : savestatus(NO_SAVE) {};
 
-  virtual void Save(Fweelin *app) {}; // Save the object
+  virtual void Save(Fweelin */*app*/) {}; // Save the object
 
   inline unsigned char *GetSaveHash() { return savehash; };
   inline int CompareHash(unsigned char *hash2) { 
@@ -422,9 +422,9 @@ public:
 
 // This class manages sets of loops, allowing them to be triggered..
 // like a keymap
-class TriggerMap : public Saveable, public EventProducer {
+class TriggerMap : public Saveable, public EventProducer { 
 public:
-  TriggerMap (Fweelin *app, int mapsize) : app(app), mapsize(mapsize), 
+  TriggerMap (Fweelin *app, int mapsize) : app(app), mapsize(mapsize),
     lastupdate(0) {
     // Map is an array of pointers to different loops
     map = new Loop *[mapsize];
@@ -862,12 +862,12 @@ public:
   void AddLoopToLoadQueue(char *filename, int index, float vol);
 
   // Saves loop XML data & prepares to save loop audio
-  void SetupSaveLoop(Loop *l, int l_idx, FILE **out, AudioBlock **b, 
+  void SetupSaveLoop(Loop *l, int /*l_idx*/, FILE **out, AudioBlock **b,
                      AudioBlockIterator **i, nframes_t *len);
   // Loads loop XML data & prepares to load loop audio-
   // returns nonzero on error
   int SetupLoadLoop(FILE **in, char *smooth_end,
-                    Loop **new_loop, int l_idx, float l_vol,
+                    Loop **new_loop, int /*l_idx*/, float l_vol,
                     char *l_filename);
 
   // Setup time marker striping on audio memory when a new
@@ -1028,7 +1028,11 @@ class Fweelin : public EventProducer, public BrowserCallback {
   Snapshot *getSNAP(int idx); 
   inline Snapshot *getSNAPS() { return snaps; }; 
 
+  // Trigger snapshot #idx - return nonzero on failure
+  char TriggerSnapshot (int idx);
+
   // Create snapshot from current state of all loops
+  void CreateSnapshot (char *_name, LoopManager *lm, TriggerMap *tmap);
   Snapshot *CreateSnapshot (int idx) { 
     Snapshot *s = getSNAP(idx);
     if (s != 0) {
@@ -1047,14 +1051,14 @@ class Fweelin : public EventProducer, public BrowserCallback {
       char tmp[sizeof(Snapshot)];
       tmap->TouchMap();
       memcpy(tmp,s1,sizeof(Snapshot));
-      memcpy(s1,s2,sizeof(Snapshot));
-      memcpy(s2,tmp,sizeof(Snapshot));
+      memcpy((unsigned char*)s1,s2,sizeof(Snapshot));
+      memcpy((unsigned char*)s2,tmp,sizeof(Snapshot));
       return 0;
     } else
       return -1;
   };
 
-  // Load snapshot from disk- just create space & name
+  // Load snapshot from disk - just create space & name
   Snapshot *LoadSnapshot (int idx, char *name) {
     Snapshot *s = getSNAP(idx);
     if (s != 0) {
@@ -1065,17 +1069,9 @@ class Fweelin : public EventProducer, public BrowserCallback {
     return s;
   };
 
-  // Trigger snapshot #idx - return nonzero on failure
-  char TriggerSnapshot (int idx);
-
-  // Create a snapshot from loops right now
-  void CreateSnapshot (char *name, LoopManager *lm, TriggerMap *tmap);
-
   // Sync parameters
-  
   inline int GetSyncSpeed() { return sync_speed; };
   inline char GetSyncType() { return sync_type; };
-  
   inline void SetSyncSpeed(int sspd) { 
     if (sspd < 1)
       sync_speed = 1;
@@ -1096,13 +1092,13 @@ class Fweelin : public EventProducer, public BrowserCallback {
   };
 
   // Patch browser callbacks
-  virtual void ItemBrowsed(BrowserItem *i) { 
+  virtual void ItemBrowsed(BrowserItem */*item*/) {
     // Auto-select (disabled)
     // ItemSelected(i); 
   };
-  virtual void ItemSelected(BrowserItem *i);
+  virtual void ItemSelected(BrowserItem *item);
   // Patches can not yet be renamed
-  virtual void ItemRenamed(BrowserItem *i) { return; }; 
+  virtual void ItemRenamed(BrowserItem */*item*/) { return; };
 
  private:
   OSCClient *osc;

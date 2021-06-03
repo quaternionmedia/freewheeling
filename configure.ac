@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ([2.69])
-AC_INIT([fweelin], [0.6.3], [https://github.com/free-wheeling/freewheeling/issues])
+AC_INIT([fweelin],[0.6.6],[https://github.com/free-wheeling/freewheeling/issues])
 AM_INIT_AUTOMAKE([subdir-objects])
 AC_CONFIG_SRCDIR([src/fweelin.cc])
 #AM_CONFIG_HEADER(config.h)
@@ -32,12 +32,12 @@ AC_CHECK_LIB([freetype], [FT_Init_FreeType], ,
 # Check for SDL_gfx with different function names..
 AC_CHECK_LIB([SDL_gfx], [main], , 
   [AC_MSG_ERROR(VIDEO: You need libsdl-gfx1.2-dev installed.
-                http://www.ferzkopp.net/~aschiffler/Software/SDL_gfx-2.0/)])
+                http://www.ferzkopp.net/wordpress/2016/01/02/sdl_gfx-sdl2_gfx/)])
 AC_CHECK_FUNC(filledPieRGBA, [AC_DEFINE(CAPITAL_FILLED_PIE)])
 AC_CHECK_LIB([SDL_ttf], [main], , 
   [AC_MSG_ERROR(VIDEO: You need libsdl-ttf2.0-dev installed.
-		http://www.libsdl.org/projects/SDL_ttf/)])
-AC_CHECK_LIB([SDL], [main], , 
+		http://www.libsdl.org/projects/SDL_ttf/release-1.2.html)])
+PKG_CHECK_MODULES([SDL], [sdl >= 1.2 sdl < 1.3], ,
   [AC_MSG_ERROR(VIDEO: You need libsdl1.2-dev installed. http://www.libsdl.org/)])
 
 AC_CHECK_LIB([lo], [main], , [AC_MSG_ERROR(CONFIG: You need liblo-dev installed.
@@ -103,7 +103,7 @@ AC_CHECK_LIB([ogg], [main], ,
 		http://www.xiph.org/ogg/vorbis/)])
 
 AC_CHECK_LIB([sndfile], [main], , 
-  [AC_MSG_ERROR(AUDIO: you need libsndfile installed.
+  [AC_MSG_ERROR(AUDIO: you need libsndfile-dev installed.
 		http://www.http://www.mega-nerd.com/libsndfile/)])
 
 CFLAGS="$CFLAGS $SDL_CFLAGS"
