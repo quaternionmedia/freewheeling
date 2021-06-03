@@ -1,0 +1,80 @@
+#!/bin/bash
+
+XML_DIR=~/.fweelin
+YML_DIR=$(dirname "$0")/../yml
+
+usage() {
+echo """
+xml to yml converter
+
+for use with freewheeling
+
+USAGE
+	buildxml [options]
+
+OPTIONS
+	-h	display this guide
+	-v	display version
+	-x	XML to YML
+	-y	YML to XML
+
+Conversions happen from XML_DIR to YML_DIR and back.
+
+DEFAULTS:
+
+XML_DIR=~/.fweelin
+YML_DIR=yml"""
+
+exit 0
+}
+
+version() {
+echo 0.1
+exit 0
+}
+
+xmltoyml() {
+mkdir -p $YML_DIR
+for i in $(ls ~/.fweelin/*.xml); do
+	FILENAME=$(basename $i .xml)
+	echo converting $FILENAME
+	RESULT="$($(dirname "$0")/xy -x2y $i)"
+ 	if [ -n "$RESULT" ] ; then
+		echo "$RESULT" > $YML_DIR/$FILENAME.yml
+
+	fi
+done
+
+exit 0
+}
+
+ymltoxml() {
+UPDATED=0
+TOTAL=0
+for i in $(ls $YML_DIR/*.yml) ; do
+	TOTAL=$((TOTAL+1))
+	FILENAME=$(basename $i .yml)
+
+	if [ $i -nt $XML_DIR/$FILENAME.xml ] ; then
+		echo "updating $i"
+		RESULT="$($(dirname "$0")/xy -y2x $FILENAME.yml)"
+		if [ -n "$RESULT" ] ; then
+			echo "$RESULT" > $XML_DIR/$FILENAME.xml && UPDATED=$((UPDATED+1))
+		fi
+	fi
+done
+
+echo "Converted $UPDATED of $TOTAL records"
+
+exit 0
+}
+
+while getopts "hvxy" OPT ; do
+	case $OPT in
+		h) usage ;;
+		v) version ;;
+		x) xmltoyml $OPTARG ;;
+		y) ymltoxml $OPTARG ;;
+		*) usage ;;
+	esac
+done

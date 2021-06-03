@@ -1,0 +1,159 @@
+#!/usr/bin/env python3.8
+
+# Convert a YAML file to XML and write it to stdout.
+#
+
+import sys, string, re, types
+import yaml
+
+from xml.dom import minidom
+from xml.dom import Node
+
+from jinja2 import FileSystemLoader, Environment, select_autoescape
+env = Environment(loader=FileSystemLoader('yml'), autoescape=select_autoescape(['html', 'xml']))
+
+
+def convertYaml2Xml(inFileName):
+    rendered = env.get_template(inFileName)
+    rendered = rendered.render().encode('utf-8')
+    yamled = yaml.load(rendered)
+    if yamled is None:
+        sys.stdout.write('No such file!\n')
+        sys.exit(-1)
+
+    out = []
+    level = 0
+    convertYaml2XmlAux(yamled, level, out)
+    outStr = "".join(out)
+    sys.stdout.write(outStr)
+
+
+def convertYaml2XmlAux(inobj, level, out):
+    for obj in inobj:
+        if type(obj) == dict and \
+            'name' in obj:
+            addLevel(level, out)
+            out.append('<%s' % obj['name'])
+            if 'attributes' in obj:
+                for key in obj['attributes']:
+                    out.append(' %s="%s"' % (key, obj['attributes'][key]))
+            if not ('children' in obj or 'text' in obj):
+                out.append('/>\n')
+            else:
+                if 'children' in obj:
+                    out.append('>\n')
+                else:
+                    out.append('>')
+                if 'text' in obj:
+                    out.append(obj['text'])
+                if 'children' in obj:
+                    convertYaml2XmlAux(obj['children'], level + 1, out)
+                    addLevel(level, out)
+                out.append('</%s>\n' % obj['name'])
+
+
+#
+# Convert an XML document (file) to YAML and write it to stdout.
+#
+def convertXml2Yaml(inFileName):
+    doc = minidom.parse(inFileName)
+    out = []
+    out.append('---\n')
+    level = 0
+    root = doc.childNodes[0]
+    convertXml2YamlAux(root, level, out)
+    content = "".join(out)
+    sys.stdout.write(content)
+
+
+def convertXml2YamlAux(obj, level, out):
+    addLevel(level, out)
+    out.append('-\n')
+    level += 1
+    addLevel(level, out)
+    out.append('name: %s\n' % obj.nodeName)
+    # Dump the attributes.
+    attrs = obj.attributes
+    if attrs.length > 0:
+        addLevel(level, out)
+        out.append('attributes:\n')
+        level += 1
+        for idx in range(attrs.length):
+            attr = attrs.item(idx)
+            addLevel(level, out)
+            out.append('%s: %s\n' % (attr.name, attr.value))
+        level -= 1
+    # Dump the text.
+    text = []
+    for child in obj.childNodes:
+        if child.nodeType == Node.TEXT_NODE and \
+            not isAllWhiteSpace(child.nodeValue):
+            text.append(child.nodeValue)
+    if text:
+        textStr = "".join(text)
+        addLevel(level, out)
+        out.append('text: %s\n' % textStr)
+    # Dump the children.
+    found = 0
+    for child in obj.childNodes:
+        if child.nodeType == Node.ELEMENT_NODE:
+            found = 1
+            break
+    if found:
+        addLevel(level, out)
+        out.append('children:\n')
+        level += 1
+        for child in obj.childNodes:
+            if child.nodeType == Node.ELEMENT_NODE:
+                convertXml2YamlAux(child, level, out)
+
+
+#
+# Utility functions.
+#
+def addLevel(level, out):
+    for idx in range(level):
+        out.append('    ')
+
+
+NonWhiteSpacePattern = re.compile('\S')
+
+def isAllWhiteSpace(text):
+    if NonWhiteSpacePattern.search(text):
+        return 0
+    return 1
+
+
+USAGE_TEXT = """
+Convert a file from YAML to XML or XML to YAML and write it to stdout.
+
+Usage: python xy <option> <in_file>
+
+Options:
+    -y2x    Convert YAML file to XML document.
+    -x2y    Convert XML document to YAML.
+"""
+
+def usage():
+    print(USAGE_TEXT)
+    sys.exit(-1)
+
+
+def main():
+    args = sys.argv[1:]
+    if len(args) != 2:
+        usage()
+    option = args[0]
+    inFileName = args[1]
+    if option == '-y2x':
+        convertYaml2Xml(inFileName)
+    elif option == '-x2y':
+        convertXml2Yaml(inFileName)
+    else:
+        usage()
+
+
+if __name__ == '__main__':
+    main()
+    #import pdb
+    #pdb.run('main()')
