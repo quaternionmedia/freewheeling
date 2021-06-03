@@ -5,11 +5,11 @@
         -
             name: var
             attributes:
-                numloopids: 1024
+                numloopids: 32
         -
             name: var
             attributes:
-                maxsnapshots: 100
+                maxsnapshots: 10
         -
             name: var
             attributes:
@@ -17,7 +17,7 @@
         -
             name: var
             attributes:
-                midiouts: 4
+                midiouts: 2
         -
             name: var
             attributes:
@@ -25,7 +25,7 @@
         -
             name: var
             attributes:
-                externalaudioinputs: MMSS
+                externalaudioinputs: SSSS
         -
             name: var
             attributes:
@@ -33,7 +33,7 @@
         -
             name: var
             attributes:
-                streaminputs: NYYN
+                streaminputs: NNNN
         -
             name: var
             attributes:
@@ -41,7 +41,7 @@
         -
             name: var
             attributes:
-                streamloopmix: Y
+                streamloopmix: N
         -
             name: var
             attributes:
@@ -53,11 +53,11 @@
         -
             name: var
             attributes:
-                limiterthreshhold: 0.75
+                limiterthreshhold: 0.95
         -
             name: var
             attributes:
-                limiterreleaserate: 0.000020
+                limiterreleaserate: 0.00020
         -
             name: var
             attributes:
@@ -73,7 +73,7 @@
         -
             name: var
             attributes:
-                oggquality: 0.5
+                oggquality: 0.8
         -
             name: fluidsynth
             attributes:
@@ -100,7 +100,7 @@
             name: fluidsynth
             attributes:
                 tuning: -31.76
-        -
-            name: fluidsynth
-            attributes:
-                soundfont: basic.sf2
+        # -
+        #     name: fluidsynth
+        #     attributes:
+        #         soundfont: basic.sf2
