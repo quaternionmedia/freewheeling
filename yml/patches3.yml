@@ -1,0 +1,466 @@
+---
+-
+    name: patchlist
+    children:
+        -
+            name: combi
+            attributes:
+                name: Strings
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 12>55
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 46>64
+                        channel: 1
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 55>76
+                        channel: 2
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 60>76
+                        channel: 3
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 77>127
+                        channel: 12
+                        bank: 32
+                        program: 18
+        -
+            name: combi
+            attributes:
+                name: Strings + Flute
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 12>55
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 46>64
+                        channel: 1
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 55>76
+                        channel: 2
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 60>127
+                        channel: 12
+                        bank: 0
+                        program: 73
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Viola
+                bank: 0
+                program: 41
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Cello
+                bank: 0
+                program: 42
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Cellos
+                bank: 32
+                program: 13
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Bass
+                bank: 0
+                program: 43
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Flute
+                bank: 0
+                program: 73
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: 2 Clarinet
+                bank: 32
+                program: 19
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Oboe
+                bank: 0
+                program: 68
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Bassoon
+                bank: 0
+                program: 70
+        -
+            name: combi
+            attributes:
+                name: Bassoon/Oboe
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 12>59
+                        channel: 12
+                        bank: 0
+                        program: 70
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 53>127
+                        channel: 13
+                        bank: 0
+                        program: 68
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Big Ol Flutes
+                bank: 32
+                program: 0
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Big Ol Clarinets
+                bank: 32
+                program: 10
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Hybrid Flute
+                bank: 32
+                program: 14
+        -
+            name: combi
+            attributes:
+                name: Flutes/Clarinets
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 12
+                        bank: 32
+                        program: 11
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 13
+                        bank: 32
+                        program: 12
+        -
+            name: combi
+            attributes:
+                name: Woods
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 12>55
+                        channel: 8
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 46>64
+                        channel: 9
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 55>76
+                        channel: 10
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 60>127
+                        channel: 11
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Trumpet (NO MOD)
+                bank: 0
+                program: 56
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Trombone (NO MOD)
+                bank: 0
+                program: 57
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: English Horn (NO MOD)
+                bank: 0
+                program: 69
+        -
+            name: patch
+            attributes:
+                channel: 12
+                name: Horn (NO MOD)
+                bank: 32
+                program: 9
+        -
+            name: combi
+            attributes:
+                name: Brass (NO MOD)
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 33>55
+                        channel: 6
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 46>64
+                        channel: 4
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 55>76
+                        channel: 5
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 60>127
+                        channel: 7
+        -
+            name: combi
+            attributes:
+                name: Trumpet/Trombone (NO MOD)
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>72
+                        channel: 12
+                        bank: 0
+                        program: 57
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 60>127
+                        channel: 13
+                        bank: 0
+                        program: 56
+        -
+            name: combi
+            attributes:
+                name: Trumpet/Horns (NO MOD)
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 12
+                        bank: 32
+                        program: 15
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 13
+                        bank: 32
+                        program: 16
+        -
+            name: combi
+            attributes:
+                name: Soft Bassoon/Horns (NO MOD)
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 12
+                        bank: 32
+                        program: 17
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 13
+                        bank: 32
+                        program: 16
+        -
+            name: combi
+            attributes:
+                name: Strings/Piano Split
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 60>127
+                        midiport: 1
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 12>55
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 46>64
+                        channel: 1
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 55>67
+                        channel: 2
+        -
+            name: combi
+            attributes:
+                name: Strings/Sordino Split
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>60
+                        midiport: 1
+                        channel: 1
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 55>64
+                        channel: 1
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 55>76
+                        channel: 2
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 60>127
+                        channel: 3
+        -
+            name: combi
+            attributes:
+                name: Strings/Piano Layer
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        midiport: 1
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 12>55
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 46>64
+                        channel: 1
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 55>76
+                        channel: 2
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 60>127
+                        channel: 3
+        -
+            name: combi
+            attributes:
+                name: Cellos/Piano Layer
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        midiport: 1
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 14
+                        bank: 32
+                        program: 13
+        -
+            name: combi
+            attributes:
+                name: Bassoon/Piano Layer
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        midiport: 1
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 14
+                        bank: 0
+                        program: 70
+        -
+            name: combi
+            attributes:
+                name: Piano/DX7
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        midiport: 1
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        midiport: 2
+                        channel: 1
+        -
+            name: combi
+            attributes:
+                name: Piano/WhySynth
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        midiport: 1
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        midiport: 2
+                        channel: 0

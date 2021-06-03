@@ -1,0 +1,1259 @@
+---
+-
+    name: interface
+    children:
+        -
+            name: bindings
+            children:
+                -
+                    name: declare
+                    attributes:
+                        var: DISPLAY_synthedit
+                        type: int
+                        init: 1000
+                -
+                    name: declare
+                    attributes:
+                        var: DISPLAY_synthedit_chanselect
+                        type: int
+                        init: 1001
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_synthedit_interfaceid
+                        type: int
+                        init: 0
+                -
+                    name: declare
+                    attributes:
+                        var: VAR_synthedit_midichannel
+                        type: int
+                        init: 0
+                -
+                    name: binding
+                    attributes:
+                        input: start-interface
+                        output1: set-variable
+                        parameters1: var=VAR_synthedit_interfaceid and value=interfaceid
+        -
+            name: graphics
+            children:
+                -
+                    name: display
+                    attributes:
+                        id: DISPLAY_synthedit_chanselect
+                        show: 0
+                        var: VAR_synthedit_midichannel
+                        type: text
+                        font: small
+                        title: SynthEdit Ch 
+                        pos: 0.05,0.07
+                -
+                    name: display
+                    attributes:
+                        id: DISPLAY_synthedit
+                        show: 0
+                        type: paramset
+                        font: tiny
+                        pos: 0.05,0.1
+                        size: 0.9,0.22
+                        name: synthedit
+                        title: Synth Editor
+                        numactiveparams: 8
+                    children:
+                        -
+                            name: bank
+                            attributes:
+                                name: CS-80
+                                maxvalue: 127
+                            children:
+                                -
+                                    name: param
+                                    attributes:
+                                        name: *S1* LFO SPD
+                                -
+                                    name: param
+                                    attributes:
+                                        name: PWM LFO %
+                                -
+                                    name: param
+                                    attributes:
+                                        name: PWM BASE
+                                -
+                                    name: param
+                                    attributes:
+                                        name: NOISE
+                                -
+                                    name: param
+                                    attributes:
+                                        name: HI FLT
+                                -
+                                    name: param
+                                    attributes:
+                                        name: HI REZ
+                                -
+                                    name: param
+                                    attributes:
+                                        name: LO FLT
+                                -
+                                    name: param
+                                    attributes:
+                                        name: LO REZ
+                                -
+                                    name: param
+                                    attributes:
+                                        name: LVL
+                                -
+                                    name: param
+                                    attributes:
+                                        name: OSC SINE
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param
+                                -
+                                    name: param

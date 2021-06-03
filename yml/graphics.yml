@@ -1,0 +1,36 @@
+---
+-
+    name: graphics
+    children:
+        -
+            name: var
+            attributes:
+                resolution: 640,480
+        -
+            name: var
+            attributes:
+                videodelay: 40
+        -
+            name: font
+            attributes:
+                name: main
+                file: truetype/ttf-bitstream-vera/VeraBd.ttf
+                size: 20
+        -
+            name: font
+            attributes:
+                name: help
+                file: truetype/ttf-bitstream-vera/Vera.ttf
+                size: 16
+        -
+            name: font
+            attributes:
+                name: small
+                file: truetype/ttf-bitstream-vera/VeraBd.ttf
+                size: 14
+        -
+            name: font
+            attributes:
+                name: tiny
+                file: truetype/ttf-bitstream-vera/Vera.ttf
+                size: 10

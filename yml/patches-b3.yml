@@ -1,0 +1,54 @@
+---
+-
+    name: patchlist
+    children:
+        -
+            name: patch
+            attributes:
+                channel: 0
+                name: B3 Upper
+        -
+            name: combi
+            attributes:
+                name: B3 Pedal/Lower/Upper
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 1
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 2
+        -
+            name: combi
+            attributes:
+                name: B3 Pedal/Upper
+            children:
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 0
+                -
+                    name: zone
+                    attributes:
+                        keyrange: 0>127
+                        channel: 2
+        -
+            name: patch
+            attributes:
+                channel: 1
+                name: B3 Lower
+        -
+            name: patch
+            attributes:
+                channel: 2
+                name: B3 Pedal

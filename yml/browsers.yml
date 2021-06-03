@@ -1,0 +1,67 @@
+---
+-
+    name: interface
+    children:
+        -
+            name: graphics
+            children:
+                -
+                    name: display
+                    attributes:
+                        interfaceid: 0
+                        id: DISPLAY_browser_patch
+                        type: browser
+                        font: main
+                        browsetype: BROWSE_patch
+                        pos: 0.0,0.96
+                        xpand: 1
+                        xbox: 0.1,0.1, 0.9,0.9
+                        xdelay: 5.0
+                        show: 1
+                    children:
+                        -
+                            name: patchbank
+                            attributes:
+                                midiport: 1
+                                separatechannels: 0
+                                suppressprogramchanges: 1
+                                patches: patches-channels.xml
+                -
+                    name: display
+                    attributes:
+                        interfaceid: 0
+                        id: DISPLAY_browser_loop
+                        type: browser
+                        font: small
+                        browsetype: BROWSE_loop
+                        pos: 0.0,0.96
+                        xpand: 1
+                        xbox: 0.1,0.1, 0.9,0.9
+                        xdelay: 5.0
+                        show: 0
+                -
+                    name: display
+                    attributes:
+                        interfaceid: 0
+                        id: DISPLAY_browser_scene
+                        type: browser
+                        font: small
+                        browsetype: BROWSE_scene
+                        pos: 0.0,0.96
+                        xpand: 1
+                        xbox: 0.1,0.1, 0.9,0.9
+                        xdelay: 5.0
+                        show: 0
+                -
+                    name: display
+                    attributes:
+                        interfaceid: 0
+                        id: DISPLAY_loop_tray
+                        type: browser
+                        font: tiny
+                        browsetype: BROWSE_loop_tray
+                        pos: 0.015,0.92
+                        xpand: 0
+                        xbox: 0.05,0.6, 0.95,0.9
+                        loopsize: 0.05
+                        show: 1
