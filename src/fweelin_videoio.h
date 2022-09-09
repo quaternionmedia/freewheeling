@@ -118,7 +118,7 @@ public:
   void SetVideoMode(char fullscreen);
   char GetVideoMode() { return fullscreen; };
 
-  void ReceiveEvent(Event *ev, EventProducer *from);
+  void ReceiveEvent(Event *ev, EventProducer */*from*/);
 
   // Draw text, and optionally return size of text drawn in sx and sy
   static int draw_text(SDL_Surface *out, TTF_Font *font,
@@ -173,8 +173,8 @@ public:
 
   SDL_Surface *screen;
   
-  // Pointers to fonts that video uses-- links into FloFont structures
-  TTF_Font *mainfont, *helpfont, *smallfont;
+  // Pointers to fonts that video uses - links into FloFont structures
+  TTF_Font *mainfont, *helpfont, *smallfont, *tinyfont;
 
   // Planar->Circular mapping variables
   CircularMap *cmaps;

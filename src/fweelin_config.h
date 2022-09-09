@@ -297,7 +297,7 @@ class InputMatrix : public EventProducer, public EventListener {
   // and sets us up to handle those
   void CreateParameterSets (int interfaceid,
                             EventBinding *bind, xmlNode *binding, 
-                            Event *input, int contnum);
+                            Event *input, unsigned char contnum);
 
   // Scans in the given binding for conditions on input event parameters 
   // or user variables, and sets us up to handle those
@@ -762,15 +762,15 @@ class FloConfig {
   char *PrepareLoadConfigFile (char *cfgname, char basecfg);
   
   // Configure bindings between events and their triggers
-  void ConfigureEventBindings(xmlDocPtr doc, xmlNode *events, 
+  void ConfigureEventBindings(xmlDocPtr /*doc*/, xmlNode *events,
                               int interfaceid = 0, char firstpass = 0);
 
   // Configuring displays
-  void SetupParamSetBank(xmlDocPtr doc, xmlNode *banknode, ParamSetBank *bank);
+  void SetupParamSetBank(xmlDocPtr /*doc*/, xmlNode *banknode, ParamSetBank *bank);
   FloDisplay *SetupParamSet(xmlDocPtr doc, xmlNode *paramset, int interfaceid);
 
   // Configuration sections
-  void ConfigureElement(xmlDocPtr doc, xmlNode *elemn, 
+  void ConfigureElement(xmlDocPtr /*doc*/, xmlNode *elemn,
                         FloLayoutElement *elem, float xscale, float yscale);
   void ConfigureLayout(xmlDocPtr doc, xmlNode *layn, 
                        FloLayout *lay, float xscale, float yscale);
@@ -778,8 +778,8 @@ class FloConfig {
   void ConfigureDisplay(xmlDocPtr doc, xmlNode *disp, int interfaceid, FloDisplayPanel *parent = 0);
   void ConfigurePatchBanks(xmlNode *pb, PatchBrowser *br);
   void ConfigureGraphics(xmlDocPtr doc, xmlNode *vid, int interfaceid = 0);
-  void ConfigureBasics(xmlDocPtr doc, xmlNode *gen);
-  void ConfigureInterfaces (xmlDocPtr doc, xmlNode *ifs, char firstpass);
+  void ConfigureBasics(xmlDocPtr /*doc*/, xmlNode *gen);
+  void ConfigureInterfaces (xmlDocPtr /*doc*/, xmlNode *ifs, char firstpass);
   void ConfigureRoot (xmlDocPtr doc, xmlNode *root, int interfaceid = 0,
                       char firstpass = 0);
   
@@ -857,9 +857,9 @@ class FloConfig {
   int msnumouts, *msouts;
   
   // Is input/output #n stereo?
-  inline char IsStereoInput(int n) { return ms_inputs[n]; };
-  inline char IsStereoOutput(int n) { return IsStereoMaster(); };
-  inline char IsInputMonitoring(int n) { return monitor_inputs[n]; };
+  inline char IsStereoInput(int out_n) { return ms_inputs[out_n]; };
+  inline char IsStereoOutput(int /*out_n*/) { return IsStereoMaster(); };
+  inline char IsInputMonitoring(int out_n) { return monitor_inputs[out_n]; };
   char *ms_inputs,    // Zero or nonzero for each input- is this input stereo?
     *monitor_inputs;  // Nonzero if monitoring is enabled for this input
   // Is FreeWheeling running in stereo or completely in mono?
@@ -1088,6 +1088,8 @@ class FloConfig {
   const static int NUM_PREALLOCATED_AUDIO_BLOCKS;
   // # of time markers to preallocate
   const static int NUM_PREALLOCATED_TIME_MARKERS;
+  // Maximum path length for config files
+  const static int CFG_PATH_MAX;
 };
 
 #endif

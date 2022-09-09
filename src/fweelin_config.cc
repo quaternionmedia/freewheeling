@@ -70,9 +70,8 @@ const int CfgMathOperation::numops = 4;
 const int FloConfig::NUM_PREALLOCATED_AUDIO_BLOCKS = 40;
 const int FloConfig::NUM_PREALLOCATED_TIME_MARKERS = 40;
 const float FloConfig::AUDIO_MEMORY_LEN = 10.0;
+const int FloConfig::CFG_PATH_MAX = 2048;
 
-// Maximum path length for config files
-#define CFG_PATH_MAX 2048
 
 // Copies configuration file 'cfgname' from shared to ~/.fweelin
 // If copyall is set, copies *all* .XML files from shared to ~/.fweelin
@@ -105,28 +104,30 @@ void FloConfig::CopyConfigFile (char *cfgname, char copyall) {
     struct stat st;
     if (stat(buf,&st) == 0) {
       // Find backup name
-      char tmp2[CFG_PATH_MAX];
-      int bCnt = 1;
+      unsigned int tmp2_size = CFG_PATH_MAX + 20;
+      char tmp2[tmp2_size];
+      unsigned char bCnt = 1;
       char go = 1;
-      while (go) {
-        snprintf(tmp2,CFG_PATH_MAX,"%s.backup.%d",buf,bCnt);
+      do {
+        snprintf(tmp2,tmp2_size,"%s.backup.%d",buf,bCnt);
         if (stat(tmp2,&st) != 0)
           go = 0; // Free backup filename
         else
           bCnt++;
-      }
+      } while (go && bCnt % 256) ;
 
       // Backup
       printf("Backing up your old configuration to: %s\n",tmp2);
-      char tmp3[CFG_PATH_MAX];
-      snprintf(tmp3,CFG_PATH_MAX,"cp \"%s\" \"%s\"",buf,tmp2);
+      unsigned int tmp3_size = (CFG_PATH_MAX * 2) + 20;
+      char tmp3[tmp3_size];
+      snprintf(tmp3,tmp3_size,"cp \"%s\" \"%s\"",buf,tmp2);
       printf("INIT: Copying: %s\n",tmp3);
       system(tmp3);
     }
 
     // Copy over from shared
-    char buf2[CFG_PATH_MAX];
-    snprintf(buf2,CFG_PATH_MAX,"cp \"%s/%s\" \"%s/%s\"",
+    char buf2[CFG_PATH_MAX*2];
+    snprintf(buf2,CFG_PATH_MAX*2,"cp \"%s/%s\" \"%s/%s\"",
              FWEELIN_DATADIR,cfgname,
              homedir,FWEELIN_CONFIG_DIR);
     printf("INIT: Copying: %s\n",buf2);
@@ -689,7 +690,7 @@ void InputMatrix::CreateVariable (xmlNode *declare) {
 // and sets us up to handle those
 void InputMatrix::CreateParameterSets (int interfaceid,
                                        EventBinding *bind, xmlNode *binding, 
-                                       Event *input, int contnum) {
+                                       Event *input, unsigned char contnum) {
   const static char *delim = " and ";
 
   const static char *str_base = "parameters";
@@ -708,7 +709,8 @@ void InputMatrix::CreateParameterSets (int interfaceid,
     // Config specifies param sets
     
     // Separate into each param set
-    char *buf = new char[xmlStrlen(paramstr)+1],
+    int buf_len = xmlStrlen(paramstr)+1;
+    char *buf = new char[buf_len],
       *curp = (char *)paramstr, 
       *nextp;
 
@@ -716,7 +718,7 @@ void InputMatrix::CreateParameterSets (int interfaceid,
       nextp = strstr(curp,delim);
 
       int len = (nextp == 0 ? strlen(curp) : (int) (nextp-curp));
-      strncpy(buf,curp,len);
+      strncpy(buf,curp,buf_len);
       buf[len] = '\0';
 
       // Now buf contains one parameter- parse it
@@ -884,7 +886,8 @@ int InputMatrix::CreateConditions (int interfaceid,
     // Config specifies conditions
 
     // Separate into each condition
-    char *buf = new char[xmlStrlen(cond)+1],
+    int buf_len = xmlStrlen(cond)+1;
+    char *buf = new char[buf_len],
       *curc = (char *)cond, 
       *nextc;
 
@@ -892,7 +895,7 @@ int InputMatrix::CreateConditions (int interfaceid,
       nextc = strstr(curc,delim);
 
       int len = (nextc == 0 ? strlen(curc) : (int) (nextc-curc));
-      strncpy(buf,curc,len);
+      strncpy(buf,curc,buf_len);
       buf[len] = '\0';
 
       // Now buf contains one condition- parse it
@@ -1139,7 +1142,7 @@ void InputMatrix::CreateBinding (int interfaceid, xmlNode *binding) {
                                          nw,binding,inproto,pidx);
 
         // Output event(s)
-        int contnum = 0;
+        unsigned char contnum = 0;
         char go = 1, first = 1;
         do { 
           const static char *str_base = "output";
@@ -1204,7 +1207,7 @@ void InputMatrix::CreateBinding (int interfaceid, xmlNode *binding) {
           }
 
           contnum++;
-        } while (go);
+        } while (go && contnum % 256);
 
         if (first)
           printf(FWEELIN_ERROR_COLOR_ON 
@@ -1778,7 +1781,7 @@ void InputMatrix::ReceiveEvent(Event *ev, EventProducer *from) {
   }
 };
 
-void FloConfig::ConfigureEventBindings(xmlDocPtr doc, xmlNode *events, 
+void FloConfig::ConfigureEventBindings(xmlDocPtr /*doc*/, xmlNode *events,
                                        int interfaceid, char firstpass) {
   xmlNode *cur_node;
   for (cur_node = events->children; cur_node != NULL; 
@@ -1800,7 +1803,7 @@ void FloConfig::ConfigureEventBindings(xmlDocPtr doc, xmlNode *events,
   }
 };
 
-void FloConfig::ConfigureBasics(xmlDocPtr doc, xmlNode *gen) {
+void FloConfig::ConfigureBasics(xmlDocPtr /*doc*/, xmlNode *gen) {
   xmlNode *cur_node;
   for (cur_node = gen->children; cur_node != NULL; 
        cur_node = cur_node->next) {
@@ -2211,7 +2214,7 @@ int *FloConfig::ExtractArrayInt(char *n, int *size, char delim_char) {
   return array;
 };
 
-void FloConfig::ConfigureElement(xmlDocPtr doc, xmlNode *elemn, 
+void FloConfig::ConfigureElement(xmlDocPtr /*doc*/, xmlNode *elemn,
                                  FloLayoutElement *elem, float xscale,
                                  float yscale) {
   xmlNode *cur_node;
@@ -2650,7 +2653,7 @@ void FloConfig::ConfigurePatchBanks(xmlNode *pb, PatchBrowser *br) {
   }    
 };
 
-void FloConfig::SetupParamSetBank(xmlDocPtr doc, xmlNode *banknode, ParamSetBank *bank) {
+void FloConfig::SetupParamSetBank(xmlDocPtr /*doc*/, xmlNode *banknode, ParamSetBank *bank) {
   // Bank name
   char *name = 0;
   xmlChar *nn = xmlGetProp(banknode, (const xmlChar *)"name");
@@ -3611,7 +3614,7 @@ FloConfig::FloConfig(Fweelin *app) : im(app),
   scope_sample_len = vsize[0]; // Scope goes across screen
 };
 
-void FloConfig::ConfigureInterfaces (xmlDocPtr doc, xmlNode *ifs,
+void FloConfig::ConfigureInterfaces (xmlDocPtr /*doc*/, xmlNode *ifs,
                                      char firstpass) {
   int cur_iid = 1, // First interface has ID 1 (0 is main config) 
     // First non-switchable interface has this ID
