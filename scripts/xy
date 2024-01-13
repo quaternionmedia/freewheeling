@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3
 
 # Convert a YAML file to XML and write it to stdout.
 #
@@ -16,7 +16,7 @@ env = Environment(loader=FileSystemLoader('yml'), autoescape=select_autoescape([
 def convertYaml2Xml(inFileName):
     rendered = env.get_template(inFileName)
     rendered = rendered.render().encode('utf-8')
-    yamled = yaml.load(rendered)
+    yamled = yaml.load(rendered, Loader=yaml.Loader)
     if yamled is None:
         sys.stdout.write('No such file!\n')
         sys.exit(-1)

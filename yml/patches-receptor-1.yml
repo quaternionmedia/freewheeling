@@ -11,22 +11,22 @@
             name: patch
             attributes:
                 channel: 10
-                name: D: Tam
+                name: 'D: Tam'
         -
             name: patch
             attributes:
                 channel: 11
-                name: D: Cajon / Snare
+                name: 'D: Cajon / Snare'
         -
             name: patch
             attributes:
                 channel: 5
-                name: D: Udu
+                name: 'D: Udu'
         -
             name: patch
             attributes:
                 channel: 9
-                name: D: Drumkit
+                name: 'D: Drumkit'
         -
             name: patch
             attributes:

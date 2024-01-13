@@ -70,7 +70,7 @@
                                 -
                                     name: param
                                     attributes:
-                                        name: *S1* LFO SPD
+                                        name: '*S1* LFO SPD'
                                 -
                                     name: param
                                     attributes:
