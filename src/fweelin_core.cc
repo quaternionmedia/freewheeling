@@ -2206,7 +2206,7 @@ void LoopManager::Deactivate (int index) {
 }
 
 void LoopManager::RecountPulse() {
-  if (GetCurPulse() > 0) {
+  if (GetCurPulse() != 0) {
     int max = 1;
     for (int i = 0; i < app->getTMAP()->GetMapSize(); i++) {
       if (status[i] == T_LS_Playing) {
